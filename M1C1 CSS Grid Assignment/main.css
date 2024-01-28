@@ -1,0 +1,69 @@
+.gridOne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gridTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+   .gridTwo-one {
+    background-color: red;
+   }
+   .gridTwo-two {
+    background-color: blue;
+   }
+   .gridTwo-three {
+    background-color: yellow;
+   }
+}
+
+.gridThree {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    background-color: lightgrey;
+    .img {
+        object-fit: fill;
+    }
+}
+
+.gridFour {
+    width: 500px;
+    background-color: green;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.gridFour .Second {
+        display: grid;
+        grid-template-columns: 1fr 1fr;;
+    }
+
+.gridFive {
+    width: 500px;    
+    background-color: lightgrey;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    
+} 
+.gridFive .Second {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+ }
+ .gridFive .Second .img{
+     object-fit: cover;
+ }
+
+ .gridSix {
+    display: grid;
+    width: 500px;
+    background-color: lightgrey;
+    grid-template-columns: 1fr 3fr;
+ }
+
+.gridSix .icon{
+    color: white;    
+ }
+
+ .gridSix .texto{
+    font-family: 'Gochi Hand', cursive;
+ }
