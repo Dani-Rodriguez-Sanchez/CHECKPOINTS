@@ -21,7 +21,7 @@
     display: grid;
     grid-template-rows: 1fr 3fr;
     background-color: lightgrey;
-    .img {
+    img {
         object-fit: fill;
     }
 }
@@ -49,7 +49,7 @@
     grid-template-columns: 1fr 1fr;
     justify-content: center;
  }
- .gridFive .Second .img{
+ .gridFive .Second img{
      object-fit: cover;
  }
 
@@ -60,7 +60,7 @@
     grid-template-columns: 1fr 3fr;
  }
 
-.gridSix .icon{
+.gridSix i{
     color: white;    
  }
 
