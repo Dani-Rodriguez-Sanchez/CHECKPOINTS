@@ -1,0 +1,37 @@
+¿Qué es un condicional?
+
+Es una estructura de control, que  permite condicionar la ejecución de uno o varios bloques de sentencias al cumplimiento de una o varias condiciones. Las sentencias condicionales son if, if-else, if anidada e if-elif-else.
+IF -ejecuta el código, y si es verdadero, ejecuta a continuación la sentencia seguida
+	a = 1
+	b = 2
+
+	if a > b
+   	 print("a es mayor que b")
+
+IF-ELSE-se utiliza para ejecutar tanto la parte verdadera como la falsa de la condición. Si esta es falsa, se ejecutará el bloque de código a continuación de else.
+	if a > b
+   	 print("a es mayor que b")
+	else 
+	   print("b es mayor que a")
+
+IF ANIDADA-es una sentencia anidada dentro de otra, sirve para filtrar y comprobar varias condiciones. Su alcance puede ser ilimitado, pero su lectura puede resultar compleja de entender.
+	numero = int(input('Introduce un número: '))
+	if numero % 3 == 0:
+    		if numero % 5 == 0:
+        		print('El número', numero, 'es divisible por 3 y por 5')
+    	else:
+        print('El número', numero, 'es divisible por 3')
+
+IF ELIF ELSE-para problemas condicionales múltiples. En primer lugar comprueba la condición de la sentencia if, si es falsa, se evalua la sentencia elif, y si esta es también falsa, se ejecuta la sentencia else.
+	
+	x = 1
+
+	if  x > 10:
+    		print(" x es mayor que 10!")
+	elif x < 10:
+      	print("x es menor que 10!")
+	elif x < 20 :
+      	print("x es menor que 20!")
+	else:
+     		print("x es igual a 10")
+-------------
