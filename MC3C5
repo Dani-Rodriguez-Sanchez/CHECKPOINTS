@@ -75,3 +75,42 @@ De esta manera, este código:
 quedaría así:
 	cuadrados = [i**2 for i in range(5)] 
 	#[0, 1, 4, 9, 16]
+-----------
+¿Qué es un argumento en Python?
+
+Es una parte de las funciones, que tendrán un nombre, argumentos de entrada, un código a ejecutar, y unos parámetros de salida. Estos argumentos pueden ser de nombre o de posición.
+ARGUMENTOS DE POSICION-Es la forma más básica. Considera la posición de los parámetro. Por ejemplo:
+	def resta(a, b): 
+		return a-b 
+	resta(5, 3) # 2
+ARGUMENTOS POR NOMBRE- Hace lo mismo que el de posición, pero usamos el nombre del argumento con = y su valor. Al indicar en la llamada a la función el nombre de la variable y el valor, el orden ya no importa. Por ejemplo:
+	
+	resta(b=5, a=3) # -2
+Además estos pueden ser de LONGITUD VARIABLE, cuando no sabemos de antemano la cantidad de argumentos que se pasarán a una función. Esto se hace indicando el parámetro *arg. Por ejemplo:
+	def sum(*args):
+		value = 0
+		for n in args:
+		value += n
+		return value
+Y si estos argumentos se pasan como un número variable con nombre (como diccionario), el parámetro es **kwargs
+---------
+¿Qué es una función de Python Lambda?
+
+También se llaman funciones anónimas, porque se definen sin un nombre. 
+Es una herramienta que permite recoger una función simple en una variable, y pasarla de forma muy sencilla a otras funciones. Su potencial radica en que la sintaxis condensada, que nos permite escribir funciones simples en tan solo una línea.
+SINTAXIS:
+lambda arguments : expression
+
+Por ejemplo:
+	def myfunc(n):
+		return lambda a : a * n
+---------
+¿Qué es un paquete pip?
+
+PIP es un programa de instalación de módulos externos de Python. Son librerías o bibliotecas de código, compartidas por otros programadores, en código abierto, y son útiles para ahorrar escribir mucho código, o simplemente realizar una tarea particular de la manera más sencilla. 
+Está diseñado para que se use desde la línea de comandos, y se empezó a incluir pip en Python con la versión de Python 3.4.
+El “Indice de paquetes de Python” es un repositorio público de paquetes bajo licencias de código abierto disponibles para otros usuarios de Python, y se encuentra en este enlace:
+https://pypi.org/
+
+Por ejemplo:
+	sudo pip install requests
