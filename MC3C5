@@ -35,3 +35,43 @@ IF ELIF ELSE-para problemas condicionales múltiples. En primer lugar comprueba 
 	else:
      		print("x es igual a 10")
 -------------
+¿Cuáles son los diferentes tipos de bucles en python? ¿Por qué son útiles?
+
+Un bucle es una estructura de control que repite un bloque de instrucciones, son útiles para automatizar la ejecución del código. 
+Hay dos tipos: los bucles for y los bucles while. A grandes rasgos, se utilizan los primeros cuando sabemos de antemano cuantas veces se repetirá el programa, y el segundo cuando no lo conocemos.
+WHILE-permite ejecutar una sección de código repetidas veces, mientras una condición determinada se cumpla. Cuando se deje de cumplir, se saldrá del bucle y se continuará la ejecución normal. 
+Por lo tanto el while tiene dos partes:
+La condición que se tiene que cumplir para que se ejecute el código.
+El bloque de código que se ejecutará mientras la condición se cumpla.
+
+	x = 5 
+	while x > 0: 
+		x -=1 
+		print(x) 
+	# Salida: 4,3,2,1,0
+
+FOR-Mientras que en el while la condición era evaluada en cada iteración para decidir si volver a ejecutar o no el código, en el for no existe tal condición, sino un iterable que define las veces que se ejecutará el código.
+	for i in range(0, 4): 
+		print(i) 
+		# Salida: 
+		# 0 
+		# 1 
+		# 2 
+		# 3 
+-------------
+¿Qué es una comprensión de listas en python?
+
+Es una manera de crear listas de elementos en una sola línea de código, simplificando el código al máximo. Python define una estructura para ello con la sintaxis de de las list comprehensions, en la cual entre corchetes se define una expresión, seguida de un bucle for al que opcionalmente le pueden seguir otros bucles for y/o una condición.
+
+              [ expresion(i) for i in list if condición ]
+
+
+
+De esta manera, este código:
+	cuadrados = []
+	for i in range(5):
+    		cuadrados.append(i**2)
+	#[0, 1, 4, 9, 16]
+quedaría así:
+	cuadrados = [i**2 for i in range(5)] 
+	#[0, 1, 4, 9, 16]
