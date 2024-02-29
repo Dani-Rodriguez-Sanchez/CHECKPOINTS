@@ -13,16 +13,24 @@ CUESTIONARIO:
 
 ------------------
 ¿Qué método se ejecuta automáticamente cuando se crea una instancia de una clase?
-
+  Al crear una instancia de una clase (instanciar) se crea el objeto en la memoria del sistema operativo, ya que hasta que no se ejecuta el programa, no se crea en memoria.
+  Existe un método especial que se ejecuta cuando creamos una instancia de un objeto. Este método es __init__ y nos permite asignar atributos y realizar operaciones 
+  con el objeto en el momento de su creación. 
 ------------------
 ¿Cuáles son los tres verbos de API?
-
+  Get, post, put y delete
+  GET : este método permite obtener información de la base de datos o de un proceso
+  POST : permite enviar información, ya sea para agregar información a una base de datos o para pasar la entrada de un modelo de aprendizaje automático, por ejemplo.
+  PUT: actualizar información. Generalmente se utiliza para gestionar información en la base de datos.
+  DELETE : este método se utiliza para eliminar información de la base de datos.
 ----------------
 ¿Es MongoDB una base de datos SQL o NoSQL?
 
 ---------------
 ¿Qué es una API?
-
+  Una API (interfaz de programación de aplicaciones), es un conjunto de reglas y protocolos que permiten que dos sistemas informáticos o aplicaciones interactúen entre sí, 
+  por ejemplo para recuperar datos de un servidor web. 
+  En Python la creamos mediante Flask
 ---------------
 ¿Qué es Postman?
 
@@ -31,6 +39,8 @@ CUESTIONARIO:
 
 ---------------
 ¿Qué es un método dunder?
+  __init__
+  __repr__
 
 ---------------
 ¿Qué es un decorador de python?
