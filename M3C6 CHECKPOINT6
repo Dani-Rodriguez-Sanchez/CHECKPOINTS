@@ -1,14 +1,44 @@
+CUESTIONARIO:
 
 ¿Para qué usamos Classes en Python?
+  Python es un lenguaje de programación orientado a objetos. Casi todo en Python es un objeto, que es una entidad con sus propiedades y métodos. 
+  Entonces una clase es un constructor de objetos, o un modelo para crearlos, nos permite definir las propiedades y métodos que tendrá cualquier objeto creado a partir de dicha clase.
+  También las clases son una manera de organizar el código y así facilitar su mantenimiento, además de aprovechar la reutilización del código: 
+  si tenemos que crear varios objetos que tengas las mismas propiedades y métodos, no tenemos que repetir el código, en su lugar, podemos crear nuevos objetos a partir de la misma clase.
+  Por ejemplo:
+	  class Galleta:
+		  una_galleta = Galleta()
+		  otra_galleta = Galleta()
+  Así con la misma clase, damos lugar a dos objetos independientes
+
+------------------
 ¿Qué método se ejecuta automáticamente cuando se crea una instancia de una clase?
+
+------------------
 ¿Cuáles son los tres verbos de API?
+
+----------------
 ¿Es MongoDB una base de datos SQL o NoSQL?
+
+---------------
 ¿Qué es una API?
+
+---------------
 ¿Qué es Postman?
+
+---------------
 ¿Qué es el polimorfismo?
+
+---------------
 ¿Qué es un método dunder?
+
+---------------
 ¿Qué es un decorador de python?
-y después tienes que realizar este ejercicio y mandarmelo
+
+
+
+---------------
+EJERCICIO:
 
 Create a Python class called User that uses the init method and creates a username and a password. Create an object using the class.
 
