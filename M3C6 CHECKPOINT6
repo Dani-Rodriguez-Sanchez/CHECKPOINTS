@@ -1,0 +1,19 @@
+
+¿Para qué usamos Classes en Python?
+¿Qué método se ejecuta automáticamente cuando se crea una instancia de una clase?
+¿Cuáles son los tres verbos de API?
+¿Es MongoDB una base de datos SQL o NoSQL?
+¿Qué es una API?
+¿Qué es Postman?
+¿Qué es el polimorfismo?
+¿Qué es un método dunder?
+¿Qué es un decorador de python?
+y después tienes que realizar este ejercicio y mandarmelo
+
+Create a Python class called User that uses the init method and creates a username and a password. Create an object using the class.
+
+  class User:
+      def __init__(self, username, password):
+        self.username = username
+        self.password = password
+        
