@@ -140,7 +140,22 @@ CUESTIONARIO:
 
 ---------------
 ¿Qué es un decorador de python?
+  Los decoradores son funciones que modifican el comportamiento de otras funciones. 
+  En otras palabras, una función la cual toma como input una función y a su vez retorna otra función.
+  Son útiles para reducir las líneas de código duplicadas, hacer nuestro código más legible, fácil de testear, y fácil de mantener.
 
+	def mi_decorador(funcion):
+    		def nueva_funcion(a, b):
+        	   print("Se va a llamar")
+        	   c = funcion(a, b)
+          	   print("Se ha llamado")
+        	   return c
+        return nueva_funcion
+
+	@mi_decorador
+	def suma(a, b):
+    		print("Entra en funcion suma")
+    		return a + b
 
 
 ---------------
