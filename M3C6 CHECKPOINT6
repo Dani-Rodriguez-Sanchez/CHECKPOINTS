@@ -2,7 +2,7 @@ CUESTIONARIO:
 
 ¿Para qué usamos Classes en Python?
   Python es un lenguaje de programación orientado a objetos. Casi todo en Python es un objeto, que es una entidad con sus propiedades y métodos. 
-  Entonces una clase es un constructor de objetos, o un modelo para crearlos, nos permite definir las propiedades y métodos que tendrá cualquier 
+  Entonces una clase es un constructor de objetos, o un modelo para crearlos, además nos permite definir las propiedades y métodos que tendrá cualquier 
   objeto creado a partir de dicha clase.
   También las clases son una manera de organizar el código y así facilitar su mantenimiento, además de aprovechar la reutilización del código: 
   si tenemos que crear varios objetos que tengan las mismas propiedades y métodos, no tenemos que repetir el código, en su lugar, podemos crear 
@@ -34,8 +34,9 @@ CUESTIONARIO:
 ------------------
 ¿Cuáles son los tres verbos de API?
 
-  Son 4 los métodos Get, post, put y delete. Están en la librería requests, que es necesario intalar
+  Son 4 los métodos son Get, Post, Put y Delete. Están en la librería requests, que es necesario intalar de esta manera:
 	pip install requests
+
   GET : este método permite obtener información del servidor.
 	URL = "https://jsonplaceholder.typicode.com/posts/1"
 	response = requests.get(URL)
@@ -49,20 +50,34 @@ CUESTIONARIO:
 	}
 	response = requests.post(URL, json=DATA)
   PUT: actualizar información. Generalmente se utiliza para gestionar información en la base de datos.
-     Este método también recibe dos parámetros, el primero es la URL que le indica a la API el objeto en particular que deseas actualizar y el segundo parámetro es la información con la que deseas actualizar el objeto.
+     Este método también recibe dos parámetros, el primero es la URL que le indica a la API el objeto en particular que deseas actualizar 
+     y el segundo parámetro es la información con la que deseas actualizar el objeto.
   	URL = "https://jsonplaceholder.typicode.com/posts/1"
 	DATA = {
    		 "title": "Título actualizado",
    		 "userId": 2
 	}
-
 	response = requests.put(URL, json=DATA)
-  DELETE : este método se utiliza para eliminar información de la base de datos. Este método recibe como parámetro la URL que le indica a el servidor de la API el objeto en particular que deseas eliminar
+  DELETE : este método se utiliza para eliminar información de la base de datos. Este método recibe como parámetro la URL
+     que le indica a el servidor de la API el objeto en particular que deseas eliminar
 	URL = "https://jsonplaceholder.typicode.com/posts/1"
 	response = requests.delete(URL)
 ----------------
 ¿Es MongoDB una base de datos SQL o NoSQL?
+  MongoDB es un programa de gestión de bases de datos NoSQL (Not only SQL) de código abierto. 
 
+  SQL significa Lenguaje de Consulta Estructurado, evolucionando desde la década de 1970 hasta convertirse en un poderoso lenguaje para consultar datos estructurados. 
+  NoSQL es un sistema de base de datos más nuevo que no utiliza un lenguaje de consulta estándar pero emplea documentos JSON para el almacenamiento de datos.
+  Ambos son dos tipos de bases de datos que permiten el almacenamiento y acceso ordenado a los datos, tanto estructurados (SQL) como no estructurados (NoSQL).
+
+  Las bases de datos SQL son relacionales, es decir, sus datos están relacionados entre sí y se almacenan como texto de manera estructurada en tablas 
+  que constan de registros (filas) que es la propia información relacionada entre sí, en base a su contexto, y campos (columnas) 
+  que son los distintos tipos de información que se relacionan. Por ejemplo Oracle, MySQL, y SQL Server.
+
+  Por otra parte las bases de datos NoSQL aparecen debido a la necesidad de flexibilidad para almacenar distintos tipos de información no estructurada
+  como documentos (PDF, Word, Excel…), emails, SMS, localizaciones geográficas, audio, vídeo, publicaciones de RRSS… 
+  Cuando este volumen de datos es muy grande, es lo que se conoce como Big Data. Tienen por tanto una gran capacidad de escalabilidad.
+  Por ejemplo MongoDB, Cassandra, CouchDB, Redis, y Neo4j.
 ---------------
 ¿Qué es una API?
   Una API (interfaz de programación de aplicaciones), es un conjunto de reglas y protocolos que permiten que dos sistemas informáticos o aplicaciones interactúen entre sí, 
