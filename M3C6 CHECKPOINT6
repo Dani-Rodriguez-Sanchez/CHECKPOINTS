@@ -111,13 +111,32 @@ CUESTIONARIO:
 			 print ("Soy un Pulpo")
 ---------------
 ¿Qué es un método dunder?
-  __init__
-__init__ permite definir los atributos y comportamientos iniciales de un objeto al momento de su creación. es un método especial en Python que se utiliza 
-para inicializar los objetos de una clase.
-Es parte de la sintaxis del lenguaje y se llama automáticamente cuando se crea una instancia de la clase.
-El método __init__ se define dentro de una clase y toma como parámetro obligatorio self, el cual hace referencia al objeto actual que se está creando. 
-Además, puede tomar otros parámetros opcionales que se utilizarán para configurar los atributos del objeto.
-__repr__
+  «double underscore methods» También llamados métodos especiales, o mágicos. Son métodos de Python que definen cómo se comportan los objetos de Python cuando se realizan operaciones comunes sobre ellos.
+  Normalmente no son invocados directamente por el programador. Por ejemplo cuando haces una simple suma 2 + 2 se está invocando al método __add__ internamente.
+  Estos métodos se definen claramente con guiones bajos dobles antes y después del nombre del método.
+  Los más comunes son __init__ y __repr__
+
+  __init__ permite definir los atributos y comportamientos iniciales de un objeto al momento de su creación. es un método especial en Python que se utiliza 
+  para inicializar los objetos de una clase.
+  Es parte de la sintaxis del lenguaje y se llama automáticamente cuando se crea una instancia de la clase.
+  El método __init__ se define dentro de una clase y toma como parámetro obligatorio self, el cual hace referencia al objeto actual que se está creando. 
+  Además, puede tomar otros parámetros opcionales que se utilizarán para configurar los atributos del objeto.
+
+	class Rectangle:
+    		def __init__(self, height, width):
+        	    self.height = height
+       		    self.width = width
+  
+  __repr__ se utiliza para devolver una representación de cadena legible de un objeto. 
+  Este método se define dentro de una clase y se llama cuando se usa la función repr() en un objeto de esa clase. 
+  Se espera que el resultado sea una cadena que contenga información relevante sobre el objeto y sus valores de atributo.
+	
+	class Persona:
+		def__init__(self, nombre, edad):
+	             self.nombre=nombre
+                     self.edad=edad
+                def __repr__(self):
+        return f"persona(nombre='{self.nombre}', edad={self.edad})"
 
 ---------------
 ¿Qué es un decorador de python?
