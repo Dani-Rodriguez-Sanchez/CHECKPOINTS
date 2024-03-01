@@ -82,7 +82,16 @@ CUESTIONARIO:
 ¿Qué es una API?
   Una API (interfaz de programación de aplicaciones), es un conjunto de reglas y protocolos que permiten que dos sistemas informáticos o aplicaciones interactúen entre sí, 
   por ejemplo para recuperar datos de un servidor web. 
-  En Python la creamos mediante Flask
+  En esencia, una API actúa como una capa o interfaz de comunicación que permite que diferentes sistemas se comuniquen entre sí.
+  Generalmente realizas una solicitud de información o datos y la API te devuelve una respuesta con lo que solicitaste. Por ejemplo, cada vez que abres Twitter 
+  o te desplazas hacia abajo en tu feed de Instagram, básicamente estás haciendo una solicitud a la API detrás de esa aplicación 
+  y obteniendo una respuesta a cambio. Esto también se conoce como llamar a una API.
+  Una interface API es JSON (JAVASCRIPT OBJETS NOTATION), es un formato ligero de intercambio de datos. El cual es fácil para los humanos leer y escribir, 
+  y es fácil para las máquinas analizar y generar.
+  Para utilizarlo, hay que implementar la biblioteca de solicitudes en Python:
+	import requests
+	r = requests.get('https://api.dailysmarty.com/posts')-->hace un request y se cierra
+	r.json()-->imprime la respuesta
 ---------------
 ¿Qué es Postman?
 
@@ -92,7 +101,8 @@ CUESTIONARIO:
 ---------------
 ¿Qué es un método dunder?
   __init__
-__init__ permite definir los atributos y comportamientos iniciales de un objeto al momento de su creación. es un método especial en Python que se utiliza para inicializar los objetos de una clase.
+__init__ permite definir los atributos y comportamientos iniciales de un objeto al momento de su creación. es un método especial en Python que se utiliza 
+para inicializar los objetos de una clase.
 Es parte de la sintaxis del lenguaje y se llama automáticamente cuando se crea una instancia de la clase.
 El método __init__ se define dentro de una clase y toma como parámetro obligatorio self, el cual hace referencia al objeto actual que se está creando. 
 Además, puede tomar otros parámetros opcionales que se utilizarán para configurar los atributos del objeto.
