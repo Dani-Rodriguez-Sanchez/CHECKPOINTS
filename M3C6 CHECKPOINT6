@@ -94,10 +94,21 @@ CUESTIONARIO:
 	r.json()-->imprime la respuesta
 ---------------
 ¿Qué es Postman?
-
+  Es una aplicación que permite conectarse con APIs externas.
 ---------------
 ¿Qué es el polimorfismo?
-
+  Es uno de los pilares básicos en la programación orientada a objetos, y significa que objetos de diferentes clases pueden ser accedidos
+  utilizando el mismo interfaz, mostrando un comportamiento distinto (tomando diferentes formas) según cómo sean accedidos. Esto significa 
+  que podemos llamar a un método exactamente igual a otro y el interprete automáticamente detectará a cual de ellos nos referimos según diversos parámetros.
+  
+  Por ejemplo, aquí el mismo nombre de Método está en diferentes clases. Al momento de crear una instancia y llamar al método vemos que 
+  aunque se llamen igual el interprete se guía por el nombre de la clase.
+	class Marino(): #Clase Padre
+    		def hablar(self): #Método Hablar
+       			 print ("Hola..")
+  	class Pulpo(Marino): #Clase Hija
+   		 def hablar (self): #Método Hablar
+			 print ("Soy un Pulpo")
 ---------------
 ¿Qué es un método dunder?
   __init__
