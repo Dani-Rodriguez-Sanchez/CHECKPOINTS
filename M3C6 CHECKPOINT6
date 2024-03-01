@@ -2,9 +2,11 @@ CUESTIONARIO:
 
 ¿Para qué usamos Classes en Python?
   Python es un lenguaje de programación orientado a objetos. Casi todo en Python es un objeto, que es una entidad con sus propiedades y métodos. 
-  Entonces una clase es un constructor de objetos, o un modelo para crearlos, nos permite definir las propiedades y métodos que tendrá cualquier objeto creado a partir de dicha clase.
+  Entonces una clase es un constructor de objetos, o un modelo para crearlos, nos permite definir las propiedades y métodos que tendrá cualquier 
+  objeto creado a partir de dicha clase.
   También las clases son una manera de organizar el código y así facilitar su mantenimiento, además de aprovechar la reutilización del código: 
-  si tenemos que crear varios objetos que tengas las mismas propiedades y métodos, no tenemos que repetir el código, en su lugar, podemos crear nuevos objetos a partir de la misma clase.
+  si tenemos que crear varios objetos que tengan las mismas propiedades y métodos, no tenemos que repetir el código, en su lugar, podemos crear 
+  nuevos objetos a partir de la misma clase.
   Por ejemplo:
 	  class Galleta:
 		  una_galleta = Galleta()
@@ -14,8 +16,21 @@ CUESTIONARIO:
 ------------------
 ¿Qué método se ejecuta automáticamente cuando se crea una instancia de una clase?
   Al crear una instancia de una clase (instanciar) se crea el objeto en la memoria del sistema operativo, ya que hasta que no se ejecuta el programa, no se crea en memoria.
-  Existe un método especial que se ejecuta cuando creamos una instancia de un objeto. Este método es __init__ y nos permite asignar atributos y realizar operaciones 
+  Existe un método especial que se ejecuta cuando creamos una instancia de un objeto. Este método es __init__ que nos permite asignar atributos y realizar operaciones 
   con el objeto en el momento de su creación. 
+    1- De esta manera se crea una clase, y después se inicializa un objeto
+	class Persona:
+   	 def inicializar(self,nom):
+        	self.nombre=nom
+	#persona1=Persona()
+	#persona1.inicializar("Pedro")
+   2-Con el método __init__ automáticamente se inicializa cuando se crea la instancia. Además, puede tomar otros parámetros opcionales 
+     que se utilizarán para configurar los atributos del objeto.
+	class Coche:
+	def __init__(self, marca, modelo):
+	self.marca = marca
+	self.modelo = modelo
+
 ------------------
 ¿Cuáles son los tres verbos de API?
   Get, post, put y delete
@@ -40,7 +55,11 @@ CUESTIONARIO:
 ---------------
 ¿Qué es un método dunder?
   __init__
-  __repr__
+__init__ permite definir los atributos y comportamientos iniciales de un objeto al momento de su creación. es un método especial en Python que se utiliza para inicializar los objetos de una clase.
+Es parte de la sintaxis del lenguaje y se llama automáticamente cuando se crea una instancia de la clase.
+El método __init__ se define dentro de una clase y toma como parámetro obligatorio self, el cual hace referencia al objeto actual que se está creando. 
+Además, puede tomar otros parámetros opcionales que se utilizarán para configurar los atributos del objeto.
+__repr__
 
 ---------------
 ¿Qué es un decorador de python?
