@@ -33,11 +33,33 @@ CUESTIONARIO:
 
 ------------------
 ¿Cuáles son los tres verbos de API?
-  Get, post, put y delete
-  GET : este método permite obtener información de la base de datos o de un proceso
-  POST : permite enviar información, ya sea para agregar información a una base de datos o para pasar la entrada de un modelo de aprendizaje automático, por ejemplo.
+
+  Son 4 los métodos Get, post, put y delete. Están en la librería requests, que es necesario intalar
+	pip install requests
+  GET : este método permite obtener información del servidor.
+	URL = "https://jsonplaceholder.typicode.com/posts/1"
+	response = requests.get(URL)
+  POST : permite enviar información, ya sea para agregar información a una base de datos o para pasar la entrada de un modelo de aprendizaje automático.
+     El método post() recibe dos parámetros, el primero es la URL de la API y el segundo es la información del objeto que queremos crear dentro de un diccionario.  
+	URL = "https://jsonplaceholder.typicode.com/posts"
+	DATA = {
+    		"title": "Título del ejemplo",
+    		"body": "Contenido de un nuevo post",
+   		 "userId": 1
+	}
+	response = requests.post(URL, json=DATA)
   PUT: actualizar información. Generalmente se utiliza para gestionar información en la base de datos.
-  DELETE : este método se utiliza para eliminar información de la base de datos.
+     Este método también recibe dos parámetros, el primero es la URL que le indica a la API el objeto en particular que deseas actualizar y el segundo parámetro es la información con la que deseas actualizar el objeto.
+  	URL = "https://jsonplaceholder.typicode.com/posts/1"
+	DATA = {
+   		 "title": "Título actualizado",
+   		 "userId": 2
+	}
+
+	response = requests.put(URL, json=DATA)
+  DELETE : este método se utiliza para eliminar información de la base de datos. Este método recibe como parámetro la URL que le indica a el servidor de la API el objeto en particular que deseas eliminar
+	URL = "https://jsonplaceholder.typicode.com/posts/1"
+	response = requests.delete(URL)
 ----------------
 ¿Es MongoDB una base de datos SQL o NoSQL?
 
