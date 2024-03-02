@@ -94,7 +94,9 @@ CUESTIONARIO:
 	r.json()-->imprime la respuesta
 ---------------
 ¿Qué es Postman?
-  Es una aplicación que permite conectarse con APIs externas.
+  Es una aplicación que permite conectar Python con APIs externas. Así los usuarios puedencrear scripts completos y flexibles, 
+  componer y administrar variables de entorno y configurar recursos para realizar una variedad de funciones.
+
 ---------------
 ¿Qué es el polimorfismo?
   Es uno de los pilares básicos en la programación orientada a objetos, y significa que objetos de diferentes clases pueden ser accedidos
@@ -181,3 +183,9 @@ Create a Python class called User that uses the init method and creates a userna
         self.username = username
         self.password = password
         
+
+
+----------------------------------
+BIBLIOGRAFIA:
+
+https://www.youtube.com/@pildorasinformaticas
