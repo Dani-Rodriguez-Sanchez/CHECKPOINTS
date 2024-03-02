@@ -34,7 +34,7 @@ CUESTIONARIO:
 ------------------
 ¿Cuáles son los tres verbos de API?
 
-  Son 4 los métodos son Get, Post, Put y Delete. Están en la librería requests, que es necesario intalar de esta manera:
+  Son 4 los métodos, y estos son: Get, Post, Put y Delete. Están en la librería requests, que es necesario intalar de esta manera:
 	pip install requests
 
   GET : este método permite obtener información del servidor.
@@ -140,23 +140,36 @@ CUESTIONARIO:
 
 ---------------
 ¿Qué es un decorador de python?
-  Los decoradores son funciones que modifican el comportamiento de otras funciones. 
+  Los decoradores son funciones que modifican el comportamiento de otras funciones, les añaden funcionalidades (las decoran).
   En otras palabras, una función la cual toma como input una función y a su vez retorna otra función.
-  Son útiles para reducir las líneas de código duplicadas, hacer nuestro código más legible, fácil de testear, y fácil de mantener.
+  Son útiles para reducir las líneas de código duplicadas, hacer nuestro código más legible, fácil de testear, y de mantener.
 
-	def mi_decorador(funcion):
-    		def nueva_funcion(a, b):
-        	   print("Se va a llamar")
-        	   c = funcion(a, b)
-          	   print("Se ha llamado")
-        	   return c
-        return nueva_funcion
+	def funcion_decoradora(funcion_parametro):
 
-	@mi_decorador
-	def suma(a, b):
-    		print("Entra en funcion suma")
-    		return a + b
+    		def funcion_interior():
+			print("vamos a relizar un cálculo: ")
 
+		    	funcion_parametro()
+        		print("Aquí acaba el cálculo")
+    		return funcion_interior
+
+	@funcion_decoradora
+		def suma():
+    		print(15+20)
+
+	def resta():
+    		print(20-15)
+
+	suma() 
+	resta()
+
+	#vamos a realizar un cálculo:
+	#35
+	#Aquí acaba el cálculo
+	#5
+  Vemos que la función decoradora sólo se ha aplicado a la suma, que tiene el llamado @funcion_decoradora sobre ella, no a la resta.
+  Una funcion decorador está formado por 3 funciones, a recibe una función b, y resulta una nueva función c.
+  Luego, se aplica con la sintaxis @nombre_funcion, lo cual añade funcionalidades añadidas a esa nueva función.
 
 ---------------
 EJERCICIO:
