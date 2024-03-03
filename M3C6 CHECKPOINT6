@@ -62,6 +62,7 @@ CUESTIONARIO:
      que le indica a el servidor de la API el objeto en particular que deseas eliminar
 	URL = "https://jsonplaceholder.typicode.com/posts/1"
 	response = requests.delete(URL)
+
 ----------------
 ¿Es MongoDB una base de datos SQL o NoSQL?
   MongoDB es un programa de gestión de bases de datos NoSQL (Not only SQL) de código abierto. 
@@ -78,24 +79,41 @@ CUESTIONARIO:
   como documentos (PDF, Word, Excel…), emails, SMS, localizaciones geográficas, audio, vídeo, publicaciones de RRSS… 
   Cuando este volumen de datos es muy grande, es lo que se conoce como Big Data. Tienen por tanto una gran capacidad de escalabilidad.
   Por ejemplo MongoDB, Cassandra, CouchDB, Redis, y Neo4j.
+
 ---------------
 ¿Qué es una API?
   Una API (interfaz de programación de aplicaciones), es un conjunto de reglas y protocolos que permiten que dos sistemas informáticos o aplicaciones interactúen entre sí, 
   por ejemplo para recuperar datos de un servidor web. 
   En esencia, una API actúa como una capa o interfaz de comunicación que permite que diferentes sistemas se comuniquen entre sí.
-  Generalmente realizas una solicitud de información o datos y la API te devuelve una respuesta con lo que solicitaste. Por ejemplo, cada vez que abres Twitter 
-  o te desplazas hacia abajo en tu feed de Instagram, básicamente estás haciendo una solicitud a la API detrás de esa aplicación 
-  y obteniendo una respuesta a cambio. Esto también se conoce como llamar a una API.
+  Para que sirve:
+    1-En el desarrollo, para ahorrar tiempo y dinero, al poder utilizar piezas o funciones que otros ya han creado. El ejemplo es una plataforma de compras online.
+    2-También cuando se quiere utilizar deliberadamente las funciones de determinado servicio para ofrecer ventajas a sus usuarios.
+      Por ejemplo, cuando vas a comprar y pones la información de tu tarjeta, la web utiliza una API para enviarle esa información de forma remota a otro programa 
+      que verifica si tus datos son correctos o es una tarjeta inventada. Una vez se verifica, este programa remoto le dice a la web que todo está en orden, y esta ya te emite tu orden de compra.
+    3-Otro ejemplo clásico es el de las aplicaciones de terceros para conectarse a un servicio. Por ejemplo, redes sociales como Twitter o Reddit 
+      permiten que se creen aplicaciones diferentes a las oficiales para conectarse a ellas. Estas aplicaciones necesitarán las API de las redes sociales 
+      para poder mostrarte la información y los mecanismos internos que las hacen funcionar.
+
   Una interface API es JSON (JAVASCRIPT OBJETS NOTATION), es un formato ligero de intercambio de datos. El cual es fácil para los humanos leer y escribir, 
   y es fácil para las máquinas analizar y generar.
   Para utilizarlo, hay que implementar la biblioteca de solicitudes en Python:
 	import requests
 	r = requests.get('https://api.dailysmarty.com/posts')-->hace un request y se cierra
 	r.json()-->imprime la respuesta
+
 ---------------
 ¿Qué es Postman?
-  Es una aplicación que permite conectar Python con APIs externas. Así los usuarios puedencrear scripts completos y flexibles, 
-  componer y administrar variables de entorno y configurar recursos para realizar una variedad de funciones.
+  Es una aplicación que permite conectar Python con APIs externas, que facilita a los desarrolladores crear, compartir, probar y documentar API. 
+  En suma, es una herramienta para testear cualquier API-
+  Nos permite enviar solicitudes con diferentes métodos HTTP (es decir, GET, POST, PUT y DELETE) y podemos comprobar la respuesta del servidor. 
+  Con esta herramienta, podemos probar fácilmente nuestra API enviando una solicitud de cliente y verificando la respuesta HTTP. 
+
+  También podemos guardar nuestros casos de prueba y solicitudes, y agruparlos en diferentes colecciones. Estos quedarían en el lado izquierdo del panel de navegación.
+  En el panel superior se redactan las solicitudes, aquí se selecciona el verbo(GET, PUT, POST y DELETE), introducimos la URL, y se encuentra el boton de SEND/SAVE. 
+  Debajo de este panel podemos introducir parámetros adicionales. Y el panel inferior muestra la respuesta del servidor.
+
+  Además podemos implementar una solicitud de llamada API en código Python, generando un fragmento de código, esto se solicita en el botón código 
+  en la barra de heramientas del panel derecho, ahí se elige el lenguaje para el que se necesita, se genera el código, y se puede entonces copiar en nuestro proyecto Python.
 
 ---------------
 ¿Qué es el polimorfismo?
@@ -111,6 +129,7 @@ CUESTIONARIO:
   	class Pulpo(Marino): #Clase Hija
    		 def hablar (self): #Método Hablar
 			 print ("Soy un Pulpo")
+
 ---------------
 ¿Qué es un método dunder?
   «double underscore methods» También llamados métodos especiales, o mágicos. Son métodos de Python que definen cómo se comportan los objetos de Python cuando se realizan operaciones comunes sobre ellos.
@@ -188,4 +207,10 @@ Create a Python class called User that uses the init method and creates a userna
 ----------------------------------
 BIBLIOGRAFIA:
 
+https://www.w3schools.com/python/default.asp
 https://www.youtube.com/@pildorasinformaticas
+https://learning.postman.com/docs/getting-started/overview/
+https://ellibrodepython.com/
+https://python-intermedio.readthedocs.io/es/latest/index.html
+https://www.freecodecamp.org/espanol/news/tag/python/
+https://www.geeksforgeeks.org/python-programming-language/?ref=shm
