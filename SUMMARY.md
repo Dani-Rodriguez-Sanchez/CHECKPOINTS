@@ -1,3 +1,3 @@
 # Table of contents
 
-* [checkpoint#7](README.md)
+* [checkpoint7](README.md)
