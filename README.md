@@ -1,360 +1,360 @@
-# checkpoint7
+# checkpoint8
 
-## Ejercicio práctico
+## Ejercicio
 
-Cree una función JS que acepte 4 argumentos. Suma los dos primeros argumentos, luego los dos segundos y multiplícalos. Si el número creado es mayor que 50, la consola registra "¡El número es mayor que 50!". Si es más pequeño, la consola registra "¡El número es menor que 50!"
+*
+
+    <pre><code><strong>Cree un bucle for en JS que imprima cada nombre de esta lista.
+    </strong>        myList = ["velma", "scout", "jane", "john", "harry"]
+    </code></pre>
 
 ```
-function LimiteCincuenta(a, b, c, d){
-	let suma1 = (a + b);
-  
-  let suma2 = (c + d);
-  
-  if((suma1*suma2)>=50){
-    console.log("¡El número es mayor que 50!");
-  }
-  else{
-    console.log("¡El número es menor que 50!");
-  }
+let myList= [
+  		"velma", 
+  		"scout", 
+  		"jane", 
+  		"john", 
+  		"harry"
+	];
+
+	for (var key in myList) {
+  		console.log(myList[key]);
 	}
-
-LimiteCincuenta(1, 2, 3, 4)
+	/*con el bucle for, le decimos que para cada elemento en myList, ejecute
+	el console.log de cada elemento de esta lista, iterando a través de la 	variable key, 
+	que acabamos de crear*/
 ```
 
-## ¿Qué diferencia a Javascript de cualquier otro lenguaje de programación?
+*
 
-La principal diferencia es que se trata de un lenguaje INTERPRETADO, esto quiere decir que los programas de JavaScript son archivos de texto que se integran directamente en las páginas HTML, y son es interpretado directamente por un navegador.
-
-Lo que esto significa es que puede escribir código JavaScript, simplemente abrirlo en el navegador, y ese navegador puede analizar el código, interpretarlo y luego ejecutar el programa. Además a partir de 2009, es compatible con todos los navegadores.
-
-Esto frente a otros lenguajes como Java, que son COMPILADOS, los cuales necesitan un compilador, que si puede ser leído por los navegadores. Desde su creación en 1995, como complemento para el navegador netscape, su idea ha sido la de agregar fácilmente programas a la páginas web, aunque hoy en día su uso se ha extendido a otros ámbitos, como las bases de datos, con mongoDB y couchDB, además de Node.js, que proporciona un entorno para la programación fuera del navegador.
-
-Otra diferencia es que **JavaScript es gestionado por ECMAScript,** una organización sin ánimo de lucro. En Java, el control lo tiene Oracle, una empresa privada que lo gestiona en función de sus intereses.
-
-Y finalmente, JavaScript es débilmente tipado: una misma variable puede contener primero un texto, luego un número, un array o un objeto. Esto, que parece una ventaja, también es fuente de posibles errores si no controlamos correctamente lo que ocurre en nuestro código. Java, el contrario, es fuertemente tipado, el tipo de dato que se le puede asignar a una variable es mucho más estricto y, una vez definidas, no se pueden cambiar.
-
-## ¿Cuáles son algunos tipos de datos JS?
-
-Los **tipos de datos** son la naturaleza del contenido de una variable o constante, y son importantes porque sin ellos, una computadora no puede resolver esto de manera segura:
-
-`let x = 10 + "hola";`
-
-Primero, hay que distinguir cuales son los tipos primitivos y los objetos. Los primeros, son datos que no tienen métodos.
-
-Y por otra parte, un tipo objeto es capaz de almacenar múltiples valores como propiedades.
-
-De acuerdo con el último estándar [ECMAScript](https://developer.mozilla.org/es/docs/Glossary/ECMAScript), existen nueve tipos de datos:
-
-PRIMITIVOS:
-
-1. _Undefined_. representa una variable que no ha sido declarada o a la cual no se le ha asignado un valor.
-2. _Boolean._ representa un valor lógico y puede tener dos valores, **true o false**.
-3. _Number._ Valores numéricos
-4. _String._ Cadenas de caracteres
-5. _BigInt._ Valroes numéricos demasiado grandes para poder ser representados por number
-6.  _Symbol_
-
-    TIPO OBJETO:
-7. _Null._ Representa la ausencia de cualquier valor
-8. _Object._ Colección de datos definidos
-9. _Function._ Objetos con la capacidad de ser ejecutables
-
-Algunos ejemplos:
+    ```
+    Cree un bucle while que recorra la misma lista e imprima también los nombres. 
+    ```
 
 ```
-// Numbers:
-let length = 16;
+let myList= [
+  		"velma", 
+  		"scout", 
+  		"jane", 
+  		"john", 
+  		"harry"
+	];
 
-// Strings:
-let color = "Yellow";
-
-// Booleans
-let x = true;
-let y = false;
-
-// Object:
-const person = {firstName:"Daniel", lastName:"Rodriguez"};
-
-// Function:
-
-const bucle = (x) => {
-  if (x >= 10) return;
-  bucle(x + 1);
-};
-```
-
-Podemos utilizar la función `typeof`, que nos devuelve el tipo de dato de la variable que le pasemos por parámetro.
-
-`console.log(typeof text); // "String"`
-
-## ¿Cuáles son las tres funciones de String en JS?
-
-Son varios los métodos o funciones de String, pero voy a describir las más interesantes:
-
-\-charAt(index)
-
-&#x20;devuelve el carácter en un índice (posición) especificado en una cadena. Hay que tener en cuenta que el primer carácter es 0, y el último -1
-
-`let text = "HELLO WORLD";`
-
-`let letter = text.charAt(2);`
-
-`#L`
-
-
-
-\-indexOf(carácter,desde)
-
-Devuelve la posición de la primera vez que aparece el carácter indicado por parámetro en un string. Si no encuentra el carácter en el string devuelve -1. El segundo parámetro es opcional y sirve para indicar a partir de que posición se desea que empiece la búsqueda.
-
-`let text = "Hello world, welcome to the universe.";`
-
-`document.getElementById("demo").innerHTML = text.indexOf("e");`
-
-`#1`
-
-\
-\-replace(`searchValue, replaceValue)`
-
-sirve para reemplazar porciones del texto de un string por otro texto, por ejemplo, podríamos utilizarlo para reemplazar todas las apariciones del substring "xxx" por "yyy". El método no reemplaza en el string, sino que devuelve un resultante de hacer ese reemplazo.
-
-`let originalString = "The color of the sky changes throughout the day.";`
+	var i = 0;
+	while (i < myList.length) {
+  		console.log(myList[i]);
+  		i++;
+	}
+	//queremos que se ejecute el console.log de cada elemento de la lista, y
+	para ello creamos un índice(i) que definimos en 0, y le decimos que cada 
+	vez que se ejecute el código se le sume 1, a través del i++. Entonces, 
+	introduciendo el condicional “mientras i sea menor que la longitud de la 
+	lista”, ejecuta el console.log de cada elemento.*/
 
 ```
-	let newString = originalString.replace("color", "colour");
-	console.log(newString);
-```
 
-\#`"The colour of the sky changes throughout the day."`
+*
 
-
-
-\-toUpperCase()
-
-convierte una cadena a letras mayúsculas. ToLowerCase() hace los mismo pero las convierte en minúsculas
-
-`let text = "Hello World!";`\
-`let result = text.toLowerCase();`
-
-`#HELLO WORLD!`
-
-#### -toString()
-
-se usa para convertir objetos en cadenas.
-
-`let text = "Hello World!";`\
-`let result = text.toString();`
-
-`#Hello World!`
-
-## ¿Qué es un condicional?
-
-\
-Las condicionales te permiten tener un comportamiento dinámico en las aplicaciones, en las cuales a veces se hace necesario romper la secuencia lineal y crear ramas que nos permitan tomar diferentes caminos en el código dependiendo de ciertas condiciones.
-
-El _if...else_ es un tipo de instrucción condicional que ejecutará un bloque de código
-
-cuando la condición de la instrucción if sea verdadera TRUE, y si la condición es falsa FALSE,
-
-se ejecutará el bloque else.
+    ```
+    Cree una función de flecha que devuelva "Hello World".
+    ```
 
 ```
-if (true) {
-console.log("Hola Mundo");
-} else {
-console.log("Adios Mundo");
+const holaMundo = () => {console.log ("Hello World")};
+
+	holaMundo();
+
+	/* Creamos la función holaMundo, sin parámetros, y con arrow le decimos 	
+	que ejecute console.log, y que imprima Hello World.*/
+
+```
+
+## ¿Qué tipo de bucles hay en JS?
+
+Los bucles son útiles para repetir un mismo código varias veces, como por ejemplo iterar los elementos de una lista.
+
+Los tipos de bucles que hay son FOR y WHILE.
+
+**FOR.**
+
+Crea un bucle con una duración definida por sus expresiones.
+
+Sintaxis básica:
+
+```
+for (begin; condition; step) { 
+  // ... elemento a ejecutar...
 }
 ```
 
-En vez de utilizar _true_ o _false_ como condición, también podemos utilizar una expresión que evalúe la condición misma
+Admite la declaración de variable dentro del bucle, podemos definir un elemento, darle un valor iniciar, decirle que lo modifique con cada vuelta del bucle, y parar el bucle cuando haya llegado a tal valor.
+
+Por ejemplo:
 
 ```
-if (1 == 1) {
-  console.log("Hola Mundo");
+let i = 0;
+for (i = 0; i < 3; i++) { 
+console.log(i); 
+// 0, 1, 2
+```
+
+**WHILE Y DO/WHILE**
+
+Tiene un funcionamiento diferente, ya que recorre un código mientras que una condición sea verdadera (true). Do while hace lo mismo, pero el código se ejecuta al menos una vez antes de la condición.
+
+Sintaxis básica:
+
+```
+while (condition) {
+  // code block to be executed
 }
 ```
 
-\-La sintaxis básica de if
-
-_(==) igual_. devuelve TRUE si los operandos son iguales
-
-_(!=) no igual_. Devuelve `true` si los operandos _no_ son iguales.
-
-_(===)estrictamente igual_. Devuelve `true` si los operandos son iguales y del mismo tipo.
-
-_(>=)mayor o igual._ Devuelve `true` si el operando izquierdo es mayor o igual que el derecho.
-
-
-
-Un ejemplo:
+Previo al bucle, definimos i como 0, y le decimos que mientras i sea menor que 3, imprima cada i, sumándole 1 en cada vuelta del bucle. Finalizaría al llegar el index de i a 3.
 
 ```
-var num = 8;
-
-if (num < 10) {
-  console.log("El número es menor a 10");
-} else {
-  console.log("El número es igual o mayor a 10");
+let i = 0; 
+while (i < 3) { 
+	console.log( i ); 
+	i++; 
 }
-```
-
-Estas condicionales pueden ser anidadas:
+//0, 1, 2
 
 ```
-var num = 8;
-if (num < 10) {
-console.log("El número es menor a 10");
-} else {
-if (num > 10) {
-console.log("El número es mayor a 10");
-} else {
-console.log("El número es igual a 10");
+
+{% embed url="https://es.javascript.info/while-for#el-bucle-forhttps://www.w3schools.com/js/js_loop_for.asp" %}
+
+## ¿Cuáles son las diferencias entre const, let y var?
+
+Las tres se usan para la declaración de variables, aunque tienen alguna diferencia.
+
+VAR eras las más usadas antes de la llegada de ES6. Las variables creadas con var se pueden volver a declarar y modificar. Tiene ámbito global cuando se declara fuera de la función, y local cuando está situada dentro.
+
+`var x = 10;`
+
+`var x = 20;`   &#x20;
+
+**LET** es la preferible para la declaración de variables. Su alcance es sólo dentro del bloque de la función, dentro de los {}, significa que no estará disponible fuera de él. A diferencia de VAR, puede modificarse pero no volver a declararse, es decir, no puedes declarar la misma variable varias veces.
+
+```
+let x = 10; 
+{ 
+let x = 20; 
+console.log(x); // Esto mostrará 20 ya que está dentro de su ámbito
+} 
+console.log(x); // Esto mostrará 10 al estar fuera de los {}
+
+```
+
+**CONST** tiene similitudes con LET, pero no puede modificarse ni volver a declararse. Aunque no es inmutable, ya que si declaras un objeto o array con Cont, puedes modificar sus propiedades.
+
+`const cars = ["Saab", "Volvo", "BMW"];`
+
+Por lo tanto, deberá usarse CONST, para variables que queremos mantener constantes(Arrays y objetos), LET es flexible y limita el alcance de la variable, pero sin los problemas que puede ocasionar Var, y VAR mejor evitar, solo es útil para su uso con navegadores antiguos.
+
+## ¿Qué es una función de flecha?
+
+Es una forma de definir una función, es bastante reciente, ya que fué introducida en el ES6, y surge como una manera de simplificar código, dando lugar a una sintaxis más sencilla y fácil de leer, que en el caso de funciones simples puede ser definida en una sola línea. De hecho se prescinde de return, incluso se puede no incluir las {}.
+
+Como ejemplo, esta función de multiplicar, con dos parámetros como argumentos, que en el bloque de la función se multiplican, y se imprime el resultado:\
+
+
+```
+const multiplicar = (x, y) => { const resultado = x * y; console.log(resultado); } 
+
+multiplicar(2, 3); // 6
+
+```
+
+Puede aceptar ningún argumento, uno, o varios. Además de la palabra THIS, con la peculiaridad de que en este caso, this, hereda las condiciones del ámbito principal, mientras que en una función normal variaría dependiendo donde se escriba la función.
+
+```
+const myObject = {
+  fullname: 'John Doe',
+  sayName: () => {
+    return `My name is ${this.fullname}`
+  },
 }
-}
+
+const myMethod = myObject.sayName
+console.log(myMethod())
 ```
 
-Aunque una alternativa al anidamiento es el (else if), que equivale a decir “de lo contrario que”
+{% embed url="https://www.w3schools.com/js/js_arrow_function.asphttps://desarrolloweb.com/articulos/arrow-functions-es6.html" %}
 
-```
-if (<primera condición>) {
-// código que se ejecuta si <primera condición> se cumple
-} else if (<segunda condición>) {
-// código si <primera condición> NO se cumple, pero <segunda condición> se cumple
-} else if (<tercera condición>) {
-// código si <primera condición> y <segunda condición> NO se cumplen, pero <tercera condición> sí se cumple
-} else {
-// código si ninguna de las condiciones se cumple
-}
-```
+## ¿Qué es la deconstrucción variable?
 
+La deconstrucción de variables es una técnica que permite extraer limpiamente valores de un array y asignarlos a nuevas variables. Consigue que el código sea menos repetitivo, y cumplir el principio de programación DRY (_don´t repeat yourself_)
 
-
-## ¿Qué es un operador ternario?
-
-\
-El operador ternario una alternativa al condicional if/else de una forma mucho más compacta y breve, que en muchos casos resulta más legible.
-
-Sin embargo, hay que tener cuidado, porque su sobreutilización puede ser contraproducente y producir un código más difícil de leer.
-
-El operador condicional (ternario) es el único operador en JavaScript que tiene tres operandos.
-
-`condición ? expr1 : expr2`
-
-
-
-Como ejemplo, primero escribo la versión larga en la que vamos a mostrar un mensaje en pantalla diciendo si alguien aprueba o suspende un examen basándonos en su puntuación:
-
-```
-let puntacion = 5;
-if (puntacion >= 6) {
-alert('Aprobado');
-}
-else {
-alert('suspenso');
-
-```
-
-y con la versión abreviada se vería así:
-
-```
-let puntacion = 5;
-alert ( puntuacion >= 6 ? 'aprobado' : 'suspenso' );
-```
-
-¿Cuál es la diferencia entre una declaración de función y una expresión de función?\
-
-
-
-\
-Una función tiene la capacidad de recibir información y luego realiza todo tipo de procesos, para dar un resultado de salida.
-
-Las funciones de JavaScript se definen con la functionpalabra clave.
-
-Puede utilizar una declaración de función o una expresión de función .
+Entonces podríamos hacer algo así, donde se asigna en orden los dos elementos del array perfil, accedemos a ellos, y los asignamos a nuevas variables con nombres independientes.
 
 \
 
 
-**Declaración de función:**
-
-_function doStuff() {};_
-
-VS
-
-**Expresión de función:**
-
-_const doStuff = function() {}_
-
-\
-
-
-\-Una **declaración de función**, declara una función con una palabra clave de función.
-
-`function dosParametros(paramA, paramB) {`
-
-`// Conjunto de declaraciones`
-
-`}`
-
-
-
-\-una **expresión de función** es una función que se almacena dentro de una variable.
-
-Pueden ser anónimas
-
-`var saludo = function () {`
-
-`return ' Hola de nuevo ' ;`
-
-`};`
-
-## ¿Qué es la palabra clave "this" en JS?
-
-Es una palabra clave de JavaScript, que tiene una valor flexible, y se usa para representar o llamar al objeto que dicha función está modificando.&#x20;
-
-Hace referencia al objeto en cuestión cuando se encuentra dentro de una variable, y si se encuentra solo, se refiere al objeto global.
-
-
-
 ```
-const ejemplo = {
-color: azul,
-func: function ( ) {
-return this.color;
-},
-};
+const perfil = ["Daniel", "Rodriguez"];
 
-console.log (ejemplo.func());
-#azul
+const [nombre, apellido] = perfil;
 
+console.log(nombre); // "Daniel"
+console.log(apellido); // "Rodriguez"
 ```
 
-**This en funciones:**
-
-No puedes saber el valor que tendrá la variable "this" al ver el código de una función, porque depende de cómo te hayan invocado a esa función.
-
-* Si la función se ejecuta como global, "this" será el propio objeto global.
+//en lugar de este código más largo:
 
 ```
-function miFuncion() {
-  console.log(this);
+const perfil = ["Daniel", "Rodriguez"];
+
+const nombre = perfil[0];
+const apellido = perfil[1];
+
+
+console.log(nombre); // "Daniel"
+console.log(apellido); // "Rodriguez"
+```
+
+También podemos aprovechar la deconstrucción para combinar objetos y funciones, y lograr que se reconecten:
+
+```
+const user = {
+  name: 'Daniel',
+  lastname: 'Rodriguez'
 }
-miFuncion();
+
+const renderUser = ({ name, lastname }) => {
+  console.log(`${name}: ${lastname}`);
+}
 ```
 
-* Si la función se ejecuta como método de un objeto, entonces "this" es el objeto que está recibiendo este método.
+{% embed url="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Destructuring_assignmenthttps:/www.freecodecamp.org/espanol/news/arreglos-vs-desestructuracion-de-objectos-en-javascript/" %}
+
+## ¿Qué hace el operador de spread JS?
+
+Es un operador nos permite copiar rápidamente todo o parte de una array u objeto existente en otra array u objeto. Su sintaxis será tres puntos seguidos de algún tipo de palabra (...word)
+
+Su utilidad es poder distribuir los elementos de un _iterable_ (cadena de texto, array) dentro de uno nuevo.
+
+En este ejemplo, se combinan los elementos de una array, dentro de otra nueva a través de la definición de la nueva incluyendo ...delante del nombre de la emisora.
+
+```
+let frutas = ['Manzana', 'Pera', 'Platano'];
+
+let nuevasFrutas = ['Fresa', ...frutas];
+console.log(nuevasFrutas);
+// Resultado -> ["Fresa","Manzana","Pera","Platano"]
 
 ```
 
-let miObjeto = {
-  prop: 'valor',
-  metodo: function() {
-    console.log(this);
+{% embed url="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax" %}
+
+## ¿Qué es OOP?
+
+_**Object Oriented Programming**_
+
+Es un estilo o paradigma de programación basado en clases y objetos. Estos últimos agrupan datos (propiedades) y métodos (acciones) dentro de sí mismo. Por ser un paradigma, dependiendo del tipo de proyecto, tendremos que elegir entre utilizar una programación basada en funciones (recomendable para códigos pequeños), y otra orientada a objetos, con clases y métodos (en los proyectos que requieren una arquitectura más sólida y mantenible en el tiempo).
+
+El ejemplo sacado de la vida real podría ser el siguiente: la clase es el concepto de coche, el objeto es un modelo concreto de coche, con las propiedades (cilindrada, nºplazas, color, etc.) y con los métodos (acelerar, frenar, cambiar de marcha, etc).
+
+La clase es como una representación de un conjunto, la instancia de una clase es lo que realmente tiene el código propio. En este sentido, podemos tener varias instancias de una sola clase, como podemos tener copias únicas de una sola versión original.
+
+Un objeto también se llama instancia de clase, ya que se crea mediante la instanciación, que consiste en crear un nuevo objeto a partir de una plantilla o molde predefinido. Esto se realiza por dos métodos, ESTÁTICO, y de INSTANCIA, se diferencian en cómo se accede a ellos y cómo se utilizan.
+
+En el **método de INSTANCIA** primero se crea una instancia de clase, se convierte en objeto y a partir de ahí se le añaden atributos y métodos:
+
+```
+class Persona {
+  constructor(nombre, edad) {
+    this.nombre = nombre
+    this.edad = edad
   }
+ //así creamos la clase con el constructor que acepta dos parametros
+  saludar() {
+    console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`)
+  }
+//así creamos un método para la clase
 }
-miObjeto.metodo();
+const persona1 = new Persona("Daniel", 49)
+persona1.saludar() // ¡Hola! Mi nombre es Daniel y tengo 49 años.
+//y así creamos una instancia de clase. Podríamos crear mas, ya que la //estructura de objeto es reutilizable
 ```
 
-Por lo cual, el valor de "this" dentro de una función no depende de cómo se define esa función, sino de cómo se invoca.
+A diferencia, el **método ESTATICO** no requiere un objeto para funcionar, se puede llamar a un método estático sin crear primero un objeto de la clase.
 
-\
+```
+class Chat {
+    static sendMessage() {
+      return "Hola!";    }
+}
+console.log(Chat.sendMessage());
+//"Hola!"
+```
+
+Hay varios conceptos básicos, como HERENCIA (para reutilizar código, ya que propiedades y métodos se heredan a las subclases), ENCAPSULAMIENTO (los propiedades y métodos pueden ser privados al interior de las funciones), y POLIMORFISMO (podemos ejecutar un mismo método en objetos distintos).
+
+{% embed url="https://www.campusmvp.es/recursos/post/los-conceptos-fundamentales-sobre-programacion-orientada-objetos-explicados-de-manera-simple.aspxhttps://codigomovil.mx/blog/programacion-orientada-a-objetos-en-javascript" %}
+
+## ¿Qué es una promesa JS?
+
+Como concepto, es algo que, en principio pensamos que se cumplirá, pero queremos anticiparnos, y crear ciertos escenarios: se cumple, no se cumple, o queda en un estado pendiente.
+
+Debido a la naturaleza asíncrona de JS, que en resumen significa que las instrucciones no son necesariamente ejecutadas una después de otra. Entonces, cuando nos comunicamos con una API externa, puede suceder que necesitemos que una tarea se ejecute antes que otra.
+
+Por ejemplo, podemos necesitar que Twitter nos muestre unos elementos primero, y decidir que otros pueden tardar mas en caso que tarden más tiempo en cargar.
+
+En JS, una promesa es un objeto que representa la finalización o falla de una tarea asíncrona y su valor resultante.
+
+Esta es la sintaxis básica:
+
+```
+const myPromise = new Promise((resolve, reject) => { 
+// Aquí se realiza la operación asíncrona 
+	resolve(); // exito
+  	reject();  // error
+ }); 
+
+myPromise 
+	.then(resultado => { { console.log(value) })
+
+	// el resultado está asociado a resolve, se cumple la promesa, ejecuta lo que esté entre {}
+	.catch(error => {  console.log(err) });
+
+	// resultado asociado a reject, no se cumple la promesa
+```
+
+Ejemplo, quiero comprobar que los valores x e y son estrictamente iguales. En caso positivo, lanzar un mensaje afirmativo, y en el contrario lanzar un error.
+
+```
+let myPromise = new Promise(function (resolve, reject) {
+    const x = "manzana";
+    const y = "manzana"
+    if (x === y) {
+        resolve();
+    } else {
+        reject();
+    }
+});
+ 
+myPromise.
+    then(function () {
+        console.log('efectivamente, es una manzana');
+    }).
+    catch(function () {
+        console.log('Some error has occurred');
+    });
+```
+
+
+
+{% embed url="https://es.javascript.info/asynchttps://www.freecodecamp.org/news/guide-to-javascript-promises/" %}
+
+## ¿Qué hacen async y await por nosotros?
+
+Es una sintaxis especial para trabajar con promesas de una forma más confortable y fácil de escribir.
+
+**ASYNC** hace que una función devuelva una Promesa, y **AWAIT** hace que la función suspenda la ejecución, y espere una promesa resuelta antes de continuar, sólo se puede usar dentro de la función async.
+
+Por la naturaleza asíncrona de JS, necesitamos considerar el orden en el que se devuelven las funciones, ya que de no ser así lo que sucediese más rápido sería el que regresase primero, y esto puede no ser lo que necesitemos,y nos encontraríamos con un error. Entonces por ese motivo necesitamos la función async y await, para definir el orden en el que se llaman y devuelven las funciones.
+
+Son una evolución de las funciones CALLBACK, las cuales se pasan como argumento a otra función y se ejecutan después de que se haya completado alguna operación. Pero su uso excesivo puede generar código complejo, y por ello ASYNC/AWAIT, es una alternativa más moderna para simplificar esta programación.
+
+https://www.freecodecamp.org/espanol/news/tutorial-de-async-await-de-javascript/
