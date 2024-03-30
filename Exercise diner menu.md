@@ -14,6 +14,9 @@ Have breakfast, lunch, and dinner menu. Breakfast has different items, lunch and
 BONUS: Allow for item customization (how items are prepared, decide additional cost implications)
 
 
+![Añadir unsubtítulo](https://github.com/Dani-Rodriguez-Sanchez/CHECKPOINTS/assets/150516884/5c41ef12-7384-46ea-9450-e7480cd95b4c)
+
+
 ```
 //menu desayuno
 const breakfastCafes = [ 
