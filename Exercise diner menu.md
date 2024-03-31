@@ -30,7 +30,7 @@ const breakfastComplementos = [
     ' tostada con tomate',
     ' croissant' 
 ];
-//menu almuerzo
+//menu almuerzo y cena
 const lunchMain = [
     'filete de ternera',
     ' dorada al horno ',
