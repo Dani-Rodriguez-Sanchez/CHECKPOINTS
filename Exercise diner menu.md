@@ -68,7 +68,7 @@ function menuAlmuerzoCena(){
   const platoPrincipal = prompt("¿Cuál prefiere?")
   
   alert (comentariosAleatorios()+`\nNuestos acompañamientos son: \n${(lunchComplementos)}`);
-  const complementos = prompt("¿Cuál prefiere?")
+  const complementos = prompt("¿Cuáles prefiere?")
   
   if (platoPrincipal.toLowerCase() === "filete de ternera") {
     let coccion = prompt("¿Cómo desea el filete?: muy hecho, al punto, o poco hecho?");
@@ -85,7 +85,6 @@ function menuAlmuerzoCena(){
     else {
       alert("Ahora le traigo su comida")
     }
-  alert (precioApertivo);
 }
 //define el menu desayuno, tiene elementos distintos a comida y cena
 function menuDesayuno(){
