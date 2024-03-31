@@ -48,12 +48,6 @@ function comentariosAleatorios() {
     const arr = ["!Hoy está buenisimo!", "!Buena elección!", "!Es nuestra especialidad!"];
     return(arr[(Math.floor(Math.random() * arr.length))]);
 }
-//total menu
-let total = 0
-function suTotal() {
-  total = (Precio)
-    alert(`Su cuenta es: {total}€`)
-}
 
 //precios
 const precioMenuDesayuno = 5;
