@@ -48,11 +48,19 @@ function comentariosAleatorios() {
     const arr = ["Hoy está buenisimo", "Buena elección", "Es nuestra especialidad"];
     return(arr[(Math.floor(Math.random() * arr.length))]);
 }
+//total menu
+let total = 0
+function suTotal() {
+  total = (Precio)
+    alert(`Su cuenta es: {total}€`)
+}
 
 //precios
 const precioMenuDesayuno = 5;
 const precioMenuAlmuerzo = 15;
 const precioMenuCena = 20;
+var precioAperitivo = 0;
+var precioZumo = 0;
 
 //define que tipo de menú mostramos en caso de almuerzo o cena, que comparten elementos, aunque no precio
 function menuAlmuerzoCena(){
@@ -60,7 +68,7 @@ function menuAlmuerzoCena(){
   const platoPrincipal = prompt("¿Cuál prefiere?")
   
   alert (comentariosAleatorios()+`\nNuestos acompañamientos son: \n${(lunchComplementos)}`);
-  const complementos = prompt("¿Cuáles prefiere?")
+  const complementos = prompt("¿Cuál prefiere?")
   
   if (platoPrincipal.toLowerCase() === "filete de ternera") {
     let coccion = prompt("¿Cómo desea el filete?: muy hecho, al punto, o poco hecho?");
@@ -69,13 +77,15 @@ function menuAlmuerzoCena(){
   
   alert (`Su elección ha sido: \n${platoPrincipal} y ${complementos}`)
   
-  const aperitivo = confirm("¿Quiere tomar un apertivo antes de su comida?")
+  const aperitivo = confirm("¿Quiere tomar un apertivo antes de su comida, por 3€ adicionales?")
     if (aperitivo == true){
-      alert("Ahora mismo le traigo su aperitivo");
+      alert("Ahora mismo le traigo su apertivo");
+      var precioApertivo = 3
     }
     else {
       alert("Ahora le traigo su comida")
     }
+  alert (precioApertivo);
 }
 //define el menu desayuno, tiene elementos distintos a comida y cena
 function menuDesayuno(){
@@ -92,34 +102,39 @@ function menuDesayuno(){
   
   alert (`Su elección ha sido: \n${cafe} y ${complementos}`)
   
-  const aperitivo = confirm("¿Quiere tomar zumo de naranja?")
+  const aperitivo = confirm("¿Quiere tomar zumo de naranja, por 2€ adicionales?")
     if (aperitivo == true){
       alert("Ahora mismo le traigo su zumo.");
+      var precioZumo = 2;
     }
     else {
       alert("Ahora le traigo su desayuno")
     }
+  let suTotal = (precioMenuDesayuno + precioZumo); {
+      alert (`Su total, incluido el Zumo es: ${suTotal}€`);}
+    //aqui hay un problema, el valor del var precioZumo no se actualiza
+  
 }
 //elección de menu mediante un mensaje
 const eleccionMenu = prompt("Bienvenido a Restaurante Bottega, ¿que tipo de menú desea?")
   if (eleccionMenu.toLowerCase() === "desayuno") {
     alert("Adelante, ahora le doy su menú, puede elegir café y un acompañamiento por 5€");
     menuDesayuno();
-    alert(`Su cuenta es de: ${precioMenuDesayuno}€`)
   }
-
   else if (eleccionMenu.toLowerCase() === "almuerzo") {
     alert("Adelante, ahora le doy su menú, puede elegir un plato principal y dos acompañamientos por 15€");
     menuAlmuerzoCena();
-    alert(`Su cuenta es de: ${precioMenuAlmuerzo}€`) 
+    let suTotal = (precioMenuAlmuerzo + precioAperitivo); {
+      alert (`Su total, incluido el Aperitivo es: ${suTotal}€`);}
+    //aqui hay un problema, el valor del var precioAperitivo no se actualiza
+   
   }
-
   else if (eleccionMenu.toLowerCase() === "cena") {
     alert("Adelante, ahora le doy su menú, puede elegir un plato principal y dos acompañamientos por 20€");
     menuAlmuerzoCena();
-    alert(`Su cuenta es de: ${precioMenuCena}€`) 
   }
-
   else{
     alert("disculpe, esto es un restaurante");}
+//for (let mainDish in mainMenu) {
+  // console.log(mainMenu[mainDish])};
 ```
