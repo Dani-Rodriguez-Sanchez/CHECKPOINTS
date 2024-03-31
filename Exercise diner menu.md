@@ -104,6 +104,7 @@ function menuDesayuno(){
       alert("Ahora le traigo su desayuno")
     }  
 }
+
 //elección de menu mediante un mensaje
 const eleccionMenu = prompt("Bienvenido a Restaurante Bottega, ¿que tipo de menú desea?")
   if (eleccionMenu.toLowerCase() === "desayuno") {
