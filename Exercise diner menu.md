@@ -80,7 +80,7 @@ function menuAlmuerzoCena(){
   const aperitivo = confirm("¿Quiere tomar un apertivo antes de su comida, por 3€ adicionales?")
     if (aperitivo == true){
       alert("Ahora mismo le traigo su apertivo");
-      var precioApertivo = 3
+      var precioApertivo = 3;
     }
     else {
       alert("Ahora le traigo su comida")
@@ -104,23 +104,23 @@ function menuDesayuno(){
   
   const aperitivo = confirm("¿Quiere tomar zumo de naranja, por 2€ adicionales?")
     if (aperitivo == true){
-      alert("Ahora mismo le traigo su zumo.");
+      alert("Ahora mismo le traigo su zumo");
       var precioZumo = 2;
     }
     else {
       alert("Ahora le traigo su desayuno")
-    }
-  let suTotal = (precioMenuDesayuno + precioZumo); {
-      alert (`Su total, incluido el Zumo es: ${suTotal}€`);}
-    //aqui hay un problema, el valor del var precioZumo no se actualiza
-  
+    }  
 }
 //elección de menu mediante un mensaje
 const eleccionMenu = prompt("Bienvenido a Restaurante Bottega, ¿que tipo de menú desea?")
   if (eleccionMenu.toLowerCase() === "desayuno") {
     alert("Adelante, ahora le doy su menú, puede elegir café y un acompañamiento por 5€");
     menuDesayuno();
+    let suTotal = (precioMenuDesayuno + precioZumo); {
+      alert (`Su total, incluido el Zumo es: ${suTotal}€`);}
+    //aqui hay un problema, el valor del var precioZumo no se actualiza
   }
+
   else if (eleccionMenu.toLowerCase() === "almuerzo") {
     alert("Adelante, ahora le doy su menú, puede elegir un plato principal y dos acompañamientos por 15€");
     menuAlmuerzoCena();
@@ -132,9 +132,12 @@ const eleccionMenu = prompt("Bienvenido a Restaurante Bottega, ¿que tipo de men
   else if (eleccionMenu.toLowerCase() === "cena") {
     alert("Adelante, ahora le doy su menú, puede elegir un plato principal y dos acompañamientos por 20€");
     menuAlmuerzoCena();
+    let suTotal = (precioMenuCena + precioAperitivo); {
+      alert (`Su total, incluido el Aperitivo es: ${suTotal}€`);}
+    //aqui hay un problema, el valor del var precioAperitivo no se actualiza
+
   }
   else{
     alert("disculpe, esto es un restaurante");}
-//for (let mainDish in mainMenu) {
-  // console.log(mainMenu[mainDish])};
+
 ```
