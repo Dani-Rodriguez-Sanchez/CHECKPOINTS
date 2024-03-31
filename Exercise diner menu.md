@@ -45,7 +45,7 @@ const lunchComplementos = [
 
 //comentarios aleatorios
 function comentariosAleatorios() {
-    const arr = ["Hoy está buenisimo", "Buena elección", "Es nuestra especialidad"];
+    const arr = ["!Hoy está buenisimo!", "!Buena elección!", "!Es nuestra especialidad!"];
     return(arr[(Math.floor(Math.random() * arr.length))]);
 }
 //total menu
