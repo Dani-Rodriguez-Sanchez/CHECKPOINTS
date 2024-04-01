@@ -1,0 +1,11 @@
+##qué es GIT
+Es una plataforma destinada a alojar el código de las aplicaciones de cualquier desarrollador, hay otras como Gitlab,y Bitbucket, es propiedad de microsoft, 
+y es de código abierto.
+Es repositorio, ya que el código de los proyectos que sean abiertos puede ser descargado y revisado por cualquier usuario.
+Está relacionado con GIT, ya que 
+
+##qué es GITHUB
+Es un portal
+Está relacionado con GIT, ya que utiliza el sistema de control de versiones GIT
+
+##qué es GITIGNORE
