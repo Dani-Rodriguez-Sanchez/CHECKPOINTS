@@ -53,8 +53,8 @@ function comentariosAleatorios() {
 const precioMenuDesayuno = 5;
 const precioMenuAlmuerzo = 15;
 const precioMenuCena = 20;
-let precioAperitivo = 0;
-let precioZumo = 0;
+let precioAperitivo;
+let precioZumo;
 
 //define que tipo de menú mostramos en caso de almuerzo o cena, que comparten elementos, aunque no precio
 function menuAlmuerzoCena(){
@@ -84,7 +84,7 @@ function menuAlmuerzoCena(){
   const aperitivo = confirm("¿Quiere tomar un apertivo antes de su comida, por 3€ adicionales?")
     if (aperitivo == true){
       alert("Ahora mismo le traigo su apertivo");
-      let precioApertivo = 3
+      precioApertivo = true
     }
     else {
       alert("Ahora le traigo su comida")
@@ -119,7 +119,7 @@ function menuDesayuno(){
   const aperitivo = confirm("¿Quiere tomar zumo de naranja, por 2€ adicionales?")
     if (aperitivo == true){
       alert("Ahora mismo le traigo su zumo");
-      let precioZumo = 2;
+      let precioZumo = true;
     }
     else {
       alert("Ahora le traigo su desayuno")
@@ -131,26 +131,40 @@ switch (eleccionMenu) {
   case  "desayuno":
     alert("Adelante, ahora le doy su menú, puede elegir café y un acompañamiento por 5€");
     menuDesayuno();
-    let desayunoTotal = (precioMenuDesayuno + precioZumo); {
-      alert (`Su total es: ${desayunoTotal}€  \n!Buen Provecho!`);}
-    //aqui hay un problema, el valor del var precioZumo no se actualiza
+    if (precioZumo = true) {
+      let desayunoTotal = (precioMenuDesayuno + 2); {
+      alert (`Su total es: ${desayunoTotal}€ \n!Buen Provecho!`);}
+    }
+    else {
+      alert (`Su total es: ${precioMenuDesayuno}€ \n!Buen Provecho!`);
+    }
     break;
   case "almuerzo":
     alert("Adelante, ahora le doy su menú, puede elegir un plato principal y dos acompañamientos por 15€");
     menuAlmuerzoCena();
-    let almuerzoTotal = (precioMenuAlmuerzo + precioAperitivo); {
-      alert (`Su total es: ${almuerzoTotal}€  \n!Buen Provecho!`);}
-    //aqui hay un problema, el valor del var precioAperitivo no se actualiza
-   break;
+    if (precioAperitivo = true) {
+      let almuerzoTotal = (precioMenuAlmuerzo + 3); {
+      alert (`Su total es: ${almuerzoTotal}€ \n!Buen Provecho!`);}
+    }
+    else {
+      alert (`Su total es: ${precioMenuCena}€ \n!Buen Provecho!`);
+    }
   case "cena":
     alert("Adelante, ahora le doy su menú, puede elegir un plato principal y dos acompañamientos por 20€");
     menuAlmuerzoCena();
-    let cenaTotal = (precioMenuCena + precioAperitivo); {
+    if (precioAperitivo = true) {
+      let cenaTotal = (precioMenuCena + 3); {
       alert (`Su total es: ${cenaTotal}€ \n!Buen Provecho!`);}
-    //aqui hay un problema, el valor del var precioAperitivo no se actualiza
+    }
+    else {
+      alert (`Su total es: ${precioMenuCena}€ \n!Buen Provecho!`);
+    }
+    
    break;
   default: 
     alert("disculpe, esto es un restaurante");
     break;
 }
 ```
+ 
+  
