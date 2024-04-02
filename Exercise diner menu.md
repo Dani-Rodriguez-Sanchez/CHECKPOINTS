@@ -53,16 +53,26 @@ function comentariosAleatorios() {
 const precioMenuDesayuno = 5;
 const precioMenuAlmuerzo = 15;
 const precioMenuCena = 20;
-var precioAperitivo = 0;
-var precioZumo = 0;
+let precioAperitivo = 0;
+let precioZumo = 0;
 
 //define que tipo de menú mostramos en caso de almuerzo o cena, que comparten elementos, aunque no precio
 function menuAlmuerzoCena(){
   alert(`Nuestros principales son: \n${lunchMain}`)
   const platoPrincipal = prompt("¿Cuál prefiere?")
   
+  if (platoPrincipal.includes(lunchMain)) {} 
+  else {
+    alert("Por favor, elija un plato principal de nuestro menú.");
+  }
+  
   alert (comentariosAleatorios()+`\nNuestos acompañamientos son: \n${(lunchComplementos)}`);
-  const complementos = prompt("¿Cuál prefiere?")
+  const complementos = prompt("¿Cuáles prefiere?")
+  
+  if (complementos.includes(lunchComplementos)) {} 
+  else {
+    alert("Por favor, elija dos complementos de nuestro menú.");
+  }
   
   if (platoPrincipal.toLowerCase() === "filete de ternera") {
     let coccion = prompt("¿Cómo desea el filete?: muy hecho, al punto, o poco hecho?");
@@ -74,7 +84,7 @@ function menuAlmuerzoCena(){
   const aperitivo = confirm("¿Quiere tomar un apertivo antes de su comida, por 3€ adicionales?")
     if (aperitivo == true){
       alert("Ahora mismo le traigo su apertivo");
-      var precioApertivo = 3
+      let precioApertivo = 3
     }
     else {
       alert("Ahora le traigo su comida")
@@ -85,9 +95,19 @@ function menuDesayuno(){
   alert(`Nuestros cafés son: \n${breakfastCafes}`)
   const cafe = prompt("¿Cuál prefiere?")
   
+  if (cafe.includes(breakfastCafes)) {} 
+  else {
+    alert("Por favor, elija un café de nuestro menú.");
+  }
+  
   alert (comentariosAleatorios()+`\nNuestos acompañamientos son: \n${(breakfastComplementos)}`);
   
   const complementos = prompt("¿Cuál prefiere?")
+  
+  if (complementos.includes(breakfastComplementos)) {} 
+  else {
+    alert("Por favor, elija un complemento de nuestro menú.");
+  }
   
   if (cafe.toLowerCase() === "café con leche" || cafe.toLowerCase()=== "café cortado") {
     let leche = prompt("Desea leche normal, de soja, o sin lactosa");
@@ -99,40 +119,38 @@ function menuDesayuno(){
   const aperitivo = confirm("¿Quiere tomar zumo de naranja, por 2€ adicionales?")
     if (aperitivo == true){
       alert("Ahora mismo le traigo su zumo");
-      var precioZumo = 2;
+      let precioZumo = 2;
     }
     else {
       alert("Ahora le traigo su desayuno")
     }  
 }
 //elección de menu mediante un mensaje
-const eleccionMenu = prompt("Bienvenido a Restaurante Bottega, ¿que tipo de menú desea?")
-  if (eleccionMenu.toLowerCase() === "desayuno") {
+var eleccionMenu = prompt("Bienvenido a Restaurante Bottega, \n¿que tipo de menú desea, desayuno, almuerzo, o cena?");
+switch (eleccionMenu) {
+  case  "desayuno":
     alert("Adelante, ahora le doy su menú, puede elegir café y un acompañamiento por 5€");
     menuDesayuno();
-    let suTotal = (precioMenuDesayuno + precioZumo); {
-      alert (`Su total es: ${suTotal}€  \n!Buen Provecho!`);}
+    let desayunoTotal = (precioMenuDesayuno + precioZumo); {
+      alert (`Su total es: ${desayunoTotal}€  \n!Buen Provecho!`);}
     //aqui hay un problema, el valor del var precioZumo no se actualiza
-    
-  }
-  else if (eleccionMenu.toLowerCase() === "almuerzo") {
+    break;
+  case "almuerzo":
     alert("Adelante, ahora le doy su menú, puede elegir un plato principal y dos acompañamientos por 15€");
     menuAlmuerzoCena();
-    let suTotal = (precioMenuAlmuerzo + precioAperitivo); {
-      alert (`Su total es: ${suTotal}€  \n!Buen Provecho!`);}
+    let almuerzoTotal = (precioMenuAlmuerzo + precioAperitivo); {
+      alert (`Su total es: ${almuerzoTotal}€  \n!Buen Provecho!`);}
     //aqui hay un problema, el valor del var precioAperitivo no se actualiza
-   
-  }
-  else if (eleccionMenu.toLowerCase() === "cena") {
+   break;
+  case "cena":
     alert("Adelante, ahora le doy su menú, puede elegir un plato principal y dos acompañamientos por 20€");
     menuAlmuerzoCena();
-    let suTotal = (precioMenuCena + precioAperitivo); {
-      alert (`Su total es: ${suTotal}€ \n!Buen Provecho!`);}
+    let cenaTotal = (precioMenuCena + precioAperitivo); {
+      alert (`Su total es: ${cenaTotal}€ \n!Buen Provecho!`);}
     //aqui hay un problema, el valor del var precioAperitivo no se actualiza
-  }
-  else{
-    alert("disculpe, esto es un restaurante");}
-//for (let mainDish in mainMenu) {
-  // console.log(mainMenu[mainDish])};
-
+   break;
+  default: 
+    alert("disculpe, esto es un restaurante");
+    break;
+}
 ```
