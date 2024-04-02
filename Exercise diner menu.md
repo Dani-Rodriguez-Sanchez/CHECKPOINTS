@@ -126,7 +126,7 @@ function menuDesayuno(){
     }  
 }
 //elección de menu mediante un mensaje
-var eleccionMenu = prompt("Bienvenido a Restaurante Bottega, \n¿que tipo de menú desea, desayuno, almuerzo, o cena?");
+var eleccionMenu = prompt("Bienvenido a Restaurante Bottega, \n¿que tipo de menú desea: desayuno, almuerzo, o cena?");
 switch (eleccionMenu) {
   case  "desayuno":
     alert("Adelante, ahora le doy su menú, puede elegir café y un acompañamiento por 5€");
