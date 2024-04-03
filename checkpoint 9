@@ -1,0 +1,40 @@
+-¿Qué es un paquete NPM?
+npm es el gestor de paquetes de Node.js
+Es un programa que se instala en tu computadora y que te permite tanto instalar paquetes de Node.js, como otros paquetes de terceros.
+agrupacion de codigos que se usa para añadir funcionalidad adicional a la app, que se instala y se usa en javascript
+Cada paquete incluye un archivo package.json que contiene informacion y dependencias
+-¿Por qué es importante la gestión de errores?
+Aunque el código esté libre de errores, se pueden generar, ya que las aplicaciones de JS no son entidades independientes, por ejemplo puede haber problemas con los servidores.
+Por esto es interesante configurar la gestión de errores, así avisaremos al usuario y a nosotros mismos, de que hay algo que no va bien.
+
+En si, es la forma de poder tratar un proceso y si no funciona atraparlo, a través de las declaraciones
+TRY Y CATCH
+try { Block of code to try } catch(err) { Block of code to handle errors }
+Con try definirmo el bloque de código a probar, y con catch ejecutamos algo si ocurre el error.
+
+Las ERROR CLASSES son herramientas para controlar la información para el manejo de errores
+
+El objeto XMLHttpRequest se puede utilizar para solicitar datos de un servidor web. realiza una llamada detallada al servidor y almacena los resultados
+-¿Qué es Momento JS?
+una biblioteca de javascript . sirve para poder trabajar con números y fechas.
+Se instala a través de npm, en la seccion de dependencias de package.json. Y se puede configurar su formato, de manera que podemos crear strings con formatos personalizados, de año, mes, dia, etc. además de poder realizar cálculos a través de funciones en las que incluimos moment
+
+se crea una variable = moment ('string con fecha', 'formato de fecha'); llamamos a la variable
+-Qué es Lodash?
+es una biblioteca de JavaScript 
+
+Ayuda a trabajar con matrices, cadenas, objetos, números, etc.
+
+en lugar de escribir funciones repetitivas, las tareas se pueden realizar con un solo línea de código
+
+Proporciona varias funciones incorporadas para colecciones, matrices, para manipular objetos y otros métodos de utilidad que podemos usar directamente en lugar de escribirlos desde cero.
+
+Se puede importar al código de varias maneras, a traves de consola, podemo importar toda la librería, o metodos especificos. También se puede incluir en el html, incluyendo una secuencia de comendos en el encabezado.
+
+Ejemplo: la función Reduce. Que retorna el valor acumulado de una colección.
+_.reduce(colección, iterado, acumulador)
+
+-Creacion de un módulo npm
+
+nos regsitramos en npm, iniciando sesión. Luego en el terminal o en vsc nos identificamos, y creamos en módulo cuando estemos dentro de nuestra carpeta, con npm init, nos va haciendo unas preguntas, y al final creará el archivo package.json, con las dependencias.
+*dependencias: módulos, bibliotecas o paquetes de código que tu proyecto necesita para funcionar correctamente
