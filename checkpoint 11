@@ -1,0 +1,85 @@
+CHECKPOINT #11
+¿Por qué usamos ramas de git?
+Las ramas le permiten trabajar en diferentes partes de un proyecto sin afectar la rama principal, es una bifurcación para crear un nuevo camino en la que probar una funcionalidad previamente a incluirla en el código principal.
+Cuando se completa el trabajo, se puede fusionar una rama con el proyecto principal. Incluso puedes cambiar entre ramas y trabajar en diferentes proyectos sin que interfieran entre sí. permite crear nuevas ramas de un proyecto para probar ideas, aislar nuevas características, o experimentar sin impactar al proyecto principal.
+Podemos ver las ramas con: 
+git branch
+Y creamos con:
+git checkout -b (nombre)
+
+
+¿Cuál es el comando para crear un repositorio git?
+git add
+se creará un nuevo subdirectorio .git en tu directorio de trabajo actual. También se creará una nueva rama principal.
+Lo más lógico sería crear un directorio donde crearlo, con cd..., y estando ahí dentro git init
+¿Qué es un conflicto de fusión?
+
+Git branch
+muestra todas las ramas, y en que rama nos encontramos, con un asterisco al lado.
+Puede servir para renombrar una rama
+
+Git push y git pull
+git push sirve para empujar el commit, es decir, pasar de una rama local en el ordenador a un repositorio remoto. El comando es git add. Con git status vemos los 
+Git pull es lo contrario: descargar las modificaciones en nuestro ordenador en local.
+
+Pull vs fetch. Git fetch copia los cambios al repositorio local, mientras que pull los copia directamente al directorio de trabajo. Es una unión de git merge y git fetch
+
+Git merge 
+sirve para volver a unir una rama bifurcada
+
+git checkout
+permite navegar entre ramas
+
+Que es un commit
+realiza una foto de los cambios hasta ese momento, a través de los commit, que son confirmaciones , como hitos dentro del proyecto. Estos commit se realizan en local(no interactuan en remoto hasta que se lo digamos)
+*Identifica los cambios hechos en un entorno de trabajo. Luego con git push, los podemos trasladar al repositorio global o remoto.
+Git commit -m (añadimos un mensaje con info sobre que se ha cambiado y por que).
+Por ejemplo:
+Necesito pasar cambios locales a producción. Entonces, mi flujo de trabajo fue:
+git checkout local/production
+git merge master
+git commit
+git push
+
+git merge conflict
+
+*surgen cuando dos personas cambian las mismas líneas en un archivo, o si un desarrollador elimina un archivo mientras otro lo modifica. Git marcará el archivo como en conflicto y detendrá el proceso de fusión
+
+
+
+
+¿Qué es el DOM?
+DOCUMENT OBJECT MODEL Modelo de Objetos de Documento ( DOM )
+
+es una representación orientada a objetos de una página web, donde cada elemento de la página, como un botón, una imagen o un texto, se representa como un objeto con su propio conjunto de propiedades y métodos.
+Se representa como un arbol de nodos.
+
+Nodo es un objeto que representa una parte del documento.
+
+Accedemos a el a traves de la consola del navegador
+
+
+*es la representación de datos de los objetos que componen la estructura y el contenido de un documento en la web.
+
+*También proporciona propiedades y métodos, para permitir al desarrollador realizar cambios en el documento.
+*Es la manera de representar una web en forma de código, lo cual permite manipularlo.
+*metodos y eventos son organizados como objetos
+*es independiente de lenguajes, es una API, AUNQUE La forma en cómo se usan los objetos en JavaScript es la misma
+*una interfaz de programación para HTML. Traduce el contenido de un documento HTML a un objeto estandarizado
+
+https://esdocu.dev/javascript/dom
+
+¿Qué es un detector de eventos?
+*es un “escuchador” para asignar una acción a un evento cuando se produzca
+*los objetos que pueden lanzar eventos tienen el método addEventListener()
+*Por ejemplo, si el usuario hace clic en el ratón, en una tecla, termina de cargar algún elemento, un formulario, etceacc
+btn.addEventListener("click", () => {
+  const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+  document.body.style.backgroundColor = rndCol;
+});
+ón y mostrar una tarjeta con información.
+¿Qué es un selector de consultas?
+*sirve para localizar elementos en el DOm
+Es una herramienta para hacer consultas en el DOM
+querySelector() y querySelectorAll(). El primero da el primer elemento resultante, y el segundo nos devolverá un nodelist con los elementos
+*NodeList aunque podría iterarse sobre él usando forEach,  no podríamos usar métodos como reduce, map, filter, some
