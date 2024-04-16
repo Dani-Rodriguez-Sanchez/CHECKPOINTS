@@ -40,7 +40,7 @@ Son diferentes de los estructurales, ya que representan como se comportan y rela
 el mas útil para los desarrolladores. Es el más complejo, muestra como se debe implementar y de como debe funcionar el código.
 Su planteamiento es un sistema que envía mensajes interna o externamente. Poder visualizar cómo se ven esos mensajes es increíblemente importante.
 
-##¿Qué es el enrutamiento RESTful
+## ¿Qué es el enrutamiento RESTful
 El ENRUTAMIENTO es el mecanismo por el cual las solicitudes se enrutan(dirigen) al código que las maneja. El enrutamiento RESTFUL es una CONVENCION  para definir rutas, a través de unos verbos.
 Es una convención sobre como manejar las URL, Las rutas RESTful proporcionan un patrón de diseño que permite una fácil manipulación de datos.
 Se basa en principios como la simplicidad y la interoperabilidad (capacidad de compartir de datos).
