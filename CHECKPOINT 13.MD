@@ -1,4 +1,4 @@
-CHECKPOINT 13
+# CHECKPOINT 13
 
 ### ¿Cuáles son las partes de un diagrama de clases?
 
