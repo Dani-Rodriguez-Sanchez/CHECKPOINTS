@@ -7,6 +7,7 @@ NOMBRE, ATRIBUTOS, METODOS ó operaciones
 1. nombre de la clase
 2. atributo, son las características de la clase. el tipo de atributo va después de dos puntos (string, o int...). Pueden ser +(publicos) -(privados) #(protegidos)
 3. metodos. Son las operaciones o comportamientos que esta clase puede realizar. seguidos de ()
+las INTERACCIONES las relacionan entre si. Herencia y asoc bidireccional y unidireccional
 
 ### ¿Los diagramas de implementación son estructurales o de comportamiento?
 
