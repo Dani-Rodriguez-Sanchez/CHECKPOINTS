@@ -29,7 +29,7 @@ Permite una base sólida para la construcción del sitema, ya que permite la com
 DEPLOYMENT DIAGRAM ilustra cómo la arquitectura de software, diseñada a nivel conceptual, se traduce en la arquitectura del sistema físico donde el software se ejecutará como nodos .
 “Es representar como se traduciría el sistema de software en el mundo real.”
 Tenemos una visión de como se distribuyen los elementos del sistema en nodos y como interactúan entre ellos. Se visualizan en cajas.
-Se relacionan a través de enlaces y dependencias. Son servicios web, apis, bases de datos...
+Se relacionan a través de ENLACES Y DEPENDENCIAS. Son servicios web, apis, bases de datos...
 ayuda a identificar los recursos necesarios, las dependencias entre los componentes y las posibles limitaciones o restricciones de hardware.
 La vista de implementación muestra el empaquetado físico de las partes reutilizables del sistema en unidades sustituibles, llamadas componentes. Una vista de implementación muestra los elementos físicos del sistema mediante componentes, así como sus interfases y dependencias entre componentes. Los componentes son piezas reutilizables de alto nivel a partir de las cuales se pueden construir los sistemas.
 
