@@ -22,7 +22,7 @@ Hay un estado inicial y otro final, y unos flujos de estado con branches, condic
 ### ¿De qué manera el diseño del sistema ayuda al proceso de desarrollo?
 
 Al ser una representación visual de los elementos del sistema. Es como dibujar unos planos o un mapa, para planificar como el sistema va a funcionar. Y como las partes del sistema van a interactuar
-Permite una base sólida para la construcción del sitema, ya que permite la comprensión de todos lo miembros del equipo, y la identificación de problemas o conflictos antes de la implementación.
+Permite una BASE SOLIDA para la construcción del sitema, ya que permite la COMPRENSION de todos lo miembros del equipo, y la identificación de PROBLEMAS o conflictos antes de la implementación.
 
 ### ¿Por qué usaríamos un diagrama de implementación?
 
