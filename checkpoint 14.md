@@ -32,8 +32,11 @@ Son como funciones, fragmentos de código independientes y reutilizables. Acepta
 se almacenan en src/components
 Dos tipos: FUNCIONALES, Y DE CLASE:
 
-FUNCIONAL. es una función que recibe el objeto Props y retorna un ReactNode (un ReactNode puede ser un elemento html, un string, un booleano, entre otros tipos de datos.). Son las más simples y concretos, ya que solo reciben y retornan
-DE CLASE. es una clase de javascript que extiende la clase Component de React. son clases simples (compuestas por múltiples funciones que agregan funcionalidad a la aplicación). requiere que lo extiendas desde React. Componente y cree una función de renderizado que devuelva un elemento de React.
+FUNCIONAL.  son similares a las funciones de JavaScript que reciben propiedades (props) y devuelven elementos de React para su renderización.
+(un ReactNode puede ser un elemento html, un string, un booleano, entre otros tipos de datos.). Son las más simples y concretos, ya que solo reciben y retornan
+
+DE CLASE. se crean utilizando clases de JavaScript, que extienden (amplian) la clase React.Component proporcionada por el propio React. 
+son clases simples (compuestas por múltiples funciones que agregan funcionalidad a la aplicación). requiere que lo extiendas desde React. Componente y cree una función de renderizado que devuelva un elemento de React.
 
 ## ¿Por qué usamos accesorios en React?
 PROPS? (son las propiedades de un componente)
