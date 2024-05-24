@@ -13,13 +13,14 @@ Se envían tres argumentos:
 - el opcional "withcredentials"
   
 AXIOS VS FETCH
-Axios es una librería y Fetch es una herramienta nativa del navegador. Entonces fetch no genera dependencias, esto es positivo para algunos proyectos, por el contrario Axios es más sencillo de configurar
+Axios es una librería y Fetch es una herramienta nativa del navegador. Entonces fetch no genera dependencias, esto es positivo para algunos proyectos, por el contrario Axios es más sencillo de configurar, por lo tanto, axios es el más utilizado.
 
 
 Entonces ese es el proceso que estamos haciendo ahora, estamos creando la capacidad de crear una sesión en el servidor para que el servidor envíe una cookie,
 la almacene directamente en el navegador, y eso es qué se podrá usar para asegurarnos de que tengamos la capacidad de 
 iniciar sesión o si no tenemos esa capacidad.
 
+---
 ## cookies en react
 
 > son archivos de texto con pequeños datos, como un nombre de usuario y contraseña, que se utilizan para identificar tu ordenador cuando utilizas una red.
@@ -35,9 +36,25 @@ Cuando indicamos en el código withCredentials: true, lo que estamos haciendo es
 
 con nuestra respuesta, no solo recuperamos el estado creado, sino que también recibimos estas cookies, y estas cookies se colocarán automáticamente dentro de la sesión de su navegador. Esto significa que puedes salir de la computadora, puedes reiniciar, puedes hacer cualquier cosa y estas cookies aún se almacenarán en el navegador, son un par clave-valor.
 
-## ¿Por qué son útiles las herramientas de desarrollo de React?
+---
+## ¿Por qué son útiles las herramientas de desarrollo de React? DEVELOPER TOOLS
+Es una EXTENSION DEL NAVEGADOR
+
+brinda la capacidad de obtener una mejor visibilidad específica de React. Esto significa que puede ver los accesorios de su aplicación, su estado, puede ver los componentes secundarios, los componentes principales, puede ver el árbol de componentes completo y puede inspeccionar todos sus datos.
+
+SON UTILES PARA seleccionar y visualizar los componentes de React que se están utilizando en la aplicación. Además, también permite ver el estado de los componentes, así como los props que se están pasando a cada uno de ellos, así como la identificación de errores. Sin estas herramientas, sería un proceso más complejo
 
 
-## ¿Qué es un oyente de eventos?
+---
+## ¿Qué es un oyente de eventos? EVENT LISTENER
 
+---
+## debugger
+Este depurador nos permite ejecutar el código paso a paso, puesto que se detiene cada vez que se encuentra con la palabra clave debugger. 
+Si clicamos en el botón de continuar, la ejecución del código continuará hasta que se encuentre con la siguiente palabra clave debugger.
 
+no es algo específico de React, está integrado directamente en JavaScript, por lo que puedes usarlo en cualquier tipo de aplicación que use JavaScript
+
+Es útil si estamos interesados ​​en descubrir qué sucede en una sección particular de código. 
+
+Si escribimos item en la consola, se nos mostrarán los datos del elemento actual de la lista. Dichos datos, serán aquellos que se introducieron en el servidor y a los que hemos llamado, es decir, los datos de la API. por ejemplo, pordemos `Extraer los nombres de los datos del API `
