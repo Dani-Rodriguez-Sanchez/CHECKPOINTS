@@ -1,4 +1,4 @@
-## ¿Qué es Axios?
+## ¿Qué es AXIOS?
 *se instala con `npm i axios`
 
 AXIOS es una biblioteca npm. es un conjunto de código JavaScript, que nos permite llamar a API y luego acceder a los datos 
@@ -21,7 +21,7 @@ la almacene directamente en el navegador, y eso es qué se podrá usar para aseg
 iniciar sesión o si no tenemos esa capacidad.
 
 ---
-## cookies en react
+## COOKIES en react
 
 > son archivos de texto con pequeños datos, como un nombre de usuario y contraseña, que se utilizan para identificar tu ordenador cuando utilizas una red.
 
@@ -49,7 +49,7 @@ SON UTILES PARA seleccionar y visualizar los componentes de React que se están 
 ## ¿Qué es un oyente de eventos? EVENT LISTENER
 
 ---
-## debugger
+## DEBUGGER
 Este depurador nos permite ejecutar el código paso a paso, puesto que se detiene cada vez que se encuentra con la palabra clave debugger. 
 Si clicamos en el botón de continuar, la ejecución del código continuará hasta que se encuentre con la siguiente palabra clave debugger.
 
