@@ -1,7 +1,7 @@
 ## ¿Qué es AXIOS?
 *se instala con `npm i axios`, la agregará a nuestro archivo `package.json`, luego agregará el código de Axios directamente a nuestro node_module.
 
-> AXIOS es una biblioteca npm que se utiliza para hacer solicitudes HTTP
+> AXIOS es una biblioteca npm que se utiliza para hacer solicitudes HTTP.
 > es un conjunto de código JavaScript, que nos permite llamar a API y luego acceder a los datos para que podamos representarlos en nuestra aplicación. 
 
 en react, es una herramienta que usamos para comunicarnos. hay que importarla (como un componente), y luego llamarla para generar el inicio de sesión.
