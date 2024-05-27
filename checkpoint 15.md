@@ -41,9 +41,9 @@ con nuestra respuesta, no solo recuperamos el estado creado, sino que también r
 
 ---
 ## ¿Por qué son útiles las herramientas de desarrollo de React? DEVELOPER TOOLS
-Es una EXTENSION DEL NAVEGADOR
+Es una EXTENSION DEL NAVEGADOR. Se instala por ejemplo en chrome, yendo a chrome web store y buscar React Developer Tools o dar click aqui e instalarlas.
 
-brinda la capacidad de obtener una mejor visibilidad específica de React. Esto significa que puede ver los accesorios de su aplicación, su estado, puede ver los componentes secundarios, los componentes principales, puede ver el árbol de componentes completo y puede inspeccionar todos sus datos.
+Da la capacidad de obtener una mejor visibilidad específica de React. Esto significa que puede ver los accesorios de su aplicación, su estado, puede ver los componentes además de que  puede ver el árbol de componentes completo y puede inspeccionar todos sus datos.
 
 > SON UTILES PARA  ver la estructura de componentes, examinar las propiedades (props) y el estado (state) de cada componente, y realizar un seguimiento de cómo se comunican entre sí. así como la para la identificación de errores, que sin estas herramientas, sería un proceso más complejo
 
