@@ -94,5 +94,28 @@ Los mixins son una forma de compartir comportamiento entre diferentes componente
 POR EJEMPLO, para los estilos
 
 ---
-## ESTILOS 
+## VARIABLES SASS
 
+> En React, a veces es posible que necesitemos actualizar dinámicamente el estilo debido a la interacción del usuario y al cambio en el DOM. En el caso de las variables SCSS, podemos actualizar dinámicamente las variables SCSS usando ReactJS.
+
+
+Un gran uso de SASS es almacenar los distintos colores utilizados en su aplicación como variables. Luego se puede hacer referencia a estas variables en otros archivos .scss o, en este caso, directamente en sus componentes de React.
+
+A continuación se muestra un ejemplo de cómo crear una variable de color:
+```
+// _colors.scss 
+$colorprimario: #1d6dd3;
+```
+Este archivo se puede importar fácilmente a cualquier otro archivo .scss haciendo:
+```
+@import '_colores';
+h1 {color: $colorprimario}
+```
+Pero si desea extraer este color para usarlo directamente en un componente de React, deberá realizar las siguientes actualizaciones:
+```
+// Cambiar el nombre de _colors.scss a _colors.module.scss 
+$primaryColor: $1d6dd3;
+:exportar { 
+  primario: $colorprimario; 
+}
+```
