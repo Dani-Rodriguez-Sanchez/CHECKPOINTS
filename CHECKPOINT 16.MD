@@ -34,6 +34,7 @@ export default function App() {
 
 en REACT lo estamos usando como metodo HTTP.
 Es lo opuesto a GET, este envia información, y no necesita THEN como Get
+se usa para ENVIAR datos a la API.
 
 Es asíncrona, lo que significa que hay dos momentos cruciales en la ejecución: el momento en el que inicias la llamada y el momento en que recibes una respuesta (o un tiempo de espera).
 
