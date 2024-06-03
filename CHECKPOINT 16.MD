@@ -13,7 +13,7 @@ necesita una estructura de carpetas, y luego a través de una función:
 - Primero envolvemos nuestro contenido con <BrowserRouter>.
 - Luego definimos nuestro <Routes>  (se pueden anidar)
 
-'''
+```
 export default function App() {
   return (
     <BrowserRouter>
@@ -34,5 +34,10 @@ export default function App() {
 
 en REACT lo estamos usando como metodo HTTP.
 Es lo opuesto a GET, este envia información, y no necesita THEN como Get
+
+Es asíncrona, lo que significa que hay dos momentos cruciales en la ejecución: el momento en el que inicias la llamada y el momento en que recibes una respuesta (o un tiempo de espera).
+
+En el módulo lo hemos usado para crear nuevos items en el portfolio 
+
 ## ¿Cuáles son algunas cosas que puede hacer para prepararse para las entrevistas de trabajo?
 
