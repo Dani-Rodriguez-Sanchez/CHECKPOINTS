@@ -81,3 +81,14 @@ buildForm() {
         return formData;
     }
 ```
+## COOKIE VS TOKEN
+
+HTTP no tiene estado. Cada solicitud es independiente y no contiene ningún contexto sobre las solicitudes anteriores. Entonces ¿cómo gestionamos las solicitudes que se realizan después de superar la autorización? 
+Aquí es donde entran en juego las Cookies de Sesión y JWT (Json Web Token).
+
+https://itequia.com/es/jwt-o-cookies-de-sesion-autenticacion-entornos-web/
+
+Ambas son herramientas para la AUTENTIFICACION DE USUARIOS.
+El proceso de autorización valida si dicho usuario o dispositivo tiene permisos para acceder a un recurso específico. 
+
+> A diferencia de las cookies, los tokens de sesión no se almacenan en el dispositivo del usuario, sino en el servidor o en un servicio de terceros. El servidor genera un token único y aleatorio para cada usuario y lo envía al navegador como parte de la respuesta
