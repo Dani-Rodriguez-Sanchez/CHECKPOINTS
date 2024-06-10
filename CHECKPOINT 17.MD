@@ -1,4 +1,5 @@
 ## METODO HANDLER
+event handling: controladores de eventos. determinan qué acción ocurrirá cada vez que se active un evento. Esto podría ser un clic en un botón o un cambio en una entrada de texto. hacen posible que los usuarios interactúen con su aplicación React
 
 ## REFS Y DOM
 sobre la manera en que REACT se relaciona con el DOM: react trabaja con un Dom virutal, pero hay veces que necesitamos interactuar directamente con el DOM y eso es lo que hacen los REFS
@@ -37,15 +38,28 @@ En el módulo lo hemos utilizado en ...
 
 ## ¿Qué tipo de solicitud API hacemos cuando queremos eliminar datos?
 DELETE
+axios.delete(`https://api.devcamp.space/portfolio/portfolio_items/${portfolioItem.id}`,
+    { withCredentials: true }
+  )
 
 ## ¿Qué tipo de solicitud de API hacemos cuando queremos actualizar datos?
 PUT Reemplaza todo el recurso con la versión actualizada completamente.
 PATCH cuando necesita actualizar sólo una parte de un recurso en lugar de todo el recurso. Este método le permite enviar un conjunto de instrucciones al servidor, indicando los cambios que se deben realizar en el recurso.
 
 ## ¿Qué es el código dinámico?
-Es un código que responde a las intereacciones con el usuario.
- dos flujos de trabajo por ejemplo a partir de una condicion
+Es un código que responde a las intereacciones con el usuario o de los datos api. mejora la experiencia del usuario y haciendo que las aplicaciones sean más intuitivas y fáciles de usar.
+
+ dos flujos de trabajo por ejemplo a partir de una condicion. 
+por ejemplo, en un formulario, si los datos introducidos son incorrectos, lanza un mensaje de error
 
 
 ## ¿cuál es un caso de uso común para poder pasar un componente secundario a un componente principal? 
 (modificar el contenido de una dropzone por ejemplo)
+
+## INPUT VS TEXTAREA:
+Los input de tipo radio y textarea en React son dos tipos de datos que podemos permitirle al usuario insertar en un formulario. TEXTAREA permite formato multiliniea, mientas que INPUT no
+
+## HOOKS
+(ganchos)
+permiten que los componentes de funciones tengan acceso al estado y otras características de React. Debido a esto, los componentes de clase generalmente ya no son necesarios.
+por ejemplo USESTATE que nos da un estado inicial, para después con una funcion poder actualizarlo. durante el ciclo de vida de la funcion
