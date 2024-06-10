@@ -63,3 +63,6 @@ Los input de tipo radio y textarea en React son dos tipos de datos que podemos p
 (ganchos)
 permiten que los componentes de funciones tengan acceso al estado y otras características de React. Debido a esto, los componentes de clase generalmente ya no son necesarios.
 por ejemplo USESTATE que nos da un estado inicial, para después con una funcion poder actualizarlo. durante el ciclo de vida de la funcion
+
+## FONTAWESOME
+web con iconos, utilizables en apps, bien descargando, o enlazando
