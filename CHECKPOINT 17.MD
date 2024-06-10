@@ -34,7 +34,7 @@ condición ? valor verdadero : valor falso;
 
 Si la condición es true, el operador retorna el valor de la valorverdadero; de lo contrario, devuelve el valor de valorfalso
 
-En el módulo lo hemos utilizado en ...
+En el módulo lo hemos utilizado en construir una función condicional.
 
 ## ¿Qué tipo de solicitud API hacemos cuando queremos eliminar datos?
 DELETE
