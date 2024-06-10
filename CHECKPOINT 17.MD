@@ -3,11 +3,15 @@
 ## REFS Y DOM
 sobre la manera en que REACT se relaciona con el DOM: react trabaja con un Dom virutal, pero hay veces que necesitamos interactuar directamente con el DOM y eso es lo que hacen los REFS
 lo hemos utilizado para poder borrar los archivos tan pronto como se hayan cargado exitosamente. es útil para trabajar con bibliotecas de terceros.
+para utilizar en casos que no podamos solucionar con props, state y funciones.
+permite acceder a los elementos del DOM o a los elementos react creados en el método render.
 
 ## DROPZONE
 el dropzone component es una libreria de javascript, q se instala como componente. 
-Es una ZONA DE ARRASTAR Y SOLTAR.
+permite la creación sencilla de funciones de ARRASTAR Y SOLTAR en una ZONA, dentro de una aplicación React.
 
+Simplifica la experiencia de carga de archivos del usuario, permitiéndole arrastrar archivos desde su explorador de archivos y soltarlos en la aplicación para cargarlos inmediatamente.
+Es ideal para cualquier aplicación que implique la carga de archivos
 
 ## Qué significa CRUD?
 
@@ -23,7 +27,7 @@ CONJUNTO DE OPERACIONES DE CRUD que son las siguientes:
 - Eliminar: eliminar y eliminar la entrada o contenido/publicación de la página web EN HTTP DELETE
 
 ## ¿Qué es un operador ternario?
-en javascript es un operador con TRES OPERANDOS 
+en javascript es un operador CONDICIONAL con TRES ELEMENTOS
 se usa para condensar una expresión de if/else mucho más larga en menos código y más compacta.
 condición ? valor verdadero : valor falso;
 
