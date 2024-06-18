@@ -28,3 +28,32 @@ sirve para:
 - confirmar una acción (eliminar un elemento de un blog)
 
 Se abren con un event listener, y se cierran con otro (clicando fuera o esc) o cuando termina su función
+
+## Formularios. diferencia de comportamiento con html
+
+## router. que es?
+
+La aplicación Create React no incluye el enrutamiento de páginas.
+
+React Router es la solución más popular.
+
+React Router es una biblioteca estándar para enrutamiento en React . Permite la navegación entre vistas de varios componentes en una aplicación React, permite cambiar la URL del navegador y mantiene la interfaz de usuario sincronizada con la URL. Creemos una aplicación sencilla para React para comprender cómo funciona React Router. La aplicación contiene tres componentes: el componente de inicio , el componente Acerca de y el componente de contacto . 
+Usaremos React Router para navegar entre estos componentes.
+entonces tiene el comportamiento predeterminado en HTML que consiste en navegar a una nueva página cuando el usuario envía el formulario.
+
+## estados de vida
+los componentes poseen algo conocido como el ciclo de vida. Este ciclo de vida son una serie de funciones que se ejecutan en distintos momentos de la vida del componente y nos permiten realizar distintas acciones en estos momentos.
+El ciclo de vida se puede dividir en 3 fases, el montado, actualización y desmontado del componente. Estas fases a su vez se dividen en varios métodos que puede tener el componente.
+
+a — Montaje
+Cuando se crea una instancia de un componente y se inserta en el DOM
+
+b — Actualización
+Cuando sufre algún cambio las propiedades (props) o el estado (state) del componente.
+
+c — Desmontaje
+Cuando el componente se elimina del DOM.
+
+
+https://platzi.com/blog/ciclo-de-vida-de-un-componente-de-reactjs/
+
