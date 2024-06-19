@@ -31,6 +31,21 @@ Se abren con un event listener, y se cierran con otro (clicando fuera o esc) o c
 
 ## Formularios. diferencia de comportamiento con html
 
+un formulario permite que un usuario introduzca datos que luego serán enviados a nuestro servidor para ser procesados.
+Los formularios en React son un tipo de elemento en esta librería de JavaScript que proviene del código HTML. Aun así, los formularios en React son un poco diferentes.
+
+En nuestro post sobre el estado en React, te hemos mencionado que existen dos tipos de datos en esta librería de JavaScript: las propiedades o props y los estados. Entonces, lo que renderizamos y vemos en pantalla es el resultado de estos dos tipos de datos, es decir, de las props y del estado interno que tiene un componente. De este modo, todo lo que vemos en pantalla siempre es reflejo de los datos que estamos manejando en el código de nuestra aplicación. Ten muy presente esto, pues es lo que diferencia los formularios en React de los formularios en HTML.
+
+Imaginemos que tenemos un formulario de perfil de usuario que estamos trabajando en HTML y JavaScript. Ahora, queremos acceder a este formulario para actualizar nuestro correo en la página de perfil. Para acceder a este formulario por debajo de la aplicación, seguro que habrá una llamada a la API que nos dice cuál es nuestro correo y nos permite sobrescribirlo. De esta forma, por un lado, tenemos el dato de nuestro correo, y por otro, estamos modificando nuestro correo.
+
+Mientras estamos modificando nuestro correo, normalmente no tenemos este dato almacenado en ningún sitio. Al contrario: es cuando enviamos el formulario que se actualiza nuestro correo en el servidor y se guarda. En React, esto cambia un poco.
+
+¿Cómo funcionan los formularios en React?
+Existen dos maneras básicas de manejar formularios en React:
+
+- La primera suele ser más fácil de entender, pues es similar a otros programas. Consiste en dejarle la responsabilidad al DOM. Esto quiere decir que dejamos que los inputs de los formularios trabajen solos de manera inicial. Luego, cuando necesitemos hacer un submit de los formularios y capturamos los valores que tienen estos inputs para poder mandarlos al API. A este método se le conoce como formularios no controlados.
+- La segunda forma de manejar formularios en React y la mejor manera de hacerlo es al controlarlos. Cuando trabajamos con formularios de manera controlada, todo lo que veamos en pantalla lo vamos a tener en el estado. Es decir, si vemos algo en pantalla es porque está así en el estado. Con esto queremos decir que todo, incluso los valores que tenemos en los inputs de un formulario, van a ser parte de un estado.
+
 ## router. que es?
 
 La aplicación Create React no incluye el enrutamiento de páginas.
