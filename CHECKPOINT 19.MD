@@ -19,3 +19,85 @@ Pasa controladores de eventos y otras funciones como props a componentes hijos:
 Hay varias maneras de asegurarte que las funciones tengan acceso a los atributos del componente como this.props y this.state, dependiendo de qué tipo de sintaxis o
 
 `this.handleClick = this.handleClick.bind(this);`
+---
+## FORMULARIOS REACT
+DIFERENCIA CON HTML
+con HTML creamos una propiedad y un método (post), el cual procesaría nuestro formulario al enviarle
+con JS se selecciona este mismo formulario, se le añade un event handler, y ejecutamos la función para enviar el formulario
+con REACT es diferente, creamos un estado, y a través de hooks vamos actualizando este valor a través de funciones. de manera que al enviar el formulario, no se actualiza en este momento, si no que ya se ha actualizado de forma dinámica a través de ciclo de vida de este.
+*Si eso es correcto!! igualmente puedes probar crear un formulario en react, y cuando escribes dentro de las cajas de texto, veras que no aparece el texto que escribes, tiene que obligatoriamente usar estados para poder hacer que el formulario funcione como se debe!!
+
+Igualmente busca la guía que se llama "Introduction to React Forms" justo antes del checkpoint 15 y te quedara mas claro!*
+
+tomamos el estado, lo configuramos dinámicamente, miramos el evento, el objetivo y la propiedad del nombre. Así sabemos si es un correo electrónico o una contraseña. 
+Y si te preguntas, ¿por qué seguiríamos todos estos pasos para aprender esto cuando simplemente podríamos construir un condicional? 
+Bueno, imagina un formulario que tiene entradas, no querrás crear 10 condicionales diferentes.
+estas tres líneas de código aquí son todo lo que necesitaba hacer para capturar el valor y actualizar el estado
+```
+handleChange(event) {
+    this.setState({
+      [event.target.name]: event.target.value
+    });
+  }
+```
+
+COMO QUEDARIA:
+```
+// login.js
+
+import React, { Component } from "react";
+
+export default class Login extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      email: "",
+      password: ""
+    };
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({
+      [event.target.name]: event.target.value
+    });
+  }
+
+  handleSubmit(event) {
+    console.log("Handle submit", event);
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>LOGIN TO ACCESS YOUR DASHBOARD</h1>
+
+        <form onSubmit={this.handleSubmit}>
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email"
+            value={this.state.email}
+            onChange={this.handleChange}
+          />
+
+          <input
+            type="password"
+            name="password"
+            placeholder="Your password"
+            value={this.state.password}
+            onChange={this.handleChange}
+          />
+
+          <div>
+            <button type="submit">Login</button>
+          </div>
+        </form>
+      </div>
+    );
+  }
+}
+```
