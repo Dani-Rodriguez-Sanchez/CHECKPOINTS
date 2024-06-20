@@ -46,7 +46,7 @@ Existen dos maneras básicas de manejar formularios en React:
 - La primera suele ser más fácil de entender, pues es similar a otros programas. Consiste en dejarle la responsabilidad al DOM. Esto quiere decir que dejamos que los inputs de los formularios trabajen solos de manera inicial. Luego, cuando necesitemos hacer un submit de los formularios y capturamos los valores que tienen estos inputs para poder mandarlos al API. A este método se le conoce como formularios no controlados.
 - La segunda forma de manejar formularios en React y la mejor manera de hacerlo es al controlarlos. Cuando trabajamos con formularios de manera controlada, todo lo que veamos en pantalla lo vamos a tener en el estado. Es decir, si vemos algo en pantalla es porque está así en el estado. Con esto queremos decir que todo, incluso los valores que tenemos en los inputs de un formulario, van a ser parte de un estado.
 
-En react a través de los hooks, podemos ir actualizando el valor del usuario, con funciones actualizadoras
+
 ---
 - En html
 para manejar un formulario,lo creariamos en nuestro documento HTML y le asignaríamos una propiedad action = "https://my-php-backend.com" y method ="POST", generalmente se trataba de una url a un servidor PHP el cual procesaría nuestro formulario una vez enviado
