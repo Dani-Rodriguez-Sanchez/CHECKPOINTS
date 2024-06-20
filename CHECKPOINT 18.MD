@@ -46,6 +46,16 @@ Existen dos maneras básicas de manejar formularios en React:
 - La primera suele ser más fácil de entender, pues es similar a otros programas. Consiste en dejarle la responsabilidad al DOM. Esto quiere decir que dejamos que los inputs de los formularios trabajen solos de manera inicial. Luego, cuando necesitemos hacer un submit de los formularios y capturamos los valores que tienen estos inputs para poder mandarlos al API. A este método se le conoce como formularios no controlados.
 - La segunda forma de manejar formularios en React y la mejor manera de hacerlo es al controlarlos. Cuando trabajamos con formularios de manera controlada, todo lo que veamos en pantalla lo vamos a tener en el estado. Es decir, si vemos algo en pantalla es porque está así en el estado. Con esto queremos decir que todo, incluso los valores que tenemos en los inputs de un formulario, van a ser parte de un estado.
 
+En react a través de los hooks, podemos ir actualizando el valor del usuario, con funciones actualizadoras
+---
+- En html
+para manejar un formulario,lo creariamos en nuestro documento HTML y le asignaríamos una propiedad action = "https://my-php-backend.com" y method ="POST", generalmente se trataba de una url a un servidor PHP el cual procesaría nuestro formulario una vez enviado
+- en JS
+Se selecciona el formulario, se le añade un manejador de eventos y, la función que se ejecuta cuando el formulario es enviado, reúne toda la información y la redirige a una API, de alguna manera.
+- en REACT
+en vez de esperar a que el formulario sea enviado y luego reunir la información, creamos un estado y, a cada tecla presionada, click en un checkbox etc.. actualizamos el estado, por lo que siempre estamos "escuchando" a los cambios en los inputs del formulario y, cuando finalmente se envía el formulario, no tenemos que reunir ninguna información, eso ya está hecho a través de la actualización dinámica del estado.
+ a través de los hooks, podemos ir actualizando el valor del usuario, con funciones actualizadoras
+
 ## router. que es?
 
 La aplicación Create React no incluye el enrutamiento de páginas.
