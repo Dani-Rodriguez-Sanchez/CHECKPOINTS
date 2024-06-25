@@ -104,7 +104,9 @@ export default class Login extends Component {
 ---
 ## REFS
 
+### REF ELEMENT VS GET ELEMENT
 
+https://www.freecodecamp.org/news/react-state-vs-ref-differences-and-use-cases/#:~:text=Refs%20are%20not%20directly%20linked,without%20affecting%20the%20user%20interface.
 ---
 ## Rich Text Editor Styles
 
@@ -113,5 +115,6 @@ export default class Login extends Component {
 ### DROPDOWNS
 ---
 
+## SLUGS
 
-
+https://rohitmondallblog.hashnode.dev/usingslug-to-make-dynamic-and-user-friendly-urls-for-our-website
