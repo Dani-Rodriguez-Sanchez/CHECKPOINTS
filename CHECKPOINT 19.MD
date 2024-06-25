@@ -118,3 +118,5 @@ https://www.freecodecamp.org/news/react-state-vs-ref-differences-and-use-cases/#
 ## SLUGS
 
 https://rohitmondallblog.hashnode.dev/usingslug-to-make-dynamic-and-user-friendly-urls-for-our-website
+--
+## DESESTRUCTURACION
