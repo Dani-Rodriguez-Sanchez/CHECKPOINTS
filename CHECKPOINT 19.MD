@@ -117,6 +117,33 @@ https://www.freecodecamp.org/news/react-state-vs-ref-differences-and-use-cases/#
 
 ## SLUGS
 
+
 https://rohitmondallblog.hashnode.dev/usingslug-to-make-dynamic-and-user-friendly-urls-for-our-website
 --
 ## DESESTRUCTURACION
+
+---
+## REDUX
+Es una herramienta para el control del estado.
+En el frontend moderno, tienes que juntar la continua variación de datos (mutabilidad), con la incertidumbre de cuando se producen (asincronismo), y eso es una combinación peligrosa.
+
+Para apps pequeñas no es un problema, todos los frameworks modernos (Angular, React, Vue) proporcionan sus propios mecanismos para almacenar el estado, al margen de Redux.
+
+¿Cuando me interesa Redux entonces? Pues una señal clara de que necesitas ayuda con la gestión de estados es cuando tienes una app tan grande que en un momento dado pierdes el control del cuándo, cómo y por qué de tu estado.
+
+El propósito de Redux es hacer predecibles los cambios de estado, imponiendo ciertas restricciones sobre como y cuando pueden producirse las actualizaciones. Redux consigue que tu gestión de estado sea transparente y determinista, lo que entre otras cosas aporta…
+
+Mejor comprensión de la evolución del estado en un momento dado
+Facilidad para incorporar nuevas características a la app
+Un nuevo abanico de herramientas de debugging (como el time travelling)
+Capacidad de reproducir un bug
+Mejoras en el proceso de desarrollo, pudiendo reiniciar la ejecución a partir de un estado concreto.
+### REDUCERS
+¿Qué son los reductores en Redux?
+En Redux , los reductores son funciones puras que manejan la lógica del estado, aceptando el estado inicial y el tipo de acción para actualizar y devolver el estado, facilitando los cambios en los componentes de vista de React.
+```
+const initialState = {};
+const Reducer = (state = initialState, action) => {
+   // Write your code here
+}
+```
