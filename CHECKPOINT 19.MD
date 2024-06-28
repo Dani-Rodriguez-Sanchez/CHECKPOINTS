@@ -147,3 +147,14 @@ const Reducer = (state = initialState, action) => {
    // Write your code here
 }
 ```
+---
+## HOC
+HIGH ORDER COMPONENT
+es una técnica avanzada en React para el reuso de la lógica de componentes. Los HOCs no son parte de la API de React. Son un patrón que surge de la naturaleza composicional de React.
+
+> Mientras que un componente transforma props en interfaz de usuario, un componente de orden superior transforma un componente en otro.
+
+Los HOCs son comunes en bibliotecas de terceros usadas en React, tales como connect en Redux y createFragmentContainer en Relay.
+
+WITHROUTER es un HOC
+https://v5.reactrouter.com/web/api/withRouter
