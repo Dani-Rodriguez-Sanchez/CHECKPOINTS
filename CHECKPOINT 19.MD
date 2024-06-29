@@ -147,6 +147,16 @@ const Reducer = (state = initialState, action) => {
    // Write your code here
 }
 ```
+### THUNK
+La palabra "thunk" es un término de programación que significa "un fragmento de código que realiza un trabajo diferido" . En lugar de ejecutar cierta lógica ahora , podemos escribir un cuerpo de función o código que se pueda usar para realizar el trabajo más tarde.
+
+Específicamente para Redux, los "thunks" son un patrón de escritura de funciones con lógica interna que puede interactuar con los métodos y de una tienda de ReduxdispatchgetState .
+
+El uso de procesadores requiere que se agregue el redux-thunkmiddleware a la tienda Redux como parte de su configuración.
+
+Los thunks son un método estándar para escribir lógica asincrónica en aplicaciones Redux y se utilizan comúnmente para la obtención de datos. Sin embargo, se pueden utilizar para una variedad de tareas y pueden contener lógica sincrónica y asincrónica.
+
+Una función de procesador es una función que acepta dos argumentos: el dispatchmétodo de tienda Redux y el getStatemétodo de tienda Redux. Las funciones de procesador no son llamadas directamente por el código de la aplicación. En cambio, se pasan a store.dispatch():
 ---
 ## HOC
 HIGH ORDER COMPONENT
