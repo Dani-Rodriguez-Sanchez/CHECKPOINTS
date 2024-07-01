@@ -124,7 +124,7 @@ https://rohitmondallblog.hashnode.dev/usingslug-to-make-dynamic-and-user-friendl
 
 ---
 ## REDUX
-Es una herramienta para el control del estado.
+> Es una biblioteca de gestión de estados
 En el frontend moderno, tienes que juntar la continua variación de datos (mutabilidad), con la incertidumbre de cuando se producen (asincronismo), y eso es una combinación peligrosa.
 
 Para apps pequeñas no es un problema, todos los frameworks modernos (Angular, React, Vue) proporcionan sus propios mecanismos para almacenar el estado, al margen de Redux.
@@ -138,6 +138,7 @@ Facilidad para incorporar nuevas características a la app
 Un nuevo abanico de herramientas de debugging (como el time travelling)
 Capacidad de reproducir un bug
 Mejoras en el proceso de desarrollo, pudiendo reiniciar la ejecución a partir de un estado concreto.
+
 ### REDUCERS
 ¿Qué son los reductores en Redux?
 En Redux , los reductores son funciones puras que manejan la lógica del estado, aceptando el estado inicial y el tipo de acción para actualizar y devolver el estado, facilitando los cambios en los componentes de vista de React.
@@ -148,6 +149,32 @@ const Reducer = (state = initialState, action) => {
 }
 ```
 ### THUNK
+
+> Redux-thunk te permite escribir creadores de acciones que retornan una función en vez de un objeto de acción típico. Entonces, el thunk puede ser usado para retrasar el envío de una acción hasta que se cumpla una línea de código asíncrona
+
+> un redux-thunk está compuesto de un “creador thunk” (creador de acciones asincrónicas) y “el mismo thunk” el cual es la función que devuelve el “creador Thunk” y acepta el dispatch y setState como argumentos.
+
+```
+const INCREMENTAR_CONTADOR = 'INCREMENTAR_CONTADOR';
+
+function incrementar() {
+  return {
+    type: INCREMENTAR_CONTADOR
+  };
+}
+
+function incrementarAsync() {
+  return dispatch => {
+    setTimeout(() => {
+      // Es posible invocar acciones sincrónicas o asicrónicas con "dispatch"
+      dispatch(incrementar());
+    }, 1000);
+  };
+}
+```
+
+Redux-Thunk mejora las capacidades de Redux al proporcionar un mecanismo sencillo y eficiente para gestionar acciones asincrónicas. Permite a los desarrolladores escribir código limpio, predecible y fácil de mantener, al tiempo que garantiza la integridad de la gestión del estado de la aplicación.
+
 La palabra "thunk" es un término de programación que significa "un fragmento de código que realiza un trabajo diferido" . En lugar de ejecutar cierta lógica ahora , podemos escribir un cuerpo de función o código que se pueda usar para realizar el trabajo más tarde.
 
 Específicamente para Redux, los "thunks" son un patrón de escritura de funciones con lógica interna que puede interactuar con los métodos y de una tienda de ReduxdispatchgetState .
@@ -168,3 +195,17 @@ Los HOCs son comunes en bibliotecas de terceros usadas en React, tales como conn
 
 WITHROUTER es un HOC
 https://v5.reactrouter.com/web/api/withRouter
+---
+## ASINCRONISMO
+
+> es realizar acciones o tareas sin esperar que un proceso anterior se realice,
+> programación asíncrona es una técnica que permite a tu programa iniciar una tarea de larga duración y seguir respondiendo a otros eventos mientras esa tarea se ejecuta, en lugar de tener que esperar hasta que esa tarea haya terminado. Una vez que dicha tarea ha finalizado, tu programa presenta el resultado.
+
+Redux, por su naturaleza puramente funcional, esta pensado para realizar tareas síncronas:
+
+`(state, action) => newState`
+Sin embargo, debido a como funciona JS lo más común es trabajar de forma asíncrona, por ejemplo hacer una petición AJAX a una API es asíncrono y luego de esto seguramente vamos a querer modificar el Store en base a la respuesta.
+
+Para esto se usan las acciones asíncronas, hay varias formas de trabajar con acciones asíncronas en Redux, una es hacerlo a mano, otra opción es usar es usar distintos middlewares.
+
+La gran ventaja de usar **middlewares** que nos solucionen esto es que si en muchas partes vamos a usar acciones asíncronas (y es muy probable que pase) nos ahorramos mucho trabajo cada vez que despachamos la acción.
