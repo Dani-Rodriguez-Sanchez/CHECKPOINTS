@@ -127,6 +127,8 @@ https://rohitmondallblog.hashnode.dev/usingslug-to-make-dynamic-and-user-friendl
 > Es una biblioteca de gestión de estados
 En el frontend moderno, tienes que juntar la continua variación de datos (mutabilidad), con la incertidumbre de cuando se producen (asincronismo), y eso es una combinación peligrosa.
 
+https://www.youtube.com/watch?v=QEsukdXFxxs
+
 Para apps pequeñas no es un problema, todos los frameworks modernos (Angular, React, Vue) proporcionan sus propios mecanismos para almacenar el estado, al margen de Redux.
 
 ¿Cuando me interesa Redux entonces? Pues una señal clara de que necesitas ayuda con la gestión de estados es cuando tienes una app tan grande que en un momento dado pierdes el control del cuándo, cómo y por qué de tu estado.
