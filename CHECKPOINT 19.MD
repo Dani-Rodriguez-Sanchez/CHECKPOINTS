@@ -187,6 +187,13 @@ Los thunks son un método estándar para escribir lógica asincrónica en aplica
 
 Una función de procesador es una función que acepta dos argumentos: el dispatchmétodo de tienda Redux y el getStatemétodo de tienda Redux. Las funciones de procesador no son llamadas directamente por el código de la aplicación. En cambio, se pasan a store.dispatch():
 ---
+## REDUX DEVTOOLS
+SON herramientas que están disponibles directamente en el navegador como extensiones de las DevTools nativas del navegador.
+
+proporciona una consola para configurar nuestro entorno de desarrollo con Redux. Esta extensión ayuda a visualizar los movimientos y las modificaciones de estado en el software basado en Redux.
+
+### REDUX DEVTOOLS VS REAC DEVELOPER TOOLS
+---
 ## HOC
 HIGH ORDER COMPONENT
 es una técnica avanzada en React para el reuso de la lógica de componentes. Los HOCs no son parte de la API de React. Son un patrón que surge de la naturaleza composicional de React.
