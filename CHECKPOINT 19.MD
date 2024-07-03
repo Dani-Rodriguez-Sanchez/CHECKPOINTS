@@ -141,6 +141,13 @@ Facilidad para incorporar nuevas características a la app
 Un nuevo abanico de herramientas de debugging (como el time travelling)
 Capacidad de reproducir un bug
 Mejoras en el proceso de desarrollo, pudiendo reiniciar la ejecución a partir de un estado concreto.
+---
+#### REDUX. QUE ES
+es una librería de GESTION DE ESTADO para aplicaciones JavaScript en el lado del Frontend. Su función principal es facilitar la gestión y actualización de la información que se comparte entre diferentes componentes de la aplicación de manera predecible y eficiente.
+
+#### GESTION DE ESTADO
+Es el proceso de manejar y controlar la información que cambia en una aplicación web mientras los usuarios interactúan con ella, el estado puede incluir datos como información del usuario, preferencias, datos de visualización, detalles del formulario, autenticación y más.
+La gestión del estado es esencial porque las aplicaciones modernas son cada vez más interactivas y dinámicas. Los usuarios pueden interactuar con diferentes partes de la aplicación, realizar acciones y esperar que la interfaz responda en tiempo real. Para lograr esto, es necesario tener un método eficiente y organizado para mantener y actualizar el estado.
 
 #### PRINCIPIOS DE REDUX:
 - UNICA FUENTE DE VERDAD El estado de toda la aplicación se almacena en un solo objeto, Siendo asi facilmente accesible
@@ -154,15 +161,16 @@ Mejoras en el proceso de desarrollo, pudiendo reiniciar la ejecución a partir d
 - ACTIONS Las acciones son objetos que describen un cambio en el estado. pueden llevar datos adicionales (como información sobre el cambio) en su propiedad *payload*.
 - REDUCERS Los reductores son funciones puras que toman el estado actual y una acción y devuelven un nuevo estado. Los reductores definen cómo debe cambiar el estado en función del tipo de acción recibida. Deben ser inmutables y no tener efectos secundarios.
 
-### REDUCERS
-¿Qué son los reductores en Redux?
-En Redux , los reductores son funciones puras que manejan la lógica del estado, aceptando el estado inicial y el tipo de acción para actualizar y devolver el estado, facilitando los cambios en los componentes de vista de React.
 ```
 const initialState = {};
 const Reducer = (state = initialState, action) => {
    // Write your code here
 }
 ```
+---
+#### INSTALACION 
+`> npm install @reduxjs/toolkit react-redux `
+
 ### THUNK
 
 > Redux-thunk te permite escribir creadores de acciones que retornan una función en vez de un objeto de acción típico. Entonces, el thunk puede ser usado para retrasar el envío de una acción hasta que se cumpla una línea de código asíncrona
