@@ -127,6 +127,7 @@ https://rohitmondallblog.hashnode.dev/usingslug-to-make-dynamic-and-user-friendl
 > Es una biblioteca de gestión de estados
 En el frontend moderno, tienes que juntar la continua variación de datos (mutabilidad), con la incertidumbre de cuando se producen (asincronismo), y eso es una combinación peligrosa.
 
+https://medium.com/@diego.coder/implementando-redux-en-react-js-redux-toolkit-86b82219584a
 https://www.youtube.com/watch?v=QEsukdXFxxs
 
 Para apps pequeñas no es un problema, todos los frameworks modernos (Angular, React, Vue) proporcionan sus propios mecanismos para almacenar el estado, al margen de Redux.
@@ -140,6 +141,18 @@ Facilidad para incorporar nuevas características a la app
 Un nuevo abanico de herramientas de debugging (como el time travelling)
 Capacidad de reproducir un bug
 Mejoras en el proceso de desarrollo, pudiendo reiniciar la ejecución a partir de un estado concreto.
+
+#### PRINCIPIOS DE REDUX:
+- UNICA FUENTE DE VERDAD El estado de toda la aplicación se almacena en un solo objeto, Siendo asi facilmente accesible
+- ESTADO INMUTABLE l estado en Redux es inmutable, lo que significa que no se puede modificar directamente. En lugar de ello, cuando se necesita realizar cambios en el estado, se crea una nueva versión del estado con los cambios aplicados. Esto ayuda a evitar efectos secundarios y simplifica el seguimiento de los cambios.
+- CAMBIOS SOLO MEDIANTE ACCIONES Las únicas formas en que el estado puede cambiar en Redux es mediante el envío de “acciones”. Las acciones son objetos simples que describen qué tipo de cambio debe realizarse en el estado. Estas acciones son manejadas por “reductores”, que son funciones puras que toman el estado actual y una acción, y devuelven un nuevo estado.
+
+
+#### ELEMENTOS DE REDUX:
+
+- STORE El almacén es un objeto que contiene todo el estado de la aplicación. Es INMUTABLE
+- ACTIONS Las acciones son objetos que describen un cambio en el estado. pueden llevar datos adicionales (como información sobre el cambio) en su propiedad *payload*.
+- REDUCERS Los reductores son funciones puras que toman el estado actual y una acción y devuelven un nuevo estado. Los reductores definen cómo debe cambiar el estado en función del tipo de acción recibida. Deben ser inmutables y no tener efectos secundarios.
 
 ### REDUCERS
 ¿Qué son los reductores en Redux?
