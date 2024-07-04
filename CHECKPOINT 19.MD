@@ -19,12 +19,15 @@ Pasa controladores de eventos y otras funciones como props a componentes hijos:
 Hay varias maneras de asegurarte que las funciones tengan acceso a los atributos del componente como this.props y this.state, dependiendo de qué tipo de sintaxis o
 
 `this.handleClick = this.handleClick.bind(this);`
+
 ---
 ## FORMULARIOS REACT
+
 DIFERENCIA CON HTML
-con HTML creamos una propiedad y un método (post), el cual procesaría nuestro formulario al enviarle
-con JS se selecciona este mismo formulario, se le añade un event handler, y ejecutamos la función para enviar el formulario
-con REACT es diferente, creamos un estado, y a través de hooks vamos actualizando este valor a través de funciones. de manera que al enviar el formulario, no se actualiza en este momento, si no que ya se ha actualizado de forma dinámica a través de ciclo de vida de este.
+- con HTML creamos una propiedad y un método (post), el cual procesaría nuestro formulario al enviarlo
+- con JS se selecciona este mismo formulario, se le añade un event handler, y ejecutamos la función para enviar el formulario
+- con REACT es diferente, creamos un estado, y a través de hooks vamos actualizando este valor a través de funciones. de manera que al enviar el formulario, no se actualiza en este momento, si no que ya se ha actualizado de forma dinámica a través de ciclo de vida de este.
+
 *Si eso es correcto!! igualmente puedes probar crear un formulario en react, y cuando escribes dentro de las cajas de texto, veras que no aparece el texto que escribes, tiene que obligatoriamente usar estados para poder hacer que el formulario funcione como se debe!!
 
 Igualmente busca la guía que se llama "Introduction to React Forms" justo antes del checkpoint 15 y te quedara mas claro!*
@@ -103,16 +106,42 @@ export default class Login extends Component {
 ```
 ---
 ## REFS
+para acceder a los elementos del DOM, pero al acceder a estos elementos estamos también accediendo a toda su API. Esto nos da acceso a los distintos métodos y propiedades que pueden tener los elementos que insertamos.
+
+Para acceder a un nodo DOM gestionado por React, primero importa el Hook useRef:
+
+`import { useRef } from 'react';`
+
+Luego, úsalo para declarar una ref dentro de tu componente
+
+`const myRef = useRef(null);`
+
+Finalmente, pasa la ref como el atributo ref a la etiqueta JSX en el que quieres obtener el nodo DOM:
+
+`<div ref={myRef}>`
+
+El Hook useRef devuelve un objeto con una sola propiedad llamada current. Inicialmente, myRef.current va a ser null. Cuando React cree un nodo DOM para este <div>, React pondrá una referencia a este nodo en myRef.current. Entonces podrás acceder a este nodo DOM desde tus controladores de eventos y usar las API de navegador integradas definidas en él.
+
+
 
 ### REF ELEMENT VS GET ELEMENT
+Son hooks los dos
+
+- `useState` está diseñado para administrar el estado de un componente, que representa datos que pueden cambiar con el tiempo y son importantes para la representación del componente. Puedes agregar el estado a tu componente importando el useState
+- `useRef` se utiliza para crear referencias en los componentes de React. Una referencia es un objeto con una currentpropiedad que contiene un valor. Básicamente, hace referencia a un elemento DOM o a una instancia de un componente. Podemos leer y actualizar el valor accediendo a la propiedad actual.
 
 https://www.freecodecamp.org/news/react-state-vs-ref-differences-and-use-cases/#:~:text=Refs%20are%20not%20directly%20linked,without%20affecting%20the%20user%20interface.
 ---
 ## Rich Text Editor Styles
+Es una biblioteca, que proporciona un editor de texto enriquecido (RTE). Se usa para facilitar a los usuarios la edición de contenido, ofreciendo una experiencia de edición WYSIWYG (What You See Is What You Get)
 
+vemos el ejemplo de DRAFT.JS, (Desarrollado y mantenido por Facebook) pero hay muchos mas. Draft.js proporciona un marco sólido y extensible para crear editores de texto enriquecido en React. Su arquitectura personalizable permite a los desarrolladores crear soluciones personalizadas, lo que lo hace adecuado para varios proyectos.
+
+crearemos un editor de texto enriquecido, llamaremos a las dependencias clave y luego aplicaremos los estilos iniciales. implementemos el formulario y lo coloquemos directamente dentro del formulario de nuestro blog.
 ### striptags Y truncate
 
 ### DROPDOWNS
+En diseño web se les denomina así a los menús desplegables.
 ---
 
 ## SLUGS
@@ -129,8 +158,24 @@ En REACT:
 creamos una nueva ruta para las publicaciones del blog con la ruta /blog/:slug. La :slugparte es un marcador de posición para el slug de cada publicación del blog. Por ejemplo, si el slug de una publicación del blog es how-to-bake-a-cake, la URL sería /blog/how-to-bake-a-cake.
 --
 ## DESESTRUCTURACION
+Utilizando la desestructuración de objetos podemos separar en variables las propiedades que teníamos en el objeto
+```
+const user = {
+  name: "Manz",
+  role: "streamer",
+  life: 99
+}
 
----
+const { name, role, life } = user;
+
+console.log(name);
+console.log(role, life);
+```
+En este ejemplo, separamos las propiedades name, role y life en variables individuales, «sacándolas» de user.
+
+Es una expresión que te permite extraer o “destructurar” datos desde estructuras de datos como arreglos, objetos, mapas y sets y crear nuevas variables con ese dato en particular. Te permite extraer propiedades de un objeto, items de un arreglo de una manera “sencilla” y de una sola vez.
+
+
 ## REDUX
 > Es una biblioteca de gestión de estados
 En el frontend moderno, tienes que juntar la continua variación de datos (mutabilidad), con la incertidumbre de cuando se producen (asincronismo), y eso es una combinación peligrosa.
