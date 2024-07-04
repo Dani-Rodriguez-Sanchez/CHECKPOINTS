@@ -116,9 +116,17 @@ https://www.freecodecamp.org/news/react-state-vs-ref-differences-and-use-cases/#
 ---
 
 ## SLUGS
-
+El slug es una forma legible y válida para la URL de una publicación o página web. 
+Es para la personalizacion y OPTIMIZACION DE LAS URL:
+www.noticias.ltda/?p=8679 SIN SLUG
+www.noticias.ltda/que-es-el-slug-y-por-que-optimizarlo-para-el-seo CON SLUG
+debe ser el slug breve y descriptivo
+Las URLs se muestran en los resultados del motor de búsqueda. No ingreses demasiada información, mantenla breve y descriptiva para que también sea fácil de recordar
 
 https://rohitmondallblog.hashnode.dev/usingslug-to-make-dynamic-and-user-friendly-urls-for-our-website
+En REACT:
+`<Route path="/blog/:slug">`
+creamos una nueva ruta para las publicaciones del blog con la ruta /blog/:slug. La :slugparte es un marcador de posición para el slug de cada publicación del blog. Por ejemplo, si el slug de una publicación del blog es how-to-bake-a-cake, la URL sería /blog/how-to-bake-a-cake.
 --
 ## DESESTRUCTURACION
 
