@@ -322,7 +322,10 @@ HIGH ORDER COMPONENT
 Los componentes de orden superior son útiles para abstraer una lógica compartida utilizada por muchos componentes (Los componentes en React permiten la reutilización de código y evitan la repetición de código)
 es una técnica avanzada en React para el reuso de la lógica de componentes. Los HOCs no son parte de la API de React. Son un patrón que surge de la naturaleza composicional de React.
 
+https://deadsimplechat.com/blog/higher-order-componets-in-react/
+
 > Mientras que un componente transforma props en interfaz de usuario, un componente de orden superior transforma un componente en otro.
+
 https://legacy.reactjs.org/docs/higher-order-components.html
 
 Los HOCs son comunes en bibliotecas de terceros usadas en React, tales como connect en Redux y createFragmentContainer en Relay.
