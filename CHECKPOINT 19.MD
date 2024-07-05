@@ -319,6 +319,7 @@ proporciona una consola para configurar nuestro entorno de desarrollo con Redux.
 ---
 ## HOC
 HIGH ORDER COMPONENT
+Los componentes de orden superior son útiles para abstraer una lógica compartida utilizada por muchos componentes (Los componentes en React permiten la reutilización de código y evitan la repetición de código)
 es una técnica avanzada en React para el reuso de la lógica de componentes. Los HOCs no son parte de la API de React. Son un patrón que surge de la naturaleza composicional de React.
 
 > Mientras que un componente transforma props en interfaz de usuario, un componente de orden superior transforma un componente en otro.
