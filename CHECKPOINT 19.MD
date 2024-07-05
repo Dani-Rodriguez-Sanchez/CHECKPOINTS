@@ -219,13 +219,15 @@ Para apps pequeñas no es un problema, todos los frameworks modernos (Angular, R
 
 El propósito de Redux es hacer predecibles los cambios de estado, imponiendo ciertas restricciones sobre como y cuando pueden producirse las actualizaciones. Redux consigue que tu gestión de estado sea transparente y determinista, lo que entre otras cosas aporta…
 
-Mejor comprensión de la evolución del estado en un momento dado
-Facilidad para incorporar nuevas características a la app
-Un nuevo abanico de herramientas de debugging (como el time travelling)
-Capacidad de reproducir un bug
-Mejoras en el proceso de desarrollo, pudiendo reiniciar la ejecución a partir de un estado concreto.
+- Mejor comprensión de la evolución del estado en un momento dado
+- Facilidad para incorporar nuevas características a la app
+- Un nuevo abanico de herramientas de debugging (como el time travelling)
+- Capacidad de reproducir un bug
+- Mejoras en el proceso de desarrollo, pudiendo reiniciar la ejecución a partir de un estado concreto.
+
 ---
 #### REDUX. QUE ES
+
 es una librería de GESTION DE ESTADO para aplicaciones JavaScript en el lado del Frontend. Su función principal es facilitar la gestión y actualización de la información que se comparte entre diferentes componentes de la aplicación de manera predecible y eficiente.
 
 #### GESTION DE ESTADO
