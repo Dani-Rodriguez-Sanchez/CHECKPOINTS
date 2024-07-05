@@ -322,6 +322,7 @@ HIGH ORDER COMPONENT
 es una técnica avanzada en React para el reuso de la lógica de componentes. Los HOCs no son parte de la API de React. Son un patrón que surge de la naturaleza composicional de React.
 
 > Mientras que un componente transforma props en interfaz de usuario, un componente de orden superior transforma un componente en otro.
+https://legacy.reactjs.org/docs/higher-order-components.html
 
 Los HOCs son comunes en bibliotecas de terceros usadas en React, tales como connect en Redux y createFragmentContainer en Relay.
 
@@ -341,3 +342,17 @@ Sin embargo, debido a como funciona JS lo más común es trabajar de forma asín
 Para esto se usan las acciones asíncronas, hay varias formas de trabajar con acciones asíncronas en Redux, una es hacerlo a mano, otra opción es usar es usar distintos middlewares.
 
 La gran ventaja de usar **middlewares** que nos solucionen esto es que si en muchas partes vamos a usar acciones asíncronas (y es muy probable que pase) nos ahorramos mucho trabajo cada vez que despachamos la acción.
+---
+## REACT HTML PARSER
+Una utilidad para convertir y analizar
+cadenas HTML en componentes React 
+
+html-react-parser Este analizador funciona tanto en el lado del servidor como del cliente y convierte una cadena HTML en uno o más elementos React.
+El uso es el siguiente:
+```
+import parse from 'html-react-parser';
+const MyComponent = () => {
+ const htmlString = '<div>A simple HTML string</div>';
+return <div>{parse(htmlString)}</div>
+}
+```
