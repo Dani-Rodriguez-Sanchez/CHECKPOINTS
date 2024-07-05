@@ -301,8 +301,12 @@ Los thunks son un método estándar para escribir lógica asincrónica en aplica
 Una función de procesador es una función que acepta dos argumentos: el dispatchmétodo de tienda Redux y el getStatemétodo de tienda Redux. Las funciones de procesador no son llamadas directamente por el código de la aplicación. En cambio, se pasan a store.dispatch():
 ---
 ## REDUX TOOLKIT 
+La biblioteca principal de Redux no tiene opiniones definidas. Te permite decidir cómo quieres manejar todo, como la configuración de la tienda, qué contiene tu estado y cómo quieres construir tus reductores.Esto es bueno en algunos casos, porque te da flexibilidad, pero esa flexibilidad no siempre es necesaria.
+
 el objetivo de Redux Toolkit es ayudar a simplificar los casos de uso comunes de Redux. No pretende ser una solución completa para todo lo que pueda querer hacer con Redux, pero debería simplificar mucho el código relacionado con Redux que necesita escribir (o, en algunos casos, eliminar por completo parte del código escrito a mano).
 
+exporta varias funciones individuales que puedes usar en tu aplicación y agrega dependencias en otros paquetes que se usan comúnmente con Redux (como Reselect y Redux-Thunk).
+incluye: configureStore(), createReducer() etc
 ---
 ## REDUX DEVTOOLS
 El módulo redux-devtools-extension nos ayudará a filtrar todo lo que pase por el store y así poder verlo desde la consola de desarrolladores de Redux
