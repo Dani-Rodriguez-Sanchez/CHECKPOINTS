@@ -158,6 +158,16 @@ crearemos un editor de texto enriquecido, llamaremos a las dependencias clave y 
 
 ### DROPDOWNS
 En diseño web se les denomina así a los menús desplegables.
+
+### FILE READER. 
+Para añadir imagenes a un rich text editor styles.
+no podemos simplemente incrustar un archivo de imagen directamente en nuestra cadena de texto. Lo que debemos hacer es tomar la imagen y convertirla en algo que pueda almacenarse como texto y luego podemos incrustarla junto con nuestras etiquetas de párrafo y todo lo demás.
+imagenes BASE64 Es basicamente una madera de codificar un archivo binario (una imagen) como un archivo de texto (que se puede leer). De esa manera puedes transmitir la imagen como si fuera simplemente texto. El base 64 encode solo usa los caracteres a-z A-Z 0–9. Se usa para transmitir datos en un soporte que solo soporta el código ASCII visible,
+
+JavaScript tiene una herramienta llamada biblioteca FileReader o módulo FileReader. nos permite hacer es crear esta instancia de FileReader y luego podemos trabajar con ella y luego podemos hacer que realice esta base64. Toma un archivo, en este caso toma una imagen, y luego realizará el procesamiento y la codificación por nosotros.
+
+### PROMESAS
+una promesa requiere dos argumentos. Primero se necesita una resolución y luego un rechazo. CON una función de flecha gruesa y luego dentro de aquí, aquí es donde realmente la llamamos.
 ---
 
 ## SLUGS
