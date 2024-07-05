@@ -253,8 +253,15 @@ const Reducer = (state = initialState, action) => {
 ---
 #### INSTALACION 
 `> npm install @reduxjs/toolkit react-redux `
+---
+## MIDDLEWARE
+permiten agregar funcionalidad a los Stores de Redux.
+un middleware es una función, esta función va a recibir como parámetro una versión reducida del Store, con solamente los métodos dispatch y getState.
+Sirve para muchas tareas diferentes, registrar datos, capturar errores, despachar promesas, cambiar rutas,
 
+---
 ### THUNK
+redux-thunkEs el middleware más comúnmente utilizado para trabajar con lógica sincrónica y asincrónica fuera de los componentes.
 
 > Redux-thunk te permite escribir creadores de acciones que retornan una función en vez de un objeto de acción típico. Entonces, el thunk puede ser usado para retrasar el envío de una acción hasta que se cumpla una línea de código asíncrona
 
@@ -291,7 +298,13 @@ Los thunks son un método estándar para escribir lógica asincrónica en aplica
 
 Una función de procesador es una función que acepta dos argumentos: el dispatchmétodo de tienda Redux y el getStatemétodo de tienda Redux. Las funciones de procesador no son llamadas directamente por el código de la aplicación. En cambio, se pasan a store.dispatch():
 ---
+## REDUX TOOLKIT 
+el objetivo de Redux Toolkit es ayudar a simplificar los casos de uso comunes de Redux. No pretende ser una solución completa para todo lo que pueda querer hacer con Redux, pero debería simplificar mucho el código relacionado con Redux que necesita escribir (o, en algunos casos, eliminar por completo parte del código escrito a mano).
+
+---
 ## REDUX DEVTOOLS
+El módulo redux-devtools-extension nos ayudará a filtrar todo lo que pase por el store y así poder verlo desde la consola de desarrolladores de Redux
+
 SON herramientas que están disponibles directamente en el navegador como extensiones de las DevTools nativas del navegador.
 
 proporciona una consola para configurar nuestro entorno de desarrollo con Redux. Esta extensión ayuda a visualizar los movimientos y las modificaciones de estado en el software basado en Redux.
