@@ -19,7 +19,21 @@ Pasa controladores de eventos y otras funciones como props a componentes hijos:
 Hay varias maneras de asegurarte que las funciones tengan acceso a los atributos del componente como this.props y this.state, dependiendo de qué tipo de sintaxis o
 
 `this.handleClick = this.handleClick.bind(this);`
+---
+## MODAL
+Modal es un elemento UX común. Un modal es un cuadro de diálogo/ventana emergente que se muestra en la parte superior de la página actual. 
 
+Un modal en React es un componente que se superpone a otro contenido en una página web. Es un elemento de la interfaz de usuario que se utiliza para mostrar contenido adicional o para solicitar la interacción del usuario. Los modales de React se utilizan habitualmente para mostrar formularios, mensajes u otro contenido interactivo.
+
+incluye un título, un contenido y un botón de cierre. Ademas admite varias funciones, como el componente de fondo, la tecla de escape para cerrar el modal y la gestión del foco.
+
+INSTALACION: debes instalar React Modal en tu proyecto React. Esto se puede hacer usando npm o yarn. Una vez instalado, puedes importar el modal a tu componente.
+---
+## STRIPTAGS Y TRUNCATE
+- striptags:  Supongamos que se encuentra en una situación en la que desea permitir etiquetas de imagen o etiquetas en negrita, pero no desea ninguna otra. Esto le permite incluir en la lista blanca o negra los elementos con los que no desea trabajar. Esto es realmente útil, es una gran herramienta. Utilizo esto bastante cada vez que trabajo con contenido de tipo HTML que tal vez no quiera renderizar.
+
+>Un ejemplo para el que personalmente tuve que usar esto es para una aplicación de redes sociales que estaba creando y que permitía a las personas escribir código HTML y usé un editor de texto enriquecido, pero no quería permitirles escribir JavaScript y el motivo de Esto se debe a que si permite que un usuario escriba código JavaScript, técnicamente podría secuestrar los navegadores de los usuarios, sus sesiones y podría hacer todo tipo de cosas que son muy malas desde una perspectiva de seguridad. no quería que pudieran inyectar su propio código JavaScript malicioso, por lo que use este tipo de etiqueta como striptags y dije que quiero que permita todo excepto scripts y eso funcionó y esa es una forma en que podría usar algunos de esos parámetros opcionales, pero en este caso, quiero eliminar cualquier tipo de etiqueta.
+- truncate: en un generador de resumen Es una biblioteca bastante fácil de usar donde podemos simplemente envolver nuestro contenido dentro de este componente truncado aquí, pasar cuántas líneas,
 ---
 ## FORMULARIOS REACT
 
