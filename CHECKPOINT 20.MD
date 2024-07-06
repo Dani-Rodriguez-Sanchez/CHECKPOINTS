@@ -11,5 +11,5 @@ Vite es conocido por su velocidad de desarrollo sobresaliente. Utiliza la compil
 para proporcionar una experiencia de desarrollo prácticamente instantánea.
 
 DIFERENCIAS:
-. Velocidad de desarrollo:
-. M
+* Velocidad de desarrollo:
+* M
