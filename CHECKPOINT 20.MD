@@ -11,5 +11,20 @@ Vite es conocido por su velocidad de desarrollo sobresaliente. Utiliza la compil
 para proporcionar una experiencia de desarrollo prácticamente instantánea.
 
 DIFERENCIAS:
-* Velocidad de desarrollo:
-* M
+* Velocidad de desarrollo: con vite Gracias a su enfoque en el reemplazo de módulos y la compilación en tiempo real, los cambios se reflejan de inmediato en la aplicación. En cambio, Create React App, aunque ofrece una velocidad de desarrollo decente, no puede igualar la velocidad de Vite debido a su enfoque más tradicional.
+* Configuración: Create React App brinda una configuración predeterminada que es fácil de usar para proyectos estándar de React. Sin embargo, si necesitas realizar configuraciones personalizadas específicas, puede requerir un poco más de esfuerzo y comprensión de las configuraciones de Webpack. Por otro lado, Vite destaca por su configuración mínima y su enfoque basado en estándares como ESM.
+* Compatibilidad con proyectos existentes: si estás trabajando en un proyecto de React existente, Create React App puede ser una opción más cómoda, ya que está diseñado para ser compatible con proyectos ya en marcha. Puedes migrar tu proyecto a CRA sin demasiados problemas y continuar trabajando en él. En contraste, Vite está más orientado a proyectos nuevos. Si bien es posible migrar proyectos existentes a Vite, puede requerir un poco más de trabajo.
+* Comunidad y ecosistema: Create React App ha existido durante más tiempo y tiene una comunidad establecida. Esto significa que puedes encontrar una gran cantidad de recursos, documentación y complementos desarrollados por la comunidad para ayudarte en tu proyecto. Vite, aunque más nuevo, también ha crecido rápidamente y tiene una comunidad en crecimiento.
+
+ENTONCES: 
+- Si buscas la máxima velocidad de desarrollo y estás dispuesto a aprender una nueva forma de trabajar, Vite es una excelente elección.
+
+- Si estás trabajando en un proyecto existente de React o prefieres una configuración más tradicional, Create React App sigue siendo una opción sólida. Ten en cuenta que, si estás empezando con React y deseas una introducción suave al desarrollo web, Create React App
+
+---
+## REACT NATIVE
+React Native, es un framework de código abierto creado por Meta Platforms, Inc.​ Se utiliza para desarrollar aplicaciones para Android, ​ Android TV, ​ iOS, macOS, ​ tvOS, Web, ​ Windows​ y UWP​ al permitir que los desarrolladores usen React con las características nativas de estas plataformas.
+
+React Native usa el mismo paradigma fundamental de construcción de bloques de UI (componentes visuales con los que interacciona el usuario) que las aplicaciones nativas reales de Android e iOS, pero gestiona la interacción entre los mismos utilizando las capacidades de JavaScript y React.
+
+https://www2.deloitte.com/es/es/pages/technology/articles/que-es-react-native.html
