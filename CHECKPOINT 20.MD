@@ -28,3 +28,61 @@ React Native, es un framework de código abierto creado por Meta Platforms, Inc.
 React Native usa el mismo paradigma fundamental de construcción de bloques de UI (componentes visuales con los que interacciona el usuario) que las aplicaciones nativas reales de Android e iOS, pero gestiona la interacción entre los mismos utilizando las capacidades de JavaScript y React.
 
 https://www2.deloitte.com/es/es/pages/technology/articles/que-es-react-native.html
+---
+## REACT ANIMATE HEIGHT
+https://www.npmjs.com/package/react-animate-height
+
+> Componente React sin dependencias para animar la altura mediante transiciones CSS. Deslice un elemento hacia arriba y hacia abajo o anímelo a una altura específica. La opacidad del contenido también se puede animar de forma opcional (consulte animateOpacityla propiedad a continuación).
+QUICK START:
+
+Get it from npm
+
+`$ npm install --save react-animate-height`
+
+Import and use it in your React app.
+```
+import React, { useState } from 'react';
+import AnimateHeight from 'react-animate-height';
+
+const Example = () => {
+  const [height, setHeight] = useState(0);
+
+  return (
+    <div>
+      <button
+        aria-expanded={height !== 0}
+        aria-controls="example-panel"
+        onClick={() => setHeight(height === 0 ? 'auto' : 0)}
+      >
+        {height === 0 ? 'Open' : 'Close'}
+      </button>
+
+      <AnimateHeight
+        id="example-panel"
+        duration={500}
+        height={height} // see props documentation below
+      >
+        <h1>Your content goes here</h1>
+        <p>Put as many React or HTML components here.</p>
+      </AnimateHeight>
+    </div>
+  );
+};
+```
+### GIT DIFF
+sirve para Mostrar cambios entre el árbol de trabajo y el índice o un árbol, cambios entre el índice y un árbol, cambios entre dos árboles, cambios resultantes de una fusión, cambios entre dos objetos blob o cambios entre dos archivos en el disco.
+En suma, da una vista más detallada de los cambios.
+
+git diff es un comando multiusos de Git que, cuando se ejecuta, lleva a cabo una función para establecer las diferencias en los orígenes de datos de Git. Dichos orígenes de datos pueden ser confirmaciones, ramas y archivos, entre otras posibilidades. 
+
+Gracias a este comando, no solo obtienes una visión general de tu repositorio, sino que además puedes identificar más rápidamente las fuentes de errores en el código en caso de problemas. La sintaxis de git diff es siempre la misma. El comando tiene el siguiente aspecto:
+`git diff`
+
+ejemplo:
+https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/git-diff/
+
+### INTERFACES
+
+Básicamente, se trata de un lugar donde declaras todas tus variables antes de usarlas en el archivo real.
+
+Muchos lenguajes han eliminado eso porque a veces es bastante innecesario, excepto para operaciones de gran escala que intentan desarrollar bibliotecas como esta.
