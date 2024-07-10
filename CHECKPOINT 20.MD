@@ -84,5 +84,8 @@ https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/git-diff/
 ### INTERFACES
 
 Básicamente, se trata de un lugar donde declaras todas tus variables antes de usarlas en el archivo real.
+---
+## JavaScript String substring()
 
+https://www.w3schools.com/jsref/jsref_substring.asp
 Muchos lenguajes han eliminado eso porque a veces es bastante innecesario, excepto para operaciones de gran escala que intentan desarrollar bibliotecas como esta.
