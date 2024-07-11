@@ -89,3 +89,13 @@ Básicamente, se trata de un lugar donde declaras todas tus variables antes de u
 
 https://www.w3schools.com/jsref/jsref_substring.asp
 Muchos lenguajes han eliminado eso porque a veces es bastante innecesario, excepto para operaciones de gran escala que intentan desarrollar bibliotecas como esta.
+---
+## MEDIA QUERIES
+
+---
+## FR
+
+en CSS, La unidad relativa fr en CSS o unidad de medida fr la introduce el sistema de posicionamiento CSS Grid. Esta unidad representa una fracción del contenedor. Entonces, 1fr representa una fracción, 2fr dos fracciones… La unidad relativa fr en CSS o unidad de medida fr es relevante para la creación de la cuadrícula en CSS Grid, llamada como grid fr, porque con ella podemos definir las medidas, tanto de las columnas como de las filas, en proporción con las demás.
+
+Esto quiere decir que, por ejemplo, en vez de darle a una columna una unidad de medida absoluta, como lo son los píxeles, podemos asignarle una fracción del ancho total de las columnas.
+
