@@ -99,3 +99,26 @@ en CSS, La unidad relativa fr en CSS o unidad de medida fr la introduce el siste
 
 Esto quiere decir que, por ejemplo, en vez de darle a una columna una unidad de medida absoluta, como lo son los píxeles, podemos asignarle una fracción del ancho total de las columnas.
 
+---
+---
+# SQL
+## QUE ES
+SQL es un lenguaje de programación que se utiliza para trabajar con bases de datos relacionales. El acrónimo SQL significa Structured Query Language (Lenguaje de Consulta Estructurado).
+
+Se llama bases de datos relacionales a aquellas que almacenan la información en tablas, y que relacionan unas tablas con otras mediante claves primarias y claves foráneas.
+
+Las aplicaciones modernas, en su inmensa mayoría, utilizan bases de datos para almacenar la información
+
+## CRUD
+
+El acrónimo CRUD es muy utilizado en el mundo de la programación a la hora de trabajar con bases de datos. Este acrónimo significa:
+
+Create: crear datos.
+Read: leer datos.
+Update: actualizar datos.
+Delete: eliminar datos.
+
+Estas son las operaciones básicas que se pueden realizar sobre una base de datos. 
+## WORKBENCH
+
+## SQUEMA
