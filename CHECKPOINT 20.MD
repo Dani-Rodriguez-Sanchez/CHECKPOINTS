@@ -122,3 +122,17 @@ Estas son las operaciones básicas que se pueden realizar sobre una base de dato
 ## WORKBENCH
 
 ## SQUEMA
+---
+## DATATYPES
+
+- CHARACTER CHAR(10) de longitud fija. van entre comillas
+- VARCHAR VARCHAR(10) se indica el máximo. entre comillas
+- BOOLEAN True or False values.
+- SMALLINT como integer, desde -32768 hasta 32767. Sin decimales
+- INTEGER INT  from -2147483647 to 2147483647 Decimals are truncated
+- DECIMAL DECIMAL(4, 3) (DEFINIMOS ENTEROS Y DECIMALES) limite 38 digitos
+- FLOAT tipos de datos que permiten guardar números muy grandes, de hasta 179 dígitos seguidos de 306 ceros.
+- DATETIME objetos de fecha. 1968-10-23 1:45:37.123
+- CLOB character large object. Up to 2GB
+- BLOB objeto binario grande. cuando se desea almacenar una imagen real en la base de datos
+
