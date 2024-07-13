@@ -104,24 +104,34 @@ Esto quiere decir que, por ejemplo, en vez de darle a una columna una unidad de 
 # SQL
 ## QUE ES
 SQL es un lenguaje de programación que se utiliza para trabajar con bases de datos relacionales. El acrónimo SQL significa Structured Query Language (Lenguaje de Consulta Estructurado).
-
-Se llama bases de datos relacionales a aquellas que almacenan la información en tablas, y que relacionan unas tablas con otras mediante claves primarias y claves foráneas.
-
 Las aplicaciones modernas, en su inmensa mayoría, utilizan bases de datos para almacenar la información
 
+### BASES DE DATOS RELACIONALES son aquellas que almacenan la información en tablas, y que relacionan unas tablas con otras mediante claves primarias y claves foráneas.
+Todas estas tablas pueden tener referencias entre sí.
+Las bases de datos relacionales se basan en el modelo relacional, una forma intuitiva y directa de representar datos en tablas. En una base de datos relacional, cada fila en una tabla es un registro con una ID única, llamada clave.
+Las columnas de la tabla contienen los atributos de los datos y cada registro suele tener un valor para cada atributo, lo que simplifica la creación de relaciones entre los puntos de datos.
+
+
 ## CRUD
+CRUD es una función esencial para muchos sistemas de información, ya que permite a los usuarios realizar tareas básicas de mantenimiento y gestión de datos.
 
 El acrónimo CRUD es muy utilizado en el mundo de la programación a la hora de trabajar con bases de datos. Este acrónimo significa:
 
-Create: crear datos.
-Read: leer datos.
-Update: actualizar datos.
-Delete: eliminar datos.
+- Create: crear datos.
+- Read: leer datos.
+- Update: actualizar datos.
+- Delete: eliminar datos.
 
-Estas son las operaciones básicas que se pueden realizar sobre una base de datos. 
+La idea es que cualquier sistema de información que interactúe con datos debe proporcionar funcionalidades para crearlos, leerlos, actualizarlos y eliminarlos.
+
+son las operaciones básicas que se pueden realizar sobre una base de datos. 
+---
+## implementaciones de SQL
+
 ## WORKBENCH
 
 ## SQUEMA
+
 ---
 ## DATATYPES
 
