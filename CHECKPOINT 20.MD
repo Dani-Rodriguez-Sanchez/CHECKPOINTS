@@ -127,8 +127,16 @@ La idea es que cualquier sistema de información que interactúe con datos debe 
 son las operaciones básicas que se pueden realizar sobre una base de datos. 
 ---
 ## implementaciones de SQL
+el lenguaje SQL es el mismo para todas ellas. La diferencia entre unas y otras es mínima y aprender a usar una implementación hará que sea muy sencillo aprender a usar las demás.
+Las más utilizadas son:
+- MySQL: una se las más utilizadas. Es open source y está siempre en constante desarrollo. (La que utilizaremos en este curso)
+- PostgreSQL: otra de las más utilizadas. Es muy popular en el mundo de la programación ruby on rails.
+- SQL Oracle : es una de las más antiguas, no es open source y es de pago. Es muy utilizada en el mundo empresarial.
+- MS SQL : muy utilizada en el mundo .NET. versión de SQL de Microsoft. También tiene un excelente soporte, pero no es gratis.
+ -MariaDB: aplicaciones como Facebook utilizan esta implementación. Es open source, pero no está tan extendida como otras.
 
 ## WORKBENCH
+> es una herramienta visual de diseño de bases de datos que integra desarrollo de software, administración de bases de datos, diseño de bases de datos, gestión y mantenimiento para el sistema de base de datos MySQL
 
 ## SQUEMA
 
