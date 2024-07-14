@@ -139,6 +139,14 @@ Las más utilizadas son:
 > es una herramienta visual de diseño de bases de datos que integra desarrollo de software, administración de bases de datos, diseño de bases de datos, gestión y mantenimiento para el sistema de base de datos MySQL
 
 ## SQUEMA
+un esquema SQL es un lenguaje utilizado en la programación para obtener, modificar, recuperar y actualizar la información contenida en un sistema de base de datos relacionales.
+
+se basan en un conjunto de códigos y líneas que conforman la sintaxis del mismo. La sintaxis es un conjunto de reglas que estipula la manera en que se deben combinar de manera adecuada los elementos de un idioma.
+
+sirve para agilizar el procesamiento de la información y facilitar el trabajo de los analistas de datos. al permitir que los datos agrupados y no agrupados de la base de datos se organicen en grupos, es decir, un esquema es un contenedor que permite agrupar los objetos y clasificarlos por nombre.
+
+
+
 
 ---
 ## DATATYPES
