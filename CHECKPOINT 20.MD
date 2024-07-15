@@ -121,6 +121,19 @@ en CSS, La unidad relativa fr en CSS o unidad de medida fr la introduce el siste
 
 Esto quiere decir que, por ejemplo, en vez de darle a una columna una unidad de medida absoluta, como lo son los píxeles, podemos asignarle una fracción del ancho total de las columnas.
 
+## FETCH
+fetch y AXIOS son herramientas de peticiones HTTP. 
+> Axios es una librería y Fetch es una herramienta nativa del navegador
+
+la principal diferencia es que fetch es una herramienta implementada directamente dentro del navegador.
+(Un detalle muy importante a la hora de trabajar con Fetch es que sus peticiones se ejecutan a través de promesas. Esto se da porque las peticiones HTTP no tienen un tiempo determinado, por lo que se consideran procesos asíncronos.)
+
+Algunos desarrolladores prefieren crear proyectos de 0 dependencias. Esto significa ejecutar todo el código sin herramientas o librerías externas a los lenguajes de programación principales. En estos escenarios, Fetch es una herramienta más deseable, pues su estado nativo hace que no creemos ninguna dependencia externa.
+
+Axios es mucho más completa que Fetch, pues es una librería entera y no un solo método. Esto quiere decir que nos brinda más posibilidades, es mejor usar Axios cuando vamos a ejecutar una diversidad de acciones recurrentes en un proyecto grande. Sin embargo, si vas a ejecutar algo muy puntual y concreto, podrás usar Fetch sin ningún problema, con lo que evitarás también generar una nueva dependencia en un proyecto sencillo.
+
+## CSS QUERIES
+
 ---
 ---
 # SQL
