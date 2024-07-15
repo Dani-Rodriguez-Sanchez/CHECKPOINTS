@@ -186,3 +186,13 @@ sirve para agilizar el procesamiento de la información y facilitar el trabajo d
 - CLOB character large object. Up to 2GB
 - BLOB objeto binario grande. cuando se desea almacenar una imagen real en la base de datos
 
+--- 
+## CLAVES FORANEAS Y PRIMARIAS
+Las tablas se relacionan con otras tablas mediante una relación de clave primaria o de clave foránea. 
+Las relaciones de claves primarias y foráneas se utilizan en las bases de datos relacionales para definir relaciones de muchos a uno entre tablas.
+
+- Una clave primaria 
+es una columna o un conjunto de columnas en una tabla cuyos valores identifican de forma exclusiva una fila de la tabla. Una base de datos relacional está diseñada para imponer la exclusividad de las claves primarias permitiendo que haya sólo una fila con un valor de clave primaria específico en una tabla.
+
+- Claves foráneas
+Una clave foránea es una columna o un conjunto de columnas en una tabla cuyos valores corresponden a los valores de la clave primaria de otra tabla. Para poder añadir una fila con un valor de clave foránea específico, debe existir una fila en la tabla relacionada con el mismo valor de clave primaria.
