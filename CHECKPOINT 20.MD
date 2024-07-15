@@ -86,11 +86,33 @@ https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/git-diff/
 Básicamente, se trata de un lugar donde declaras todas tus variables antes de usarlas en el archivo real.
 ---
 ## JavaScript String substring()
+El substring()método de Stringvalores devuelve la parte de esta cadena desde el índice inicial hasta el índice final excluido, o hasta el final de la cadena si no se proporciona ningún índice final.
+```
+const str = 'Mozilla';
+
+console.log(str.substring(1, 3));
+// Expected output: "oz"
+
+console.log(str.substring(2));
+// Expected output: "zilla"
+```
 
 https://www.w3schools.com/jsref/jsref_substring.asp
 Muchos lenguajes han eliminado eso porque a veces es bastante innecesario, excepto para operaciones de gran escala que intentan desarrollar bibliotecas como esta.
 ---
 ## MEDIA QUERIES
+Este gancho de React detecta coincidencias con una consulta de medios CSS. Permite la representación de componentes en función de si la consulta coincide o no.
+La cadena de consulta de medios puede ser cualquier consulta de medios CSS válida, por ejemplo '(prefers-color-scheme: dark)'.
+```
+import * as React from 'react';
+import useMediaQuery from '@mui/material/useMediaQuery';
+
+export default function SimpleMediaQuery() {
+  const matches = useMediaQuery('(min-width:600px)');
+
+  return <span>{`(min-width:600px) matches: ${matches}`}</span>;
+}
+```
 
 ---
 ## FR
@@ -108,8 +130,9 @@ Las aplicaciones modernas, en su inmensa mayoría, utilizan bases de datos para 
 
 ### BASES DE DATOS RELACIONALES son aquellas que almacenan la información en tablas, y que relacionan unas tablas con otras mediante claves primarias y claves foráneas.
 Todas estas tablas pueden tener referencias entre sí.
-Las bases de datos relacionales se basan en el modelo relacional, una forma intuitiva y directa de representar datos en tablas. En una base de datos relacional, cada fila en una tabla es un registro con una ID única, llamada clave.
-Las columnas de la tabla contienen los atributos de los datos y cada registro suele tener un valor para cada atributo, lo que simplifica la creación de relaciones entre los puntos de datos.
+Las bases de datos relacionales se basan en el *modelo relacional*, una forma intuitiva y directa de representar datos en *tablas*.
+En una base de datos relacional, cada fila en una tabla es un registro con una ID única, llamada *clave*.
+Las columnas de la tabla contienen los *atributos* de los datos y cada registro suele tener un valor para cada atributo, lo que simplifica la creación de relaciones entre los puntos de datos.
 
 
 ## CRUD
