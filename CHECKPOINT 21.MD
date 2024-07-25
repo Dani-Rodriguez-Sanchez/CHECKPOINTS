@@ -55,7 +55,8 @@ SELECT u.nombre_usuario, p.fecha_pedido
 FROM usuarios AS u
 JOIN pedidos AS p ON u.id_usuario = p.id_usuario;
 ```
-Alias en funciones y agrupaciones
+
+#### Alias en funciones y agrupaciones
 Los alias también son útiles cuando se utilizan funciones de agregación. Por ejemplo, si deseas contar el número de pedidos por usuario, podrías escribir algo como esto:
 ```
 SELECT u.nombre_usuario, COUNT(p.id_pedido) AS total_pedidos
