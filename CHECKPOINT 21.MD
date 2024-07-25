@@ -69,3 +69,9 @@ Como ves, los alias u y p ayudan a simplificar la consulta, mientras que el alia
 ---
 
 ## INNER JOINS VS OUTER JOINS
+
+---
+## NORMALIZACION BASES DE DATOS
+
+---
+## diagramas EER en SQL
