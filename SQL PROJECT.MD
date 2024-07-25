@@ -21,12 +21,12 @@
 
 ## El proyecto necesita contener las siguientes características técnicas:
 
-- Crea una base de datos con las siguientes tablas: Students, Courses, Professors, Grades.
-- Crea claves foráneas para relacionar las tablas entre sí.
-- Crea un script que rellene todas las tablas con datos de ejemplo.
-- Crea scripts de consulta SQL para:
- * La nota media que da cada profesor.
- * Las mejores notas de cada estudiante.
- * Ordenar a los estudiantes por los cursos en los que están matriculados.
- * Crear un informe resumido de los cursos y sus notas medias, ordenados desde el curso más difícil (curso con la nota media más baja) hasta el curso más fácil.
- * Encontrar qué estudiante y profesor tienen más cursos en común.
+1- Crea una base de datos con las siguientes tablas: Students, Courses, Professors, Grades.
+2- Crea claves foráneas para relacionar las tablas entre sí.
+3- Crea un script que rellene todas las tablas con datos de ejemplo.
+4- Crea scripts de consulta SQL para:
+  * La nota media que da cada profesor.
+  * Las mejores notas de cada estudiante.
+  * Ordenar a los estudiantes por los cursos en los que están matriculados.
+  * Crear un informe resumido de los cursos y sus notas medias, ordenados desde el curso más difícil (curso con la nota media más baja) hasta el curso más fácil.
+  * Encontrar qué estudiante y profesor tienen más cursos en común.
