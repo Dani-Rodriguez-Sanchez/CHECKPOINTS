@@ -16,7 +16,7 @@
 ---
 #### ALIASES AS
 
-- ¿Qué son los alias en MySQL?
+¿Qué son los **alias** en MySQL?
 Un alias es un nombre temporal que se asigna a una tabla o columna en una consulta SQL. Estos no afectan el nombre de la tabla o columna en la base de datos; su propósito es facilitar la escritura de la consulta y mejorar la legibilidad del resultado. Los alias son particularmente útiles en consultas complejas que involucran múltiples tablas y columnas con nombres largos o poco claros.
 
 1- Cómo utilizar alias para columnas
