@@ -58,12 +58,31 @@ Dentro de cada una, creo las siguientes columnas:
     PRIMARY KEY (`professor_id`),
     UNIQUE KEY `professor_id_UNIQUE` (`professor_id`)
   ```
-#### Grades 
-* grade_id INT Clave primaria, Obligatoria, Única y Autoincremental
-
-
-
 ## Crea claves foráneas para relacionar las tablas entre sí.
+> Las claves foráneas las he creado dentro de la tabla `grades`, así cada calificación apuntará a un `student`, un `professor` y un `grade`
+
+#### Grades 
+ * grade_id INT Clave primaria, Obligatoria, Única y Autoincremental
+ * grade_student_id INT
+ * grade_course_id INT
+ * grade_professor_id INT
+  ```
+  CREATE TABLE `grades` (
+    `grades_id` int NOT NULL AUTO_INCREMENT,
+    `grade_student_id` int NOT NULL,
+    `grade_course_id` int NOT NULL,
+    `grade_professor_id` int NOT NULL,
+    PRIMARY KEY (`grades_id`),
+    UNIQUE KEY `grades_id_UNIQUE` (`grades_id`),
+    KEY `grade_student_id_idx` (`grade_student_id`),
+    KEY `grade_course_id_idx` (`grade_course_id`),
+    KEY `grade_professor_id_idx` (`grade_professor_id`),
+    CONSTRAINT `grade_course_id` FOREIGN KEY (`grade_course_id`) REFERENCES `courses` (`course_id`) ON DELETE CASCADE,
+    CONSTRAINT `grade_professor_id` FOREIGN KEY (`grade_professor_id`) REFERENCES `professors` (`professor_id`) ON DELETE CASCADE,
+    CONSTRAINT `grade_student_id` FOREIGN KEY (`grade_student_id`) REFERENCES `students` (`student_id`) ON DELETE CASCADE
+  ```
+
+
 ## Crea un script que rellene todas las tablas con datos de ejemplo.
 ## Crea scripts de consulta SQL para:
   * La nota media que da cada profesor.
