@@ -24,7 +24,7 @@
 ## Creamos una base de datos con las siguientes tablas: Students, Courses, Professors, Grades.
 Dentro de cada una, creo las siguientes columnas:
 
-- Studens
+#### Students
  * student_id INT Clave primaria, Obligatoria, Única y Autoincremental
  * student_name VARCHAR(45) Obligatoria
  * student_email VARCHAR(45)
@@ -36,7 +36,7 @@ Dentro de cada una, creo las siguientes columnas:
     PRIMARY KEY (`student_id`),
     UNIQUE KEY `student_id_UNIQUE` (`student_id`)
   ```
-- Courses
+#### Courses
  * course_id INT Clave primaria, Obligatoria, Única y Autoincremental
  * course_name VARCHAR(45) Obligatoria
   ```
@@ -46,7 +46,7 @@ Dentro de cada una, creo las siguientes columnas:
     PRIMARY KEY (`course_id`),
     UNIQUE KEY `course_id_UNIQUE` (`course_id`)
   ```
-- Professors
+#### Professors
  * professor_id INT Clave primaria, Obligatoria, Única y Autoincremental
  * professor_name VARCHAR(45) Obligatoria
  * professor_email VARCHAR(45) 
@@ -58,7 +58,7 @@ Dentro de cada una, creo las siguientes columnas:
     PRIMARY KEY (`professor_id`),
     UNIQUE KEY `professor_id_UNIQUE` (`professor_id`)
   ```
-- Grades 
+#### Grades 
 * grade_id INT Clave primaria, Obligatoria, Única y Autoincremental
 
 
