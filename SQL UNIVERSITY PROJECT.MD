@@ -26,13 +26,13 @@ Dentro de cada una, creo las siguientes columnas:
 
 #### Students
  * student_id INT Clave primaria, Obligatoria, Única y Autoincremental
- * student_name VARCHAR(45) Obligatoria
- * student_email VARCHAR(45)
+ * student_name VARCHAR(100) Obligatoria
+ * student_email VARCHAR(100)
   ```
   CREATE TABLE `students` (
     `student_id` int NOT NULL AUTO_INCREMENT,
-    `student_name` varchar(45) NOT NULL,
-    `student_mail` varchar(45) DEFAULT NULL,
+    `student_name` varchar(100) NOT NULL,
+    `student_mail` varchar(100) DEFAULT NULL,
     PRIMARY KEY (`student_id`),
     UNIQUE KEY `student_id_UNIQUE` (`student_id`)
   ```
@@ -48,8 +48,8 @@ Dentro de cada una, creo las siguientes columnas:
   ```
 #### Professors
  * professor_id INT Clave primaria, Obligatoria, Única y Autoincremental
- * professor_name VARCHAR(45) Obligatoria
- * professor_email VARCHAR(45) 
+ * professor_name VARCHAR(100) Obligatoria
+ * professor_email VARCHAR(100) 
   ```
   CREATE TABLE `professors` (
     `professor_id` int NOT NULL AUTO_INCREMENT,
