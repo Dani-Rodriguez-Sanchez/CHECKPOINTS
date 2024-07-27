@@ -104,9 +104,9 @@ Dentro de cada una, creo las siguientes columnas:
 
 ---
 ## Crea un script que rellene todas las tablas con datos de ejemplo.
-```
-USE sql_university_project;
 
+`USE sql_university_project;`
+```
 INSERT INTO students(student_name, student_email)
 VALUES ("Pepe Gonzalez", 'pepegonzalez@gmail.com');
 
@@ -118,7 +118,7 @@ VALUES ("Felipe Gomez", 'felipegomez@gmail.com');
 
 INSERT INTO students(student_name, student_email)
 VALUES ("Clara Lopez", 'claralopez@gmail.com');
-
+```
 INSERT INTO courses(course_name, course_professor_id)
 VALUES ("matemáticas", 1);
 
@@ -130,7 +130,7 @@ VALUES ("inglés", 3);
 
 INSERT INTO courses(course_name, course_professor_id)
 VALUES ("gramática", 9 );
-
+```
 INSERT INTO professors(professor_name, professor_email)
 VALUES ("Sr Ramirez", 'sr_ramirez@gmail.com');
 
@@ -143,6 +143,7 @@ VALUES ("Sra Sanchez", 'sra_sanchez@gmail.com');
 INSERT INTO professors(professor_name, professor_email)
 VALUES ("Sra Perez", 'sra_perez@gmail.com');
 ```
+
 ## Crea scripts de consulta SQL para:
   * La nota media que da cada profesor.
   * Las mejores notas de cada estudiante.
