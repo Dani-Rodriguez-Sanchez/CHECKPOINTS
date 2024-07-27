@@ -101,6 +101,7 @@ Dentro de cada una, creo las siguientes columnas:
  *  course_professor_id INT 
 
 'KEY `course_professor_id_idx` (`course_professor_id`)'
+
 ---
 ## Crea un script que rellene todas las tablas con datos de ejemplo.
 ```
