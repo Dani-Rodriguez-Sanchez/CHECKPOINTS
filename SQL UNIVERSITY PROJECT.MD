@@ -21,6 +21,13 @@
 ---
 > El proyecto necesita contener las siguientes características técnicas:
 
+Después de pensarlo, la solución más acorde con un escenario real (aunque no la única), me parece que sería:
+- cada course está asociado a un único professor
+- cada student se matricula en varios courses
+- cada grade se asocia a un course, y a un alumno
+de esta manera, al generar cada result de grade, se asignaría a cada uno de los courses que haga el student
+
+
 ## Creamos una base de datos con las siguientes tablas: Students, Courses, Professors, Grades.
 Dentro de cada una, creo las siguientes columnas:
 
@@ -60,20 +67,23 @@ Dentro de cada una, creo las siguientes columnas:
   ```
 ---
 ## Crea claves foráneas para relacionar las tablas entre sí.
-> Las claves foráneas las he creado dentro de la tabla `grades`, así cada calificación apuntará a un `student`, un `professor` y un `grade`
+
+> cada `professor` está asociado a un `course` siendo este el que imparte
+> Las claves foráneas las he creado dentro de la tabla `grades`, así cada calificación apuntará a un `student`, y a un `course`
 > Luego, la nota va en grade_result, siendo esta decimal
+> Además cada course apunta a un único professor
+
 #### Grades 
  * grade_id INT Clave primaria, Obligatoria, Única y Autoincremental
  * grade_result Decimal (2,2) Obligatoria
  * grade_student_id INT
  * grade_course_id INT
- * grade_professor_id INT
+
   ```
   CREATE TABLE `grades` (
   `grade_id` int NOT NULL AUTO_INCREMENT,
   `grade_student_id` int NOT NULL,
   `grade_course_id` int NOT NULL,
-  `grade_professor_id` int NOT NULL,
   `grade_result` decimal(2,2) NOT NULL,
   PRIMARY KEY (`grade_id`),
   UNIQUE KEY `grade_id_UNIQUE` (`grade_id`),
@@ -81,11 +91,54 @@ Dentro de cada una, creo las siguientes columnas:
   KEY `grade_course_id_idx` (`grade_course_id`),
   KEY `grade_professor_id_idx` (`grade_professor_id`),
   CONSTRAINT `grade_course_id` FOREIGN KEY (`grade_course_id`) REFERENCES `courses` (`course_id`) ON DELETE CASCADE,
-  CONSTRAINT `grade_professor_id` FOREIGN KEY (`grade_professor_id`) REFERENCES `professors` (`professor_id`) ON DELETE CASCADE,
   CONSTRAINT `grade_student_id` FOREIGN KEY (`grade_student_id`) REFERENCES `students` (`student_id`) ON DELETE CASCADE
   ```
+
+#### Course
+ *  course_professor_id INT 
+
+'KEY `course_professor_id_idx` (`course_professor_id`)'
 ---
 ## Crea un script que rellene todas las tablas con datos de ejemplo.
+```
+USE sql_university_project;
+
+INSERT INTO students(student_name, student_email)
+VALUES ("Pepe Gonzalez", 'pepegonzalez@gmail.com');
+
+INSERT INTO students(student_name, student_email)
+VALUES ("Maria Fernandez", 'mariafernandez@gmail.com');
+
+INSERT INTO students(student_name, student_email)
+VALUES ("Felipe Gomez", 'felipegomez@gmail.com');
+
+INSERT INTO students(student_name, student_email)
+VALUES ("Clara Lopez", 'claralopez@gmail.com');
+
+INSERT INTO courses(course_name, course_professor_id)
+VALUES ("matemáticas", 1);
+
+INSERT INTO courses(course_name, course_professor_id)
+VALUES ("física", 2);
+
+INSERT INTO courses(course_name, course_professor_id)
+VALUES ("inglés", 3);
+
+INSERT INTO courses(course_name, course_professor_id)
+VALUES ("gramática", 9 );
+
+INSERT INTO professors(professor_name, professor_email)
+VALUES ("Sr Ramirez", 'sr_ramirez@gmail.com');
+
+INSERT INTO professors(professor_name, professor_email)
+VALUES ("Sr Guzman", 'sr_guzman@gmail.com');
+
+INSERT INTO professors(professor_name, professor_email)
+VALUES ("Sra Sanchez", 'sra_sanchez@gmail.com');
+
+INSERT INTO professors(professor_name, professor_email)
+VALUES ("Sra Perez", 'sra_perez@gmail.com');
+```
 ## Crea scripts de consulta SQL para:
   * La nota media que da cada profesor.
   * Las mejores notas de cada estudiante.
