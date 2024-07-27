@@ -69,8 +69,11 @@ Dentro de cada una, creo las siguientes columnas:
 ## Crea claves foráneas para relacionar las tablas entre sí.
 
 > cada `professor` está asociado a un `course` siendo este el que imparte
+
 > Las claves foráneas las he creado dentro de la tabla `grades`, así cada calificación apuntará a un `student`, y a un `course`
+
 > Luego, la nota va en grade_result, siendo esta decimal
+
 > Además cada course apunta a un único professor
 
 #### Grades 
