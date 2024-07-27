@@ -72,9 +72,9 @@ Dentro de cada una, creo las siguientes columnas:
 
 > Las claves foráneas las he creado dentro de la tabla `grades`, así cada calificación apuntará a un `student`, y a un `course`
 
-> Luego, la nota va en grade_result, siendo esta decimal
+> Luego, la nota va en `grade_result`, siendo esta decimal
 
-> Además cada course apunta a un único professor
+> Además cada `course` apunta a un único `professor`
 
 #### Grades 
  * grade_id INT Clave primaria, Obligatoria, Única y Autoincremental
