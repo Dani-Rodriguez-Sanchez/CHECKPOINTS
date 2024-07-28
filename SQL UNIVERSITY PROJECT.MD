@@ -179,10 +179,35 @@ INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
 VALUES  (4, 3, 7.5);
 
 ```
-
+---
 ## Crea scripts de consulta SQL para:
-  * La nota media que da cada profesor.
-  * Las mejores notas de cada estudiante.
+
+### La nota media que da cada profesor.
+cada profesor está asociado a la asignatura que imparte, así que ese dato lo sacamos de ahí:
+```
+SELECT grade_course_id, AVG(grade_result)
+FROM grades
+GROUP BY grade_course_id;
+```
+---
+### Las mejores notas de cada estudiante.
+```
+SELECT 
+	s.student_name AS ALUMNO,
+    MAX (g.grade_result) AS NOTA_MAXIMA
+FROM grades g
+JOIN students s ON g.grade_student_id = s.student_id;
+```
+|ALUMNO	|NOTA_MAXIMA
+|--------------|----
+|Pepe Gonzalez	|9.50
+|Maria Fernandez	|9.80
+|Felipe Gomez	|6.00
+|Clara Lopez	|7.50
+
+
   * Ordenar a los estudiantes por los cursos en los que están matriculados.
+
   * Crear un informe resumido de los cursos y sus notas medias, ordenados desde el curso más difícil (curso con la nota media más baja) hasta el curso más fácil.
+
   * Encontrar qué estudiante y profesor tienen más cursos en común.
