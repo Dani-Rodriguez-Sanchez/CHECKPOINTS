@@ -232,6 +232,24 @@ ORDER BY g.grade_student_id ASC;
 |Felipe Gomez	|gramática
 |Clara Lopez	|inglés
 
-  * Crear un informe resumido de los cursos y sus notas medias, ordenados desde el curso más difícil (curso con la nota media más baja) hasta el curso más fácil.
+### Crear un informe resumido de los cursos y sus notas medias, ordenados desde el curso más difícil (curso con la nota media más baja) hasta el curso más fácil.
+'''
+SELECT
+    c.course_name AS CURSO,
+    cast(AVG (g.grade_result) as dec(2,2)) AS NOTA_MEDIA
+FROM grades g
+JOIN courses c 
+	ON g.grade_course_id = c.course_id
+GROUP BY g.grade_course_id
 
+'''
+|# CURSO NOTA_MEDIA
+|------------|------
+|matemáticas| 0.99
+|física| 0.99
+|inglés| 0.99
+|gramática| 0.99
+
+
+> He 
   * Encontrar qué estudiante y profesor tienen más cursos en común.
