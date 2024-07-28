@@ -234,7 +234,7 @@ ORDER BY g.grade_student_id ASC;
 
 ### Crear un informe resumido de los cursos y sus notas medias, ordenados desde el curso más difícil (curso con la nota media más baja) hasta el curso más fácil.
 
-
+```
 SELECT
     c.course_name AS CURSO,
     cast(AVG (g.grade_result) as dec(2,2)) AS NOTA_MEDIA
@@ -242,7 +242,7 @@ FROM grades g
 JOIN courses c 
 	ON g.grade_course_id = c.course_id
 GROUP BY g.grade_course_id
-
+```
 |CURSO| NOTA_MEDIA
 |-----------|--------
 |gramática| 6.40
