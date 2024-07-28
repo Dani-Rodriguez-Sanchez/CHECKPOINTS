@@ -119,6 +119,7 @@ VALUES ("Felipe Gomez", 'felipegomez@gmail.com');
 INSERT INTO students(student_name, student_email)
 VALUES ("Clara Lopez", 'claralopez@gmail.com');
 ```
+```
 INSERT INTO courses(course_name, course_professor_id)
 VALUES ("matemáticas", 1);
 
@@ -131,6 +132,7 @@ VALUES ("inglés", 3);
 INSERT INTO courses(course_name, course_professor_id)
 VALUES ("gramática", 9 );
 ```
+```
 INSERT INTO professors(professor_name, professor_email)
 VALUES ("Sr Ramirez", 'sr_ramirez@gmail.com');
 
@@ -142,6 +144,57 @@ VALUES ("Sra Sanchez", 'sra_sanchez@gmail.com');
 
 INSERT INTO professors(professor_name, professor_email)
 VALUES ("Sra Perez", 'sra_perez@gmail.com');
+```
+> Después creo, como si se hubiese ido introduciendo, cada calificación asociada a cada estudiante y cada asignatura
+
+```
+INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
+VALUES  (1, 1, 8.5);
+
+INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
+VALUES  (1, 2, 9.5);
+
+INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
+VALUES  (1, 3, 7.0);
+
+INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
+VALUES  (1, 4, 6.8);
+
+INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
+VALUES  (2, 1, 8.5);
+
+INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
+VALUES  (2, 2, 9.0);
+
+INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
+VALUES  (2, 3, 9.8);
+
+INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
+VALUES  (2, 4, 9.9);
+
+INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
+VALUES  (3, 1, 5.0);
+
+INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
+VALUES  (3, 2, 6.5);
+
+INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
+VALUES  (3, 3, 4.8);
+
+INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
+VALUES  (3, 4, 6.0);
+
+INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
+VALUES  (4, 1, 8.3);
+
+INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
+VALUES  (4, 2, 9.5);
+
+INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
+VALUES  (4, 3, 7.5);
+
+INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
+VALUES  (4, 4, 8.0);
 ```
 
 ## Crea scripts de consulta SQL para:
