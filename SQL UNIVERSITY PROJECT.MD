@@ -193,13 +193,13 @@ GROUP BY grade_course_id;
 ### Las mejores notas de cada estudiante.
 ```
 SELECT 
-	s.student_name AS ALUMNO,
-    MAX (g.grade_result) AS NOTA_MAXIMA
+    s.student_name AS ALUMNO,
+    MAX (g.grade_result) AS MEJOR_NOTA
 FROM grades g
 JOIN students s 
 	ON g.grade_student_id = s.student_id;
 ```
-|ALUMNO	|NOTA_MAXIMA
+|ALUMNO	|MEJOR_NOTA
 |--------------|----
 |Pepe Gonzalez	|9.50
 |Maria Fernandez	|9.80
