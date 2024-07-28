@@ -200,6 +200,7 @@ GROUP BY g.grade_course_id
 |Sr Guzman| 9.25
 
 > Para este script, He buscado información y he modificado el average de int a decimal con un `cast` para evitar que esta media la diese con demasiados decimales. 
+Luego, no tenía claro si es muy ortodoxo, pero el condicional, es igualar un course_id con un professor_id, esto funciona porque pensé que lo más lógigo sería que cada profesor impartiese una sola asignatura, así que su id con el de esta coinciden.
 ---
 ### Las mejores notas de cada estudiante.
 ```
