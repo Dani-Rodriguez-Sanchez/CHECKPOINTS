@@ -243,7 +243,7 @@ JOIN courses c
 GROUP BY g.grade_course_id
 
 '''
-|# CURSO NOTA_MEDIA
+|CURSO |NOTA_MEDIA
 |------------|------
 |matemáticas| 0.99
 |física| 0.99
