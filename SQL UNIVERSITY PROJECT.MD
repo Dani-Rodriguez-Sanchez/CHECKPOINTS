@@ -183,12 +183,23 @@ VALUES  (4, 3, 7.5);
 ## Crea scripts de consulta SQL para:
 
 ### La nota media que da cada profesor.
-cada profesor está asociado a la asignatura que imparte, así que ese dato lo sacamos de ahí:
 ```
-SELECT grade_course_id, AVG(grade_result)
-FROM grades
-GROUP BY grade_course_id;
+SELECT
+    p.professor_name AS PROFESOR,
+    cast(AVG (g.grade_result) as dec(4,2)) AS NOTA_MEDIA
+FROM grades g
+JOIN professors p 
+	ON g.grade_course_id = p.professor_id
+GROUP BY g.grade_course_id
 ```
+|PROFESOR| NOTA_MEDIA
+|------------|--------
+|Sra Sanchez| 7.28
+|Sra Perez| 6.40
+|Sr Ramirez| 8.50
+|Sr Guzman| 9.25
+
+> Para este script, He buscado información y he modificado el average de int a decimal con un `cast` para evitar que esta media la diese con demasiados decimales. 
 ---
 ### Las mejores notas de cada estudiante.
 ```
@@ -206,7 +217,7 @@ JOIN students s
 |Felipe Gomez	|6.00
 |Clara Lopez	|7.50
 
-
+---
 ### Ordenar a los estudiantes por los cursos en los que están matriculados.
 ```
 SELECT
@@ -231,7 +242,7 @@ ORDER BY g.grade_student_id ASC;
 |Felipe Gomez	|inglés
 |Felipe Gomez	|gramática
 |Clara Lopez	|inglés
-
+---
 ### Crear un informe resumido de los cursos y sus notas medias, ordenados desde el curso más difícil (curso con la nota media más baja) hasta el curso más fácil.
 
 ```
@@ -255,5 +266,5 @@ ORDER BY NOTA_MEDIA ASC;
 
 > Para este script, He buscado información y he modificado el average de int a decimal con un `cast` para evitar que esta media la diese con demasiados decimales. 
 Luego he utilizado el alias del average para ordenar la lista de más difícil a más fácil
-
+---
 ### Encontrar qué estudiante y profesor tienen más cursos en común.
