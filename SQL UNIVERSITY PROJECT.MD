@@ -170,31 +170,14 @@ INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
 VALUES  (2, 3, 9.8);
 
 INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
-VALUES  (2, 4, 9.9);
-
-INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
-VALUES  (3, 1, 5.0);
-
-INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
-VALUES  (3, 2, 6.5);
-
-INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
 VALUES  (3, 3, 4.8);
 
 INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
 VALUES  (3, 4, 6.0);
 
 INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
-VALUES  (4, 1, 8.3);
-
-INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
-VALUES  (4, 2, 9.5);
-
-INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
 VALUES  (4, 3, 7.5);
 
-INSERT INTO grades(grade_student_id, grade_course_id, grade_result)
-VALUES  (4, 4, 8.0);
 ```
 
 ## Crea scripts de consulta SQL para:
