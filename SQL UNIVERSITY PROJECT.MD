@@ -210,50 +210,16 @@ JOIN students s
 ### Ordenar a los estudiantes por los cursos en los que están matriculados.
 ```
 SELECT
-	s.student_name,
-	g.grade_course_id,
-    c.course_name
+	s.student_name AS ALUMNO,
+    c.course_name AS CURSO
 FROM grades g
 JOIN students s 
 	ON g.grade_student_id = s.student_id
 JOIN courses c 
 	ON g.grade_course_id = c.course_id
 ORDER BY g.grade_student_id ASC;
-
 ```
 
-|ALUMNO	|CURSO
-|-----------|----------
-Pepe Gonzalez	matemáticas
-Pepe Gonzalez	matemáticas
-Pepe Gonzalez	matemáticas
-Pepe Gonzalez	física
-Pepe Gonzalez	física
-Pepe Gonzalez	física
-Pepe Gonzalez	inglés
-Pepe Gonzalez	inglés
-Pepe Gonzalez	inglés
-Pepe Gonzalez	gramática
-Pepe Gonzalez	gramática
-Pepe Gonzalez	gramática
-Maria Fernandez	matemáticas
-Maria Fernandez	matemáticas
-Maria Fernandez	matemáticas
-Maria Fernandez	física
-Maria Fernandez	física
-Maria Fernandez	física
-Maria Fernandez	inglés
-Maria Fernandez	inglés
-Maria Fernandez	inglés
-Felipe Gomez	inglés
-Felipe Gomez	inglés
-Felipe Gomez	inglés
-Felipe Gomez	gramática
-Felipe Gomez	gramática
-Felipe Gomez	gramática
-Clara Lopez	inglés
-Clara Lopez	inglés
-Clara Lopez	inglés
   * Crear un informe resumido de los cursos y sus notas medias, ordenados desde el curso más difícil (curso con la nota media más baja) hasta el curso más fácil.
 
   * Encontrar qué estudiante y profesor tienen más cursos en común.
