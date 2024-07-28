@@ -190,7 +190,7 @@ SELECT
 FROM grades g
 JOIN professors p 
 	ON g.grade_course_id = p.professor_id
-GROUP BY g.grade_course_id
+GROUP BY g.grade_course_id;
 ```
 |PROFESOR| NOTA_MEDIA
 |------------|--------
@@ -262,8 +262,6 @@ ORDER BY NOTA_MEDIA ASC;
 |inglés| 7.28
 |matemáticas| 8.50
 |física| 9.25
-
-
 
 > Para este script, He buscado información y he modificado el average de int a decimal con un `cast` para evitar que esta media la diese con demasiados decimales. 
 Luego he utilizado el alias del average para ordenar la lista de más difícil a más fácil
