@@ -242,6 +242,7 @@ FROM grades g
 JOIN courses c 
 	ON g.grade_course_id = c.course_id
 GROUP BY g.grade_course_id
+ORDER BY NOTA_MEDIA ASC;
 ```
 |CURSO| NOTA_MEDIA
 |-----------|--------
@@ -252,5 +253,7 @@ GROUP BY g.grade_course_id
 
 
 
-> He 
-  * Encontrar qué estudiante y profesor tienen más cursos en común.
+> Para este script, He buscado información y he modificado el average de int a decimal con un `cast` para evitar que esta media la diese con demasiados decimales. 
+Luego he utilizado el alias del average para ordenar la lista de más difícil a más fácil
+
+### Encontrar qué estudiante y profesor tienen más cursos en común.
