@@ -267,3 +267,30 @@ ORDER BY NOTA_MEDIA ASC;
 Luego he utilizado el alias del average para ordenar la lista de más difícil a más fácil
 ---
 ### Encontrar qué estudiante y profesor tienen más cursos en común.
+> Por el planteamiento, cada case tiene asignada un único profesor, así que he desarrollado el script de igual manera, pero el resultado siempre es `1`
+```
+SELECT
+	s.student_name AS ALUMNO,
+	p.professor_name AS PROFESOR,
+    COUNT(g.grade_id) AS NUMERO_CURSOS
+FROM grades g
+JOIN courses c
+ ON c.course_id = g.grade_course_id 
+JOIN students s
+	ON s.student_id = g.grade_student_id    
+JOIN professors p
+	 ON p.professor_id = g.grade_course_id
+GROUP BY s.student_name, p.professor_name
+```
+|ALUMNO	|PROFESOR|	NUMERO_CURSOS
+|-------------|------------|------------
+|Pepe Gonzalez	|Sr Ramirez	|1
+|Pepe Gonzalez	|Sr Guzman	|1
+|Pepe Gonzalez	|Sra Sanchez	|1
+|Pepe Gonzalez	|Sra Perez	|1
+|Maria Fernandez	|Sr Ramirez	|1
+|Maria Fernandez	|Sr Guzman	|1
+|Maria Fernandez	|Sra Sanchez	|1
+|Felipe Gomez	|Sra Sanchez	|1
+|Felipe Gomez	|Sra Perez	|1
+|Clara Lopez	|Sra Sanchez	|1
