@@ -294,3 +294,5 @@ GROUP BY s.student_name, p.professor_name
 |Felipe Gomez	|Sra Sanchez	|1
 |Felipe Gomez	|Sra Perez	|1
 |Clara Lopez	|Sra Sanchez	|1
+
+> Como alternativa, he creado un script para averiguar cuantos alumnos coinciden en un mismo curso:
