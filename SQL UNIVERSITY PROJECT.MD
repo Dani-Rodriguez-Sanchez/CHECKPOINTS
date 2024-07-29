@@ -295,4 +295,21 @@ GROUP BY s.student_name, p.professor_name
 |Felipe Gomez	|Sra Perez	|1
 |Clara Lopez	|Sra Sanchez	|1
 
-> Como alternativa, he creado un script para averiguar cuantos alumnos coinciden en un mismo curso:
+> Como alternativa, he creado un script para averiguar cuantos alumnos coinciden en un mismo curso, y cuales son más demandados:
+```
+SELECT 
+	c.course_name AS CURSO,
+    COUNT(g.grade_id) AS TOTAL_ALUMNOS
+FROM grades g
+JOIN courses c
+	ON c.course_id = g.grade_course_id
+GROUP BY CURSO
+ORDER BY TOTAL_ALUMNOS DESC;
+```
+| CURSO| TOTAL_ALUMNOS
+|----------|----------
+|inglés| 4
+|matemáticas| 2
+|física| 2
+|gramática| 2
+
