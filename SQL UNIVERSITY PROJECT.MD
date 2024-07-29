@@ -78,7 +78,7 @@ Dentro de cada una, creo las siguientes columnas:
 
 #### Grades 
  * grade_id INT Clave primaria, Obligatoria, Única y Autoincremental
- * grade_result Decimal (2,2) Obligatoria
+ * grade_result Decimal (4,2) Obligatoria
  * grade_student_id INT
  * grade_course_id INT
 
@@ -87,7 +87,7 @@ Dentro de cada una, creo las siguientes columnas:
   `grade_id` int NOT NULL AUTO_INCREMENT,
   `grade_student_id` int NOT NULL,
   `grade_course_id` int NOT NULL,
-  `grade_result` decimal(2,2) NOT NULL,
+  `grade_result` decimal(4,2) NOT NULL,
   PRIMARY KEY (`grade_id`),
   UNIQUE KEY `grade_id_UNIQUE` (`grade_id`),
   KEY `grade_student_id_idx` (`grade_student_id`),
