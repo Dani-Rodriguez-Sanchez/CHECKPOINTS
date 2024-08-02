@@ -18,5 +18,4 @@ Ideas generales para desarrollo de proyecto web albergue:
 
 
 
-
-[FRONT END LANDING DRAFT.pdf](https://github.com/user-attachments/files/16472975/FRONT.END.LANDING.DRAFT.pdf)
+![FRONT END LANDING DRAFT](https://github.com/user-attachments/assets/ecef28fb-b413-40b3-b2c5-90ca179ecbf7)
