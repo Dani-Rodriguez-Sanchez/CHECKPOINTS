@@ -19,3 +19,20 @@ Ideas generales para desarrollo de proyecto web albergue:
 
 
 ![FRONT END LANDING DRAFT](https://github.com/user-attachments/assets/ecef28fb-b413-40b3-b2c5-90ca179ecbf7)
+
+## DEPENDENCIAS
+
+- MULTI IDIOMAS
+https://www.npmjs.com/package/react-multi-lang
+
+- BOOKING
+https://www.npmjs.com/package/booking_calendar
+
+- EL TIEMPO
+https://www.npmjs.com/package/react-open-weather?activeTab=readme
+
+- CONTACTO POR MAIL
+https://www.npmjs.com/package/nodemailer
+
+
+
