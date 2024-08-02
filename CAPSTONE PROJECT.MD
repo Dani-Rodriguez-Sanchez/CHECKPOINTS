@@ -15,3 +15,8 @@ Ideas generales para desarrollo de proyecto web albergue:
 -NECESIDADES
   * FRONT-END JAVASCRIPT, REACT, HTML, CSS
   * BACK-END JAVASCRIPT, MONGODB, REACT, JSON, AXIOS
+
+
+
+
+[FRONT END LANDING DRAFT.pdf](https://github.com/user-attachments/files/16472975/FRONT.END.LANDING.DRAFT.pdf)
