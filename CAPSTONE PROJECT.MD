@@ -34,5 +34,8 @@ https://www.npmjs.com/package/react-open-weather?activeTab=readme
 - CONTACTO POR MAIL
 https://www.npmjs.com/package/nodemailer
 
+- GUESTBOOK (he pensado que sería más actual insertar una cuenta de intagram)
+https://www.npmjs.com/package/react-insta-stories
+
 
 
