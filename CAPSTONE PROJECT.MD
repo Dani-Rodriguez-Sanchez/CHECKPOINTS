@@ -1,5 +1,6 @@
+# PLANIFICACION 
 
-Ideas generales para desarrollo de proyecto web albergue: 
+## OBJETIVOS GENERALES
 
 - CLIENTE. Se trata de un pequeño negocio, un albergue en el camino De Santiago
 - NECESIDADES. Necesita una web, de uso sencillo, a través de la cual pueda darse a conocer, y sus futuros clientes peregrinos puedan interactuar con el.
@@ -12,11 +13,19 @@ Ideas generales para desarrollo de proyecto web albergue:
   * predicción meteorológica
   Además de elementos donde el usuario interacciona, como:
   * Formulario de registro/reserva
-  * guest book donde pueden dejar sus reseñas
+  * guest book donde pueden dejar sus reseñas/Intagram
 
 -NECESIDADES
   * FRONT-END JAVASCRIPT, REACT, HTML, CSS
   * BACK-END JAVASCRIPT, MONGODB, REACT, JSON, AXIOS
+
+## OBJETIVOS DE EXPERIENCIA DE USUARIO
+Debido a la naturaleza de público al que va dirigido, que son peregrinos que buscan información sobre lugares donde alojarse en sus teléfonos móviles, es importante que la web sera totalmente responsible web design.
+La pestaña de "booking" quedará flotando sobre todo el scroll de la página, y la opción de cambiar de idioma será bastante visible.
+Por otra parte, se incorpora incrustado nuestra cuenta de instagram, donde podrán ver imágenes y comentarios del negocio.
+
+## OBJETIVOS DE CONTENIDO
+Se da importancia a la información útil para el cliente, y por lo tanto, se detallan los servicios que van a encontrar en el establecimiento, donde estamos, la previsión meteorológica, experiencias de otros usuarios en instagram, y lo más importante: como pueden reservar.
 
 
 
