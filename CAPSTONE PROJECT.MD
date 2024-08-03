@@ -47,8 +47,9 @@ Se diseña la web basada en un SCROLL, basado en dos mitades, en la `upper page`
 Con este elemento fijo, bajaríamos a la `lower page`, y ahí tendríamos un elemento con la predicción meteorológica, y de manera incrustada nuesro instagram. Finalmente, en la parte inferior, un pie de página con los mismos elementos que en el `navbar`
 
 
+![landing_page_draft](https://github.com/user-attachments/assets/6286c4f7-695f-4aea-b95a-1144e1263eb2)
 
-![FRONT END LANDING DRAFT](https://github.com/user-attachments/assets/ecef28fb-b413-40b3-b2c5-90ca179ecbf7)
+
 
 ## DEPENDENCIAS
 
