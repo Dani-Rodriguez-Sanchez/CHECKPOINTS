@@ -38,6 +38,15 @@ El cliente potencial tiene una experiencia puntual, ya que la necesidad de aloja
 ---
 ## PLANIFICACION
 
+### USER EXPERIENCE (UX)
+Debido a la alta posibilidad de que los usuario utilicen el teléfono móvil, es primordial la facilidad de uso, por lo cual prescindimos de submenus, y toda la información útil está al alcance. 
+La información de localización, servicios, y contacto se mostrará mediante pop-ups. El cambio de idioma con un simple botón, y el booking con un botón visible que trasladará al servicio de reservas.
+
+### USER INTERFACE (UI)
+Se diseña la web basada en un SCROLL, basado en dos mitades, en la `upper page` encontramos una `navbar` con información útil, el logo del negocio en tamaño adecuado, y a su izquierda, donde nos llevaría la vista, un elemento fijo con enlace a la página de reservas.
+Con este elemento fijo, bajaríamos a la `lower page`, y ahí tendríamos un elemento con la predicción meteorológica, y de manera incrustada nuesro instagram. Finalmente, en la parte inferior, un pie de página con los mismos elementos que en el `navbar`
+
+
 
 ![FRONT END LANDING DRAFT](https://github.com/user-attachments/assets/ecef28fb-b413-40b3-b2c5-90ca179ecbf7)
 
