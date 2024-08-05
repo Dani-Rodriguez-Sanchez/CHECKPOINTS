@@ -49,7 +49,7 @@ Con este elemento fijo, bajaríamos a la `lower page`, y ahí tendríamos un ele
 
 ![landing_page_draft](https://github.com/user-attachments/assets/6286c4f7-695f-4aea-b95a-1144e1263eb2)
 
-## ACTIVITY DIAGRAM
+## USE CASE DIAGRAM
 
 ![ACTIVITY DIAGRAM](https://github.com/user-attachments/assets/9a1f55ea-ee36-4099-bde9-aa78ea8b0ecf)
 
