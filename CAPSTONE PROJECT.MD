@@ -71,4 +71,12 @@ https://www.npmjs.com/package/nodemailer
 https://www.npmjs.com/package/react-insta-stories
 
 
+---
+## DESARROLLO EN TIEMPO
 
+- 01/08 Desarrollo Idea del proyecto
+- 05/08 Aprobación Idea
+- 06/08 Esquema web/ estudiar páginas similares
+- 07/08 Esquema carpetas/ router
+- 09/08 Abandono router, y elijo diseño en scroll
+- 10/08 scroll landing page/boton retorno/css para responsibe en navbar/subida a github
