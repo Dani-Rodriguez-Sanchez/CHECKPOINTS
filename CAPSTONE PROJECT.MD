@@ -83,5 +83,7 @@ https://www.npmjs.com/package/react-insta-stories
 https://www.youtube.com/watch?v=oszUqCqTGHo&t=719s
 - 12/08 modulo cambio idioma
 https://react.i18next.com/legacy-v9/step-by-step-guide
-- 13/08 modulo boton whatsapp
+ modulo boton whatsapp
 https://www.npmjs.com/package/react-floating-whatsapp
+- 13/08
+seccion presentacion
