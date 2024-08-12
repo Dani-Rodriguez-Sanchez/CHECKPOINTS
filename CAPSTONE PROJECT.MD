@@ -80,3 +80,8 @@ https://www.npmjs.com/package/react-insta-stories
 - 07/08 Esquema carpetas/ router
 - 09/08 Abandono router, y elijo diseño en scroll
 - 10/08 scroll landing page/boton retorno/css para responsibe en navbar/subida a github
+https://www.youtube.com/watch?v=oszUqCqTGHo&t=719s
+- 12/08 modulo cambio idioma
+https://react.i18next.com/legacy-v9/step-by-step-guide
+- 13/08 modulo boton whatsapp
+https://www.npmjs.com/package/react-floating-whatsapp
