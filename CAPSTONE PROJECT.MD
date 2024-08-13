@@ -103,5 +103,12 @@ El cliente de la aplicacion es el propietario del hostel, y el intended end-user
 - What applications and languages do you expect to employ in your design?
 La estructura de la aplicación la desarrollo con REACT, lenguaje JAVASCRIPT, para algunas funciones necesitaré módulos NPM.
 Para el FRONTEND necesitaré además HTML y CSS.
-Y para el BACKEND
+Y para el BACKEND AXIOS, MONGODB, y JSON
+
 - What is your predicted timeline and milestones to complete your build?
+He previsto un tiempo de desarrollo máximo de un mes:
+ * los primeros días los he dedicado al desarrollo de la idea de proyecto, y a revisar webs similares para identificar las necesidades del cliente.
+ * después de la aprobación del proyecto, comienzo con la estructura, que me llevará unos días, y espero que antes de terminar la semana, comenzar en el FRONTEND, que me llevará entre una semana y 10 días.
+ * sobre la mitad del mes, empiezo con el BACKEND, el cual me llevará una semana aproximadamente.
+ * Y al final, haré el deployment con HEROKU o RENDER
+ 
