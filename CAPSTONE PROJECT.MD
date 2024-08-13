@@ -86,7 +86,8 @@ https://react.i18next.com/legacy-v9/step-by-step-guide
  modulo boton whatsapp
 https://www.npmjs.com/package/react-floating-whatsapp
 - 13/08
-seccion presentacion
+seccion presentacion. problema bordes blancos css
+https://stackoverflow.com/questions/75582308/weird-white-line-on-react-page
 
 ---
 
@@ -114,3 +115,28 @@ He previsto un tiempo de desarrollo máximo de un mes:
    3. sobre la mitad del mes, empiezo con el BACKEND, el cual me llevará una semana aproximadamente.
    4. Y al final, haré el deployment con HEROKU o RENDER
  
+---
+
+- What is your project title?
+Albergue Las Garzas / Las Garzas Hostel
+
+- What is the problem you are trying to solve with your application? 
+I have put myself in the role of a developer who receives an assignment to solve a client's need: he needs a webspace, where pilgrims who are doing the Camino de Santiago through Spain, before stopping by the hostel, can see what it offers. , and in a comfortable way, you can reserve a bed through WhatsApp, or an email. 
+So, the problem to solve is to make a website that is comfortable enough to use on a mobile phone while walking, and at the same time attractive, to get the potential client who enters it to book.
+
+- Who is your intended end-user for your web application? 
+The client of the application is the owner of the hostel, and the intended end-user are the potential clients, pilgrims who have seen the advertisement, go to the website, and there they can decide for a night in the establishment.
+
+- What applications and languages do you expect to employ in your design?
+The structure of the application was developed with REACT, JAVASCRIPT language, for some functions I will need NPM modules.
+For the FRONTEND I will also need HTML and CSS.
+And for the BACKEND AXIOS, MONGODB, and JSON
+
+- What is your predicted timeline and milestones to complete your build?
+I have planned a maximum development time of one month:
+
+   1. I have dedicated the first days to developing the project idea, and reviewing similar websites to identify the client's needs.
+   2. After the approval of the project, I start with the structure, which will take me a few days, and I hope that before the end of the week, I will start on 
+     the FRONTEND, which will take me between a week and 10 days.
+   3. About halfway through the month, I start with the BACKEND, which will take me approximately a week.
+   4. And at the end, I will do the deployment with HEROKU or RENDER
