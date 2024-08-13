@@ -87,3 +87,21 @@ https://react.i18next.com/legacy-v9/step-by-step-guide
 https://www.npmjs.com/package/react-floating-whatsapp
 - 13/08
 seccion presentacion
+
+---
+
+- What is your project title?
+Albergue Las Garzas / Las Garas Hostel
+
+- What is the problem you are trying to solve with your application? 
+Me he puesto en el papel de un developer que recibe un encargo para solucionar una necesidad de un cliente: este necesita un webspace, donde peregrinos que están haciendo el camino de santiago por España, antes de pasar por el hostel, puedan ver lo que ofrece, y de una manera cómoda, puedan reservar una cama a través de whatssapp, o de un email. 
+Entonces, el problema a solucionar, es realizar una web lo bastante cómoda como para usar en el móvil mientras se va caminando, y a la vez atractiva, para conseguir que el cliente potencial que entre a ella, reserve.
+
+- Who is your intended end-user for your web application? 
+El cliente de la aplicacion es el propietario del hostel, y el intended end-user, son los clientes potenciales, peregrinos que hayan visto el anuncio, entren a la web, y ahí puedan decidir para una noche en el establecimiento.
+
+- What applications and languages do you expect to employ in your design?
+La estructura de la aplicación la desarrollo con REACT, lenguaje JAVASCRIPT, para algunas funciones necesitaré módulos NPM.
+Para el FRONTEND necesitaré además HTML y CSS.
+Y para el BACKEND
+- What is your predicted timeline and milestones to complete your build?
