@@ -88,7 +88,9 @@ https://www.npmjs.com/package/react-floating-whatsapp
 - 13/08
 seccion presentacion. problema bordes blancos css
 https://stackoverflow.com/questions/75582308/weird-white-line-on-react-page
-
+- 14/08 seccion localizacion
+https://docs.maptiler.com/react/
+alternativa a google maps, con api gratuita
 ---
 
 - What is your project title?
