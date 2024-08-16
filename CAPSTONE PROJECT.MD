@@ -91,8 +91,10 @@ https://stackoverflow.com/questions/75582308/weird-white-line-on-react-page
 - 14/08 seccion localizacion
 https://docs.maptiler.com/react/
 alternativa a google maps, con api gratuita
-- 15/08 seccion servicios- iconos con modals (multiples) reutilizables
+- 16/08 seccion servicios- iconos con modals (multiples) reutilizables
 https://www.youtube.com/watch?v=yYMRuqTIkmM
+-17/08 contacto/mail
+https://medium.com/swlh/create-an-enquiry-form-in-react-and-send-email-using-nodejs-1c0cd590dce1
 ---
 
 - What is your project title?
