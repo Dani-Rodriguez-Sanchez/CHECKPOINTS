@@ -91,8 +91,8 @@ https://stackoverflow.com/questions/75582308/weird-white-line-on-react-page
 - 14/08 seccion localizacion
 https://docs.maptiler.com/react/
 alternativa a google maps, con api gratuita
-- 15/08 seccion servicios- iconos con modals
-https://www.youtube.com/watch?v=D9OJX6sSyYk
+- 15/08 seccion servicios- iconos con modals (multiples) reutilizables
+https://www.youtube.com/watch?v=yYMRuqTIkmM
 ---
 
 - What is your project title?
