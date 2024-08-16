@@ -95,6 +95,7 @@ alternativa a google maps, con api gratuita
 https://www.youtube.com/watch?v=yYMRuqTIkmM
 -17/08 contacto/mail
 https://medium.com/swlh/create-an-enquiry-form-in-react-and-send-email-using-nodejs-1c0cd590dce1
+https://dev.to/elenadiaz32505/part-2-building-a-full-stack-contact-form-nodejs-backend-2023-jdp
 ---
 
 - What is your project title?
