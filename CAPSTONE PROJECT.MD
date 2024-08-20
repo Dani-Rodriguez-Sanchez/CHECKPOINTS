@@ -99,6 +99,9 @@ https://react-slick.neostack.com/docs/example/responsive
 -17/08 contacto/mail
 https://medium.com/swlh/create-an-enquiry-form-in-react-and-send-email-using-nodejs-1c0cd590dce1
 https://dev.to/elenadiaz32505/part-2-building-a-full-stack-contact-form-nodejs-backend-2023-jdp
+
+backend:
+https://thomasgauvin.com/blog/create-react-frontend-express-backend-app
 ---
 
 - What is your project title?
