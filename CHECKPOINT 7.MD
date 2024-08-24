@@ -20,7 +20,7 @@ function LimiteCincuenta(a, b, c, d){
 
 LimiteCincuenta(1, 2, 3, 4)
 
-##¿Qué diferencia a Javascript de cualquier otro lenguaje de programación?
+## ¿Qué diferencia a Javascript de cualquier otro lenguaje de programación?
 La principal diferencia es que se trata de un lenguaje INTERPRETADO,
 esto quiere decir que los programas de JavaScript son archivos de texto que se integran directamente en las páginas HTML,
 y son es interpretado directamente por un navegador.
