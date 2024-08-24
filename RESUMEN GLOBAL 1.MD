@@ -48,6 +48,7 @@ producto.
 # CHECKPOINT 3 PYTHON
 
 ## QUE ES
+2lenguaje de programación orientado a objetos"
 es un lenguaje de programación ampliamente utilizado en las aplicaciones web, el desarrollo de software etc.
 los sitios web deben interactuar con las bases de datos, comunicarse con otros sitios web y proteger los datos cuando se los envía a través de la red. 
 Python es útil para escribir código del lado del servidor debido a que ofrece muchas bibliotecas que constan de código preescrito para crear funciones de backend complejas
@@ -127,3 +128,87 @@ Son librerías o bibliotecas de código, compartidas por otros programadores, en
 
 ---
 # CHECKPOINT 6
+
+### Classes en Python?
+  Python es un lenguaje de programación orientado a objetos. 
+Casi todo en Python es un objeto, que es una entidad con sus propiedades y métodos. 
+  Entonces una clase es un constructor de objetos, o un modelo para crearlos, además nos permite definir las propiedades y métodos que tendrá cualquier 
+  objeto creado a partir de dicha clase.
+  También las clases son una manera de organizar el código y así facilitar su mantenimiento, además de aprovechar la reutilización del código: 
+  si tenemos que crear varios objetos que tengan las mismas propiedades y métodos, no tenemos que repetir el código, en su lugar, podemos crear 
+  nuevos objetos a partir de la misma clase.
+
+### instancia de una clase
+A diferencia de la clase, un objeto define una clase particular, con unos atributos particulares para ese objeto. Es decir, el objeto es la instancia de la clase. Se puede crear usando () sobre la clase y pasando los argumentos de entrada separados por ,.
+
+'mi_clase = MiClase("Hola")'
+
+### ¿Qué método se ejecuta automáticamente cuando se crea una instancia de una clase?
+METODO __init__
+
+  Al crear una instancia de una clase (instanciar) se crea el objeto en la memoria del sistema operativo, ya que hasta que no se ejecuta el programa, no se crea en memoria.
+  Existe un método especial que se ejecuta cuando creamos una instancia de un objeto. Este método es __init__ que nos permite asignar atributos y realizar operaciones 
+  con el objeto en el momento de su creación. 
+
+###  verbos de API: Get, Post, Put y Delete.
+- GET : este método permite obtener información del servidor.
+- POST : permite enviar información, ya sea para agregar información a una base de datos
+- PUT: actualizar información. Generalmente se utiliza para gestionar información en la base de datos.
+- DELETE : este método se utiliza para eliminar información de la base de datos.
+
+### MongoDB
+MongoDB es un programa de gestión de bases de datos NoSQL (Not only SQL) de código abierto. 
+
+### SQL VS NOSQL
+
+- SQL significa Lenguaje de Consulta Estructurado, evolucionando desde la década de 1970 hasta convertirse en un poderoso lenguaje para consultar datos estructurados. son relacionales, es decir, sus datos están relacionados entre sí y se almacenan como texto de manera estructurada en tablas 
+
+- NoSQL es un sistema de base de datos más nuevo que no utiliza un lenguaje de consulta estándar pero emplea documentos JSON para el almacenamiento de datos. aparecen debido a la necesidad de flexibilidad para almacenar distintos tipos de información no estructurada
+como documentos (PDF, Word, Excel…), emails, SMS, localizaciones geográficas, audio, vídeo, publicaciones de RRSS… 
+
+Ambos son dos tipos de bases de datos que permiten el almacenamiento y acceso ordenado a los datos, tanto estructurados (SQL) como no estructurados (NoSQL).
+
+### API?
+  Una API (interfaz de programación de aplicaciones), es un conjunto de reglas y protocolos que permiten que dos sistemas informáticos o aplicaciones interactúen entre sí, 
+  por ejemplo para recuperar datos de un servidor web. 
+  En esencia, una API actúa como una capa o interfaz de comunicación que permite que diferentes sistemas se comuniquen entre sí.
+  Para que sirve:
+    1-En el desarrollo, para ahorrar tiempo y dinero, al poder utilizar piezas o funciones que otros ya han creado. El ejemplo es una plataforma de compras online.
+    2-También cuando se quiere utilizar deliberadamente las funciones de determinado servicio para ofrecer ventajas a sus usuarios.
+      Por ejemplo, cuando vas a comprar y pones la información de tu tarjeta, la web utiliza una API para enviarle esa información de forma remota a otro programa 
+      que verifica si tus datos son correctos o es una tarjeta inventada. Una vez se verifica, este programa remoto le dice a la web que todo está en orden, y esta ya te emite tu orden de compra.
+    3-Otro ejemplo clásico es el de las aplicaciones de terceros para conectarse a un servicio. Por ejemplo, redes sociales como Twitter o Reddit 
+      permiten que se creen aplicaciones diferentes a las oficiales para conectarse a ellas. Estas aplicaciones necesitarán las API de las redes sociales 
+      para poder mostrarte la información y los mecanismos internos que las hacen funcionar.
+
+  Una interface API es JSON (JAVASCRIPT OBJETS NOTATION), es un formato ligero de intercambio de datos. El cual es fácil para los humanos leer y escribir, 
+  y es fácil para las máquinas analizar y generar.
+
+### Postman
+
+  Es una aplicación que permite conectar Python con APIs externas, que facilita a los desarrolladores crear, compartir, probar y documentar API. 
+  En suma, es una herramienta para testear cualquier API-
+  Nos permite enviar solicitudes con diferentes métodos HTTP (es decir, GET, POST, PUT y DELETE) y podemos comprobar la respuesta del servidor. 
+  Con esta herramienta, podemos probar fácilmente nuestra API enviando una solicitud de cliente y verificando la respuesta HTTP. 
+
+### polimorfismo
+
+  Es uno de los pilares básicos en la programación orientada a objetos, y significa que objetos de diferentes clases pueden ser accedidos
+  utilizando el mismo interfaz, mostrando un comportamiento distinto (tomando diferentes formas) según cómo sean accedidos. Esto significa 
+  que podemos llamar a un método exactamente igual a otro y el interprete automáticamente detectará a cual de ellos nos referimos según diversos parámetros.
+
+### método dunder
+  «double underscore methods» También llamados métodos especiales, o mágicos. Son métodos de Python que definen cómo se comportan los objetos de Python cuando se realizan operaciones comunes sobre ellos.
+  Normalmente no son invocados directamente por el programador. Por ejemplo cuando haces una simple suma 2 + 2 se está invocando al método __add__ internamente.
+  Estos métodos se definen claramente con guiones bajos dobles antes y después del nombre del método.
+  Los más comunes son __init__ y __repr__
+- __init__ permite definir los atributos y comportamientos iniciales de un objeto al momento de su creación. es un método especial en Python que se utiliza para inicializar los objetos de una clase.
+
+- __repr__ se utiliza para devolver una representación de cadena legible de un objeto. 
+  Este método se define dentro de una clase y se llama cuando se usa la función repr() en un objeto de esa clase. 
+  Se espera que el resultado sea una cadena que contenga información relevante sobre el objeto y sus valores de atributo.
+
+### decorador de python
+  Los decoradores son funciones que modifican el comportamiento de otras funciones, les añaden funcionalidades (las decoran).
+  En otras palabras, una función la cual toma como input una función y a su vez retorna otra función.
+  Son útiles para reducir las líneas de código duplicadas, hacer nuestro código más legible, fácil de testear, y de mantener.
