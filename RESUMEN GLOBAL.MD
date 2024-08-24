@@ -68,6 +68,7 @@ Hay 3 reglas:
 Lo ideal es que el mismo código se explique a si mismo, mediante los nombres adecuados. No son útiles para explicar la funcionalidad, ya que esta puede cambiar, aunque si lo son para ayudar a comprender el diseño del código a otros programadores o nosotros mismos en el futuro. Además deben ser frases concisas, fáciles de entender, limitados en su número, y actualizados
 
 ### aplicaciones monolíticas y de microservicios
+
 Las aplicaciones monoliticas funcionan desde un único código base, mientras que las basadas en microservicios, cada uno de ellos funciona para lograr una única característica. La implementación y el desarrollo de las monolíticas es más sencilla, aunque también es más complejo su mantenimiento. -En caso de surgir algún problema, las de microservicios limitarían el error al servicio concreto, mientras que el resto de la aplicación seguiría funcionando, siendo así también más rápido de Identificar. -Además las monolíticas son más rápidas, ya que los servicios no necesitan comunicarse *Por lo tanto, no hay una opción general más indicada que otra, si no que dependerá del tipo de proyecto elegir el sistema adecuado
 ---
 # CHECKPOINT 4
@@ -84,3 +85,45 @@ Es un método para almacenar en una variable datos clave-valor.
 ### operador de asignación
 Se utilizan para asignar valores a variables, puede ser desde el signo igual =, que es el más básico, y operadores aritméticos, , / , % , +, -
 ---
+# CHECKPOINT 5
+
+### condicional
+Es una estructura de control, que  permite condicionar la ejecución de uno o varios bloques de sentencias al cumplimiento de una o varias condiciones.
+
+### IF-ELSE
+se utiliza para ejecutar tanto la parte verdadera como la falsa de la condición.
+
+### diferentes tipos de bucles en python? ¿Por qué son útiles?
+
+Un bucle es una estructura de control que repite un bloque de instrucciones, son útiles para automatizar la ejecución del código. 
+Hay dos tipos: los bucles FOR y los bucles WHILE.
+
+A grandes rasgos, se utilizan los primeros cuando sabemos de antemano cuantas veces se repetirá el programa, y el segundo cuando no lo conocemos.
+- WHILE-permite ejecutar una sección de código repetidas veces, mientras una condición determinada se cumpla. Cuando se deje de cumplir, se saldrá del bucle y se continuará la ejecución normal. 
+Por lo tanto el while tiene dos partes:
+La condición que se tiene que cumplir para que se ejecute el código.
+El bloque de código que se ejecutará mientras la condición se cumpla.
+
+- FOR-Mientras que en el while la condición era evaluada en cada iteración para decidir si volver a ejecutar o no el código, en el for no existe tal condición, sino un iterable que define las veces que se ejecutará el código.
+	for i in range(0, 4): 
+
+### argumento en Python
+
+Es una parte de las funciones, que tendrán un nombre, argumentos de entrada, un código a ejecutar, y unos parámetros de salida.
+Estos argumentos pueden ser de nombre o de posición.
+
+### función de Python Lambda
+
+También se llaman funciones anónimas, porque se definen sin un nombre. 
+Es una herramienta que permite recoger una función simple en una variable, y pasarla de forma muy sencilla a otras funciones. 
+Su potencial radica en que la sintaxis condensada, que nos permite escribir funciones simples en tan solo una línea.
+SINTAXIS:
+lambda arguments : expression
+
+### paquete pip
+
+PIP es un programa de instalación de módulos externos de Python. 
+Son librerías o bibliotecas de código, compartidas por otros programadores, en código abierto, y son útiles para ahorrar escribir mucho código, o simplemente realizar una tarea particular de la manera más sencilla. 
+
+---
+# CHECKPOINT 6
