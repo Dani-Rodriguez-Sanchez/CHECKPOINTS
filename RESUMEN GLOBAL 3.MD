@@ -1,48 +1,38 @@
-# CHECKPOINT 11
+# CHECKPOINT 12 UML
 
-### ¿Por qué usamos ramas de git?
-Las ramas le permiten trabajar en diferentes partes de un proyecto sin afectar la rama principal, 
-es una bifurcación para crear un nuevo camino en la que probar una funcionalidad previamente a incluirla en el código principal.
-Cuando se completa el trabajo, se puede fusionar una rama con el proyecto principal. 
-Incluso puedes cambiar entre ramas y trabajar en diferentes proyectos sin que interfieran entre sí. 
-permite crear nuevas ramas de un proyecto para probar ideas, aislar nuevas características, o experimentar sin impactar al proyecto principal.
+### Qué significa UML?
+(Unified Modeling Lenguage) Estandariza el estilo y proceso de modelado. El modelo es una forma de mostrar visualmente el comportamiento y estructura del sistema. A través de diagramas, que describen:
 
-Podemos ver las ramas con: 
-git branch
-Y creamos con:
-git checkout -b (nombre)
+- Estructura: clases, interfaces, paquetes, componentes, despliegues, etc. 
+- Comportamiento: actividades, secuencias, estados, etc. 
+- Interacciones: colaboraciones, comunicaciones, etc
 
-### comando para crear un repositorio git?
-git add
-se creará un nuevo subdirectorio .git en tu directorio de trabajo actual. También se creará una nueva rama principal.
-Lo más lógico sería crear un directorio donde crearlo, con cd..., y estando ahí dentro git init
+Es independiente del codigo del lenguaje Es un lenguaje de modelado gráfico, para REPRESENTAR LA ESTRUCTURA DE UN SISTEMA Y SU COMPORTAMIENTO, e interacciones.
 
-### ¿Qué es un conflicto de fusión?
-suceden cuando fusionas ramas que tienen confirmaciones de cambios contrapuestas, 
-y Git necesita tu ayuda para decidir qué cambios incorporar en la fusión final.
+Parte de la idea de que un sistema se puede representar mediante un conjunto de objetos que interactúan entre si.
 
-### Git branch
-muestra todas las ramas, y en que rama nos encontramos, con un asterisco al lado.
-Puede servir para renombrar una rama
+*Estos diagramas pueden ser estructurales y de comportamiento
 
-### Git push y git pull
-git push sirve para empujar el commit, es decir, pasar de una rama local en el ordenador a un repositorio remoto. 
-El comando es git add. Con git status vemos los 
-Git pull es lo contrario: descargar las modificaciones en nuestro ordenador en local.
+### Por qué utilizamos UML?
 
-### Pull vs fetch. 
-Git fetch copia los cambios al repositorio local, mientras que pull los copia directamente al directorio de trabajo. 
-Es una unión de git merge y git fetch
+Por dos motivos: Se crea para estandarizar el modelado, y HACERLO COMPRENSIBLE para todas las partes implicadas en la implementación de los proyectos, de esta manera, a través de un lenguaje visual común, se hace comprensible para desarrolladores y otro tipo de usuarios más relacionados con el negocio o el marketing.
 
-### Git merge 
-sirve para volver a unir una rama bifurcada
+Y además es recomendable realizar cuando se ha empezado a desarrollar (antes de escribir código), por ORGANIZACION, sobre todo en sistemas complejos (de estructura como de comportamiento)
 
-### git checkout
-permite navegar entre ramas
+### Nombra algunos diagramas estructurales.
+Son los que modelan la forma en que se diseña un sistema, define clases, atributos y métodos (Class , deployment, y package) -CLASS los más comunes. modela la estructura a través de clases, atributos, y métodos -DEPLOYMENT(de implementacion), modela como se configura la arquitectura del sistema para tener una vision general de como se conectan los componentes del sistema -PACKAGE permite agrupar elementos, para visualizar dependencias y relaciones, para mejorar la eficiencia en el proceso.
 
-### commit
-realiza una foto de los cambios hasta ese momento, a través de los commit, que son confirmaciones , como hitos dentro del proyecto. Estos commit se realizan en local(no interactuan en remoto hasta que se lo digamos)
-*Identifica los cambios hechos en un entorno de trabajo. Luego con git push, los podemos trasladar al repositorio global o remoto.
-Git commit -m (añadimos un mensaje con info sobre que se ha cambiado y por que).
+### Nombra algunos diagramas de comportamiento.
+Son diferentes de los estructurales, ya que representan como se comportan y relacionan los elementos del sistema (activity, use case, state machine, y sequence) *-ACTIVITY es el más simple, es como un boceto inicial. da un estado inicial, un final, estado de actividad(preguntas), flujo de accion(flechas) que indican el paso de un estado a otro, decisiones, y guards. Y swim lanes, con un quiz comun, es útil para saber los roles de cada actor del sistema.
+
+- USER CASE muestra a lo q tiene acceso cada usuario, útil para diseñar el sistema de autorizaciones.
+
+- STATE MACHINE muestra como se ven los datos y las acciones en cada estado del sistema, es antigua
+
+- SEQUENCE el mas útil para los desarrolladores. Es el más complejo, muestra como se debe implementar y de como debe funcionar el código. Su planteamiento es un sistema que envía mensajes interna o externamente. Poder visualizar cómo se ven esos mensajes es increíblemente importante.
+
+### ¿Qué es el enrutamiento RESTful
+El ENRUTAMIENTO es el mecanismo por el cual las solicitudes se enrutan(dirigen) al código que las maneja. El enrutamiento RESTFUL es una CONVENCION para definir rutas, a través de unos verbos. Es una convención sobre como manejar las URL, Las rutas RESTful proporcionan un patrón de diseño que permite una fácil manipulación de datos. Se basa en principios como la simplicidad y la interoperabilidad (capacidad de compartir de datos). En la práctica, asocia unos verbos REST a acciones HTTP. Estos son: post, get, put, patch y delete. Se basa en el principio de economía, o navaja de Occam, que dice que cuando dos teorias en igualdad de condiciones tienen las mismas consecuencias, la mas simple es la más probable. Ejemplo de verbos restful: en una e-commerce, delete para eliminar registros o recursos, get para consultar un recurso, post para crearlo, patch actualiza,
+
 
 
