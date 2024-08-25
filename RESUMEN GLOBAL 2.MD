@@ -188,3 +188,120 @@ Por la naturaleza asíncrona de JS, necesitamos considerar el orden en el que se
 Son una evolución de las funciones CALLBACK, las cuales se pasan como argumento a otra función y se ejecutan después de que se haya completado alguna operación. Pero su uso excesivo puede generar código complejo, y por ello ASYNC/AWAIT, es una alternativa más moderna para simplificar esta programación.
 
 ---
+# CHECKPOINT 9
+
+### paquete NPM?
+npm es el gestor de paquetes de Node.js
+Es un programa que se instala en tu computadora y que te permite tanto instalar paquetes de Node.js, como otros paquetes de terceros.
+agrupacion de codigos que se usa para añadir funcionalidad adicional a la app, que se instala y se usa en javascript
+Cada paquete incluye un archivo package.json que contiene informacion y dependencias
+
+### gestión de errores
+TRY Y CATCH
+
+Aunque el código esté libre de errores, se pueden generar, ya que las aplicaciones de JS no son entidades independientes, por ejemplo puede haber problemas con los servidores.
+Por esto es interesante configurar la gestión de errores, así avisaremos al usuario y a nosotros mismos, de que hay algo que no va bien.
+
+try { Block of code to try } catch(err) { Block of code to handle errors }
+Con try definirmo el bloque de código a probar, y con catch ejecutamos algo si ocurre el error.
+
+### MOMENT JS
+
+una biblioteca de javascript . sirve para poder trabajar con números y fechas.
+Se instala a través de npm, en la seccion de dependencias de package.json. Y se puede configurar su formato, de manera que podemos crear strings con formatos personalizados, de año, mes, dia, etc. además de poder realizar cálculos a través de funciones en las que incluimos moment
+
+se crea una variable = moment ('string con fecha', 'formato de fecha'); llamamos a la variable
+
+### Lodash?
+es una biblioteca de JavaScript 
+
+Ayuda a trabajar con matrices, cadenas, objetos, números, etc.
+
+en lugar de escribir funciones repetitivas, las tareas se pueden realizar con un solo línea de código
+
+Proporciona varias funciones incorporadas para colecciones, matrices, para manipular objetos y otros métodos de utilidad que podemos usar directamente en lugar de escribirlos desde cero.
+
+Se puede importar al código de varias maneras, a traves de consola, podemo importar toda la librería, o metodos especificos. También se puede incluir en el html, incluyendo una secuencia de comendos en el encabezado.
+
+Ejemplo: la función Reduce. Que retorna el valor acumulado de una colección.
+_.reduce(colección, iterado, acumulador)
+
+---
+# CHECKPOINT 10 GIT
+
+### GIT 
+
+Es un software de Control de Versiones, esto son los cambios que se producen sobre el código de un proyecto. Nos da herramientas para gestionar esas modificiones, hacer más fácil la administración de las distintas versiones de cada producto desarrollado. Nos permite organizar las modificaciones a través de ramas, lo que facilita la gestión de paquetes de gran tamaño. Lo iniciamos con git.init
+
+### GITHUB 
+
+Es una plataforma destinada a alojar el código de las aplicaciones de cualquier desarrollador, es propiedad de microsoft y es de código abierto, hay otras como Gitlab,y Bitbucket, Es repositorio, ya que el código de los proyectos que sean abiertos puede ser descargado y revisado por cualquier usuario. Además permite a los desarrolladores colaborar en proyectos en línea, al poderse realizar seguimiento de proyectos por varios usuarios.
+
+### GITIGNORE 
+
+Es una herramienta que se utiliza para especificar, mediante un archivo de texto se le dice a Git qué archivos o carpetas ignorar en un repositorio de un proyecto. Es útil, por motivos de seguridad, para evitar que archivos confidenciales o claves queden expuestos en los repositorios
+
+---
+# CHECKPOINT 11
+
+### ramas de git
+Las ramas le permiten trabajar en diferentes partes de un proyecto sin afectar la rama principal, es una bifurcación para crear un nuevo camino en la que probar una funcionalidad previamente a incluirla en el código principal.
+Cuando se completa el trabajo, se puede fusionar una rama con el proyecto principal. Incluso puedes cambiar entre ramas y trabajar en diferentes proyectos sin que interfieran entre sí. permite crear nuevas ramas de un proyecto para probar ideas, aislar nuevas características, o experimentar sin impactar al proyecto principal.
+
+### git init 
+Crea un nuevo repositorio de Git. Puede utilizarse para convertir un proyecto existente y sin versión en un repositorio de Git, o para inicializar un nuevo repositorio vacío
+
+### git branch
+El comando git branch en Git permite enumerar, crear, cambiar el nombre y eliminar branch.
+- git branch -d <branch> - elimina el branch indicado, evitando la eliminación si están presentes commit no fusionados
+- git branch -D <branch> - elimina el branch indicado sin comprobar la presencia de commit no fusionados
+- git branch -m <branch> - cambia el nombre del branch actual
+- git branch -a - enumera branch remotos
+
+### git checkout 
+cambia entre ramas o restaura los archivos del árbol de trabajo (working tree)
+
+### git pull
+para obtener y descargar contenido de un repositorio remoto y actualizar inmediatamente la working copy del repositorio local para que coincida con ese contenido.
+
+### git push 
+se utiliza para cargar cambios locales en un repositorio remoto. De esta manera, los commit locales se ponen a disposición de otros colaboradores del proyecto, quienes pueden recuperarlos a través de una búsqueda e incorporarlos a sus respectivos repositorios locales.
+
+### git fetch 
+es descargar commit, ramas y etiquetas desde un repositorio remoto al repositorio local. 
+
+### Git merge 
+sirve para volver a unir una rama bifurcada
+
+### Git commit
+realiza una foto de los cambios hasta ese momento, a través de los commit, que son confirmaciones , como hitos dentro del proyecto. Estos commit se realizan en local(no interactuan en remoto hasta que se lo digamos)
+*Identifica los cambios hechos en un entorno de trabajo. Luego con git push, los podemos trasladar al repositorio global o remoto.
+Git commit -m (añadimos un mensaje con info sobre que se ha cambiado y por que).
+
+### git merge conflict
+
+surgen cuando dos personas cambian las mismas líneas en un archivo, o si un desarrollador elimina un archivo mientras otro lo modifica. Git marcará el archivo como en conflicto y detendrá el proceso de fusión
+
+### comando para crear un repositorio git?
+git add
+se creará un nuevo subdirectorio .git en tu directorio de trabajo actual. También se creará una nueva rama principal.
+Lo más lógico sería crear un directorio donde crearlo, con cd..., y estando ahí dentro git init
+
+### DOM?
+DOCUMENT OBJECT MODEL Modelo de Objetos de Documento ( DOM )
+*es la representación de datos de los objetos que componen la estructura y el contenido de un documento en la web.
+
+es una representación orientada a objetos de una página web, donde cada elemento de la página, como un botón, una imagen o un texto, se representa como un objeto con su propio conjunto de propiedades y métodos.
+Se representa como un arbol de nodos.
+
+* Nodo es un objeto que representa una parte del documento.
+
+### detector de eventos
+*es un “escuchador” para asignar una acción a un evento cuando se produzca
+*los objetos que pueden lanzar eventos tienen el método addEventListener()
+
+### selector de consultas?
+*sirve para localizar elementos en el DOm
+Es una herramienta para hacer consultas en el DOM
+
+---
