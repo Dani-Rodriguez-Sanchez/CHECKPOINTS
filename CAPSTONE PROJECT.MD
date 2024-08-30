@@ -102,7 +102,7 @@ https://dev.to/elenadiaz32505/part-2-building-a-full-stack-contact-form-nodejs-b
 
 backend:
 
-https://thomasgauvin.com/blog/create-react-frontend-express-backend-app
+https://github.com/emmannweb/blog-mern-app/tree/main
 
 https://www.mongodb.com/resources/languages/mern-stack
 ---
