@@ -93,3 +93,13 @@ Las acciones describen que algo pasó, pero no especifican cómo cambió el esta
 => Realiza transiciones de estado en función de acciones.
 => Los reductores especifican cómo cambia el estado de la aplicación en respuesta a las acciones enviadas a la tienda.
 => Un reductor es una función que acepta el estado actual y una acción como argumentos, y devuelve el siguiente estado de la aplicación.
+
+---
+# MUI (Material-User Interface)
+Material UI es una biblioteca de componentes React de código abierto que implementa Material Design de Google. Es completa y se puede usar en producción de manera inmediata.
+
+es una tecnología  para diseñar atractivas y dinámicas interfaces de usuario para aplicaciones móviles o sitios web empresariales.
+Con la biblioteca MUI React, puedes agregar componentes MUI a tus aplicaciones React y cambiar sin problemas entre MUI CSS/JS y MUI React incluso dentro de la misma aplicación.
+
+Material UI es el design system de Google. Es muy identificable y bonito, aunque demasiado reconocible.
+Es una biblioteca de componentes: cajas, diálogos, botones, etc
