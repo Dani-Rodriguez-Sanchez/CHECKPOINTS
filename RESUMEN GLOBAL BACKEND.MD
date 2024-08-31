@@ -87,6 +87,7 @@ habilitar actualizaciones de estado a través de dispatch(action)y registrar oye
 => Llevan información desde su aplicación a la tienda Redux en forma de objetos JavaScript simples.
 => Las acciones tienen una propiedad 'tipo' que indica el tipo de acción que se está realizando.
 => En Redux, un creador de acciones crea una acción, que es una función que devuelve la acción.
+Las acciones describen que algo pasó, pero no especifican cómo cambió el estado de la aplicación en respuesta. Esto es trabajo de los reducers.
 
 - REDUCER :
 => Realiza transiciones de estado en función de acciones.
