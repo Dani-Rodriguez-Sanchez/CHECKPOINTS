@@ -49,6 +49,20 @@ Mongoose es un ODM (Object Data Modeling) que permite realizar un mapeo de cada 
 
 ---
 
+# AXIOS
+
+es una biblioteca basada en promesas que permite a los desarrolladores realizar solicitudes a su propio servidor o a un servidor de terceros para obtener datos. 
+Ofrece diferentes formas de realizar solicitudes, como GET, POST, PUT/PATCHy DELETE.
+
+Axios es una librería  JavaScript que puede ejecutarse en el navegador y que nos permite hacer sencillas las operaciones como cliente HTTP, por lo que podremos configurar y realizar solicitudes a un servidor y recibiremos respuestas fáciles de procesar.
+
+Después de alojada la web, cuando recibamos respuesta del servidor, se llamará a un callback configurada en then y en el momento que arroje un error, se correrá la misma función, pero definida por catch.
+---
+
+# API REST
+(Application Programming Interface - Representational State Transfer)
+
+---
 # I18n
 
 Se utiliza para para mostrar tu contenido en varios idiomas para apoyar el proceso de internacionalización de tu producto.
