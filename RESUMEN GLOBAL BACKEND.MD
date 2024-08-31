@@ -16,6 +16,11 @@ y se puede utilizar para crear el backend del sitio web con la ayuda de las estr
 Sin embargo, como Node JS está destinado a ejecutar JavaScript del lado servidor, pero no para desarrollar sitios web, 
 Express JS está destinado justo a esto, a crear sitios web.
 
+El marco proporciona un conjunto de herramientas para aplicaciones web, solicitudes y respuestas HTTP ,
+enrutamiento y middleware para crear e implementar aplicaciones a gran escala y listas para la empresa.
+
+con él se pueden desarrollar aplicaciones, puntos finales de API , sistemas de enrutamiento y marcos.
+
 
 ### React JS
 
@@ -33,4 +38,57 @@ Estos módulos tienen su propio contexto y no interfieren entre sí.
 Esto es una notable ventaja pues podemos crear nuestro proyecto a medida sin complicaciones, 
 sorpresas ni comportamientos inesperados.
 
+---
+# MONGOOSE
 
+Mongoose funciona como una capa adicional sobre MongoDB a través de la cuál se implementan y automatizan muchas de las tareas habituales de trabajar con una base de datos.
+
+Mongoose es una librería para Node.js que nos permite escribir consultas para una base de datos de MongooDB, con características como validaciones, construcción de queries, middlewares, conversión de tipos y algunas otras, que enriquecen la funcionalidad de la base de datos.
+
+Mongoose es un ODM (Object Data Modeling) que permite realizar un mapeo de cada colección de tu base de datos MongoDB a través de esquemas. Estos te ayudarán a acceder a los datos, realizar consultas complejas y estandarizar la estructura de los mismos.
+
+---
+
+# I18n
+
+Se utiliza para para mostrar tu contenido en varios idiomas para apoyar el proceso de internacionalización de tu producto.
+permite traducir mi aplicación a varios idiomas de manera sencilla y me proporciona componentes React fáciles de usar. Lo mejor de todo es que es muy flexible y funciona tanto en el servidor como en el cliente.
+
+es un framework de internalización escrito en y para JavaScript.
+
+---
+
+# MIDDLEWARE
+
+Para las llamadas asíncronas a un API.
+
+el middleware es un código que se ejecuta entre el framework que recibe una solicitud, y el framework que genera una respuesta.
+Proporciona un punto de extensión para terceros entre el envío de una acción y el momento en que alcanza el reductor. La gente utiliza Redux middleware para el registro de eventos, informes de fallos, para mantener las llamadas a una API asíncrona, enrutamiento y más.
+
+---
+
+# REDUX
+
+Para para administrar el estado de una aplicación de forma predecible.
+
+Redux actúa como un almacén centralizado que contiene y administra el estado de una aplicación o sus componentes. Esta centralización simplifica la gestión del estado, haciéndolo más organizado y accesible.
+funciona como la biblioteca oficial de enlaces de interfaz de usuario de Redux. Facilita la integración perfecta de React y Redux, lo que permite una experiencia de desarrollo más natural y eficiente.
+
+Tres conceptos básicos de Redux
+
+- STORE  :
+=> Contiene el estado de la aplicación. Hay una tienda para toda la aplicación.
+=> Las responsabilidades de la tienda Redux incluyen contener el estado de la aplicación, permitir el acceso al estado a través de getState(),
+habilitar actualizaciones de estado a través de dispatch(action)y registrar oyentes a través de subscribe(listener).
+
+- ACTION :
+=> Las acciones son la única forma en que su aplicación puede interactuar con la tienda Redux.
+=> Describen cambios en el estado.
+=> Llevan información desde su aplicación a la tienda Redux en forma de objetos JavaScript simples.
+=> Las acciones tienen una propiedad 'tipo' que indica el tipo de acción que se está realizando.
+=> En Redux, un creador de acciones crea una acción, que es una función que devuelve la acción.
+
+- REDUCER :
+=> Realiza transiciones de estado en función de acciones.
+=> Los reductores especifican cómo cambia el estado de la aplicación en respuesta a las acciones enviadas a la tienda.
+=> Un reductor es una función que acepta el estado actual y una acción como argumentos, y devuelve el siguiente estado de la aplicación.
