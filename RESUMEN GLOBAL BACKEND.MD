@@ -57,12 +57,84 @@ Ofrece diferentes formas de realizar solicitudes, como GET, POST, PUT/PATCHy DEL
 Axios es una librería  JavaScript que puede ejecutarse en el navegador y que nos permite hacer sencillas las operaciones como cliente HTTP, por lo que podremos configurar y realizar solicitudes a un servidor y recibiremos respuestas fáciles de procesar.
 
 Después de alojada la web, cuando recibamos respuesta del servidor, se llamará a un callback configurada en then y en el momento que arroje un error, se correrá la misma función, pero definida por catch.
+
+---
+
+# API
+(Interfaz de Programación de Aplicaciones): Una API es un conjunto de reglas, protocolos y herramientas que permiten a los desarrolladores de software interactuar con un servicio o plataforma. Básicamente, es una forma de permitir que diferentes aplicaciones o sistemas se comuniquen entre sí, sin que los desarrolladores tengan que preocuparse por la complejidad de cómo funciona internamente cada uno.
+
+Para integrar servicios de terceros, acceder a bases de datos, permitir la creación de aplicaciones móviles, y muchas otras cosas más. En resumen, una API es un conjunto de funciones, métodos y protocolos que permiten a los desarrolladores integrar sus aplicaciones o servicios con otros servicios o plataformas.
 ---
 
 # API REST
 (Application Programming Interface - Representational State Transfer)
 
+es una implementación de la arquitectura de software REST que permite que las aplicaciones accedan y manipulen los recursos a través de una serie de operaciones estándar, como GET, POST, PUT y DELETE.
+La API REST permite que las aplicaciones se comuniquen con los servidores web mediante solicitudes HTTP a recursos específicos y que se identifican mediante URIs (Uniform Resource Identifiers).
+
+Una API REST es una API que utiliza los principios de REST para diseñar y exponer servicios web a través de la web. Esto significa que una API REST utiliza las URL y los métodos HTTP estándar de REST para exponer recursos y permitir que los desarrolladores accedan a ellos.
+
 ---
+
+# JSON (JavaScript Object Notation)
+es un formato que almacena información estructurada y se utiliza principalmente para transferir datos entre un servidor y un cliente.
+
+Glosario
+Jan 10, 2023
+
+Deyimar A.
+
+4min de lectura
+
+¿Qué es JSON?
+
+Hay dos elementos centrales en un objeto JSON: claves (Keys) y valores (Values).
+
+Las Keys deben ser cadenas de caracteres (strings). Como su nombre en español lo indica, estas contienen una secuencia de caracteres rodeados de comillas.
+Los Values son un tipo de datos JSON válido. Puede tener la forma de un arreglo (array), objeto, cadena (string), booleano, número o nulo.
+Un objeto JSON comienza y termina con llaves {}. Puede tener dos o más pares de claves/valor dentro, con una coma para separarlos. Así mismo, cada key es seguida por dos puntos para distinguirla del valor.
+
+Como resultado, la sintaxis literal del objeto JSON se ve así:
+
+`{“key”:“value”,“key”:“value”,“key”:“value”.}`
+
+Una API REST también utiliza el formato de intercambio de datos JSON (JavaScript Object Notation) para representar los datos que se intercambian entre el servidor y el cliente. JSON es un formato de intercambio de datos liviano y fácil de leer y escribir, que se utiliza ampliamente en las aplicaciones web modernas.
+
+### Payload
+  
+El Payload son los datos que se transmiten en una comunicación. En el contexto de las API, el payload se refiere a los datos que se envían en el cuerpo de una solicitud HTTP o en la respuesta HTTP.
+
+El payload se refiere a los datos que se envían en una solicitud o respuesta, generalmente en formato JSON o XML como ya se los he mostrado, también pueden ser archivos binarios.
+
+### Request
+ 
+Request hace referencia a la solicitud que un cliente envía al servidor para obtener o modificar datos en una API REST.
+
+En una HTTP Request, el método HTTP indica la operación que se desea realizar sobre el recurso. Los métodos más comunes utilizados en la API REST son:
+
+GET: para obtener información sobre un recurso existente.
+
+POST: para crear un nuevo recurso o realizar una operación que no se ajusta a ningún otro método.
+
+PUT: para actualizar completamente un recurso existente.
+
+PATCH: para actualizar parcialmente un recurso existente.
+
+DELETE: para eliminar un recurso existente.
+
+### Response
+ 
+Se refiere a la respuesta enviada por un servidor web después de recibir una solicitud HTTP Request de un cliente.
+
+Una respuesta HTTP incluye un código de estado, cabeceras y un cuerpo.
+
+### Authentication
+ 
+La autenticación es un proceso fundamental en cualquier sistema de seguridad, es esencial para garantizar que solo los usuarios autorizados puedan acceder a los recursos protegidos por la API. El proceso de autenticación generalmente se realiza antes de permitir que un usuario o cliente acceda a una API.
+
+
+---
+
 # I18n
 
 Se utiliza para para mostrar tu contenido en varios idiomas para apoyar el proceso de internacionalización de tu producto.
