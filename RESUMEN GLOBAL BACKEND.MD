@@ -206,3 +206,9 @@ Yup es una biblioteca de validación de esquemas que facilita la definición y v
 # QUILL 
 ES un editor de texto enriquecido.
 Para permitir a los usuarios crear contenido atractivo, como publicaciones de blogs y páginas web que incorporan varias opciones de formato y la posibilidad de insertar imágenes. Al integrar un editor de texto enriquecido en su aplicación web, ofrece a los usuarios una interfaz intuitiva que fomenta la creatividad y mejora la experiencia general del usuario.
+
+---
+# Socket.IO
+Fue desarrollado para utilizar conexiones abiertas para facilitar la comunicación en tiempo real, un fenómeno relativamente nuevo en ese momento.
+
+Socket.IO permite la comunicación bidireccional entre el cliente y el servidor. Las comunicaciones bidireccionales se habilitan cuando un cliente tiene Socket.IO en el navegador y un servidor también ha integrado el paquete Socket.IO. Si bien los datos se pueden enviar en varios formatos, JSON es el más simple.
