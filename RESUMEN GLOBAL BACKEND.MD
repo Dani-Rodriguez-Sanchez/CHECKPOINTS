@@ -189,3 +189,20 @@ Con la biblioteca MUI React, puedes agregar componentes MUI a tus aplicaciones R
 
 Material UI es el design system de Google. Es muy identificable y bonito, aunque demasiado reconocible.
 Es una biblioteca de componentes: cajas, diálogos, botones, etc
+
+---
+# FORMIK Y YUP
+Formik y Yup para crear formularios robustos y fáciles de validar en React
+
+FORMIK es la biblioteca de formularios de código abierto más popular del mundo para React
+
+Formik está diseñado para gestionar formularios con validación compleja con facilidad. Formik admite la validación sincrónica y asincrónica a nivel de formulario y a nivel de campo. Además, viene con soporte integrado para la validación a nivel de formulario basada en esquema a través de Yup.
+
+YUP 
+La validación de datos se debe realizar tanto en el frontend como en el backend.
+Yup es una biblioteca de validación de esquemas que facilita la definición y validación de la estructura y los tipos de datos en aplicaciones de React. Proporciona una forma declarativa y fácil de definir reglas de validación utilizando una amplia gama de métodos predefinidos y la capacidad de crear validaciones personalizadas.
+
+---
+# QUILL 
+ES un editor de texto enriquecido.
+Para permitir a los usuarios crear contenido atractivo, como publicaciones de blogs y páginas web que incorporan varias opciones de formato y la posibilidad de insertar imágenes. Al integrar un editor de texto enriquecido en su aplicación web, ofrece a los usuarios una interfaz intuitiva que fomenta la creatividad y mejora la experiencia general del usuario.
