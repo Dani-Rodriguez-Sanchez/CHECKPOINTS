@@ -19,7 +19,7 @@ ReactJS divide la interfaz de usuario en piezas aisladas y reutilizables de cód
 Los componentes de React funcionan de forma similar a las funciones de JavaScript, ya que aceptan entradas arbitrarias denominadas propiedades o props.
 
 ## Gestión de Estado
-'La gestión de estado consiste en asegurar que la UI muestre correctamente el estado actual de la aplicación y es un pilar fundamental en frontend.'
+`La gestión de estado consiste en asegurar que la UI muestre correctamente el estado actual de la aplicación y es un pilar fundamental en frontend.`
 Un estado es un objeto JavaScript que representa una parte de un componente. 
 Cambia cada vez que un usuario interactúa con la aplicación, renderizando una nueva interfaz de cliente para reflejar las modificaciones.
 
