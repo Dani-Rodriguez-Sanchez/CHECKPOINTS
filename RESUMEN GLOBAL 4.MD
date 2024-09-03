@@ -108,3 +108,90 @@ Además, actualizará automáticamente el archivo package.json y el archivo pack
 ### dependencias. que son?
 
 (son elementos para que una aplicación se ejecute), en desarrollo, son bibliotecas, módulos, o paquetes. En react, están dentro de la carpeta node_modules, y hay que llamarlas desde package.json, indicando nombre y versión. Se instalan después con npm install. Y en app.js hay que importarlas con “import moment from 'moment'”
+
+### dos tipos de componentes de react
+
+Componentes: Son como funciones, fragmentos de código independientes y reutilizables. Aceptan entradas (props), y devuelven elementos de react. Cada una tiene su propia lógica y su propósito es renderizar algo. se almacenan en src/components Dos tipos: FUNCIONALES, Y DE CLASE:
+
+#### FUNCIONAL. son similares a las funciones de JavaScript que reciben propiedades (props) y devuelven elementos de React para su renderización. (un ReactNode puede ser un elemento html, un string, un booleano, entre otros tipos de datos.). Son las más simples y concretos, ya que solo reciben y retornan
+
+#### DE CLASE. se crean utilizando clases de JavaScript, que extienden (amplian) la clase React.Component proporcionada por el propio React. son clases simples (compuestas por múltiples funciones que agregan funcionalidad a la aplicación). requiere que lo extiendas desde React. Componente y cree una función de renderizado que devuelva un elemento de React.
+
+### PROPS
+
+(son las propiedades de un componente) Es una manera de pasarle información dinámica a un componente, esto da dinamismo al sistema, ya que un mismo prop, puede dar lugar a diferentes resultados con diferentes instancias, y además da la posibilidad de reutilizar componentes También es una manera de pasar información entre componentes, de padre a hijo
+
+### Con qué tipo de Componente utilizamos un Constructor?
+
+CONSTRUCTOR: es un método utilizado para inicializar el estado de un objeto en una clase. 
+Por lo tanto utilizamos el componente de tipo clase. 
+
+Las utilidades del constructor son inicializar el estado local del componente asignando un objeto a this.state. Y para vincular eventos SUPER . 
+no se puede acceder a este objeto.props directamente desde el principio, 
+lo que puede provocar errores, entonces transferimos el valor de un accesorio a la función super() desde el constructor(). 
+Cuando llamas a la función super(), se llama al constructor de la clase principal, que en el caso de React es React.Component. 
+
+### SLUG
+(o permalink) se usa como convenio para aquellas URLs que tienen partes customizadas, que podrían ser parámetros. En este caso, el slug sería el nombre del proyecto, la habilidad o la empresa.
+
+---
+
+# CHECKPOINT 15
+
+## AXIOS 
+es una biblioteca npm. es un conjunto de código JavaScript, que nos permite llamar a API y luego acceder a los datos para que podamos representarlos en nuestra aplicación. 
+
+Se instala con npm install axios. la agregará a nuestro archivo package.json y luego, luego agregará el código de Axios directamente a nuestro módulo de nodo.
+```
+AXIOS es una biblioteca npm que se utiliza para hacer solicitudes HTTP. es un conjunto de código JavaScript, que nos permite llamar a API y luego acceder a los datos para que podamos representarlos en nuestra aplicación.
+```
+### AXIOS VS FETCH 
+
+Axios es una librería externa, y Fetch es una herramienta nativa del navegador.
+
+Entonces fetch no genera dependencias, esto es positivo para algunos proyectos, por el contrario Axios es más sencillo de configurar, por lo tanto, axios es el más utilizado. 
+Axios maneja los resultados facilmente, y a través de catch capturamos los errores
+
+###SOLICITUDES HTTP 
+
+Las solicitudes HTTP son el mecanismo mediante el cual las aplicaciones web se comunican con los servidores. Pueden ser de diferentes tipos, como GET, POST, PUT y DELETE, 
+
+### COOKIES en react
+son archivos de texto con pequeños datos, como un nombre de usuario y contraseña, que se utilizan para identificar tu ordenador cuando utilizas una red.
+
+### DEVELOPER TOOLS
+
+Es una EXTENSION DEL NAVEGADOR. Se instala por ejemplo en chrome, yendo a chrome web store y buscar React Developer Tools o dar click aqui e instalarlas.
+
+Da la capacidad de obtener una mejor visibilidad específica de React. Esto significa que puede ver los accesorios de su aplicación, su estado, puede ver los componentes además de que puede ver el árbol de componentes completo y puede inspeccionar todos sus datos.
+```
+SON UTILES PARA ver la estructura de componentes, examinar las propiedades (props) y el estado (state) de cada componente, y realizar un seguimiento de cómo se comunican entre sí. así como la para la identificación de errores, que sin estas herramientas, sería un proceso más complejo
+```
+
+### EVENT LISTENER
+Es una función Sirve PARA realizar acciones en el programa a través de EVENTOS del usuario. Se asocian acciones a los eventos del usuario.
+
+Al igual que los eventos DOM HTML, React puede realizar acciones basadas en eventos del usuario.
+
+React tiene los mismos eventos que HTML: hacer clic, cambiar, pasar el mouse, etc.
+
+
+No es específico de React sino que es general en programación web. Al igual que los eventos HTML DOM, React puede realizar acciones basadas en eventos del usuario. React tiene los mismos eventos que HTML: hacer clic, cambiar, pasar el mouse, etc.
+`onClick`
+
+### DEBUGGER
+
+Este depurador nos permite ejecutar el código paso a paso, puesto que se detiene cada vez que se encuentra con la palabra clave debugger. Si clicamos en el botón de continuar, la ejecución del código continuará hasta que se encuentre con la siguiente palabra clave debugger.
+
+### MIXINS
+permite crear código CSS que se reutilizará en todo el sitio web. 
+un mixin es una clase que contiene métodos que pueden ser utilizados por otras clases sin necesidad de heredar de ella. 
+Los mixins son una forma de compartir comportamiento entre diferentes componentes de React. Son una forma de reutilización de código, un método para compartir funcionalidad entre varios componentes. POR EJEMPLO, para los estilos
+
+### VARIABLES SASS
+
+En React, a veces es posible que necesitemos actualizar dinámicamente el estilo debido a la interacción del usuario y al cambio en el DOM. En el caso de las variables SCSS, podemos actualizar dinámicamente las variables SCSS usando ReactJS.
+
+Un gran uso de SASS es almacenar los distintos colores utilizados en su aplicación como variables. Luego se puede hacer referencia a estas variables en otros archivos .scss o, en este caso, directamente en sus componentes de React.
+
+Por ejemplo, para crear una variable de color:
