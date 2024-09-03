@@ -83,3 +83,28 @@ React Native utiliza interfaces de programación de aplicaciones (APIs) nativas 
 
 ---
 # CHECKPOINT 14
+
+### módulo de nodo
+ se instalac con: npm install [nombre-del-módulo].
+Con este comando, se puede agregar cualquier módulo o biblioteca disponible en el registro de npm a un proyecto de Node.js.
+
+NVM. Node Version Manager. es un administrador de versiones que le permite instalar y cambiar entre diferentes versiones de Node.js en una sola máquina.
+
+NODE  es un entorno de ejecución usado para ejecutar código JavaScript en los servidores. Permite ejecutar JavaScript sin necesidad de un navegador web. 
+
+### NPM
+Node Package Manager 
+Viene incluido con Node.js y se instala automáticamente. Maneja la instalación de paquetes, la gestión de versiones y la resolución de dependencias dentro de un proyecto node.js. NPM lee el archivo `package.json.
+Asi con Node se permite que cientos de desarrolladores puedan compartir paquetes de software entre distintos proyectos.
+
+npm se compone de al menos dos partes principales.
+
+- Un repositorio online para publicar paquetes de software libre para ser utilizados en proyectos Node.js
+- Una herramienta para la terminal (command line utility) para interactuar con dicho repositorio que te ayuda a la instalación de utilidades, manejo de dependencias y la publicación de paquetes.
+
+`npm install` descargará el módulo desde el registro público de npm y lo colocará en la carpeta node_modules de nuestro proyecto.
+Además, actualizará automáticamente el archivo package.json y el archivo package-lock.json con la nueva dependencia.
+
+### dependencias. que son?
+
+(son elementos para que una aplicación se ejecute), en desarrollo, son bibliotecas, módulos, o paquetes. En react, están dentro de la carpeta node_modules, y hay que llamarlas desde package.json, indicando nombre y versión. Se instalan después con npm install. Y en app.js hay que importarlas con “import moment from 'moment'”
