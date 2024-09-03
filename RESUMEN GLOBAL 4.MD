@@ -6,6 +6,22 @@
 ReactJS es una de las librerías más populares de JavaScript para el desarrollo de aplicaciones móviles y web. 
 Creada por Facebook, React contiene una colección de fragmentos de código JavaScript reutilizables utilizados para crear interfaces de usuario (UI) llamadas componentes
 
+### VENTAJAS DE USO DE REACT
+Una de las mayores ventajas de usar React es que puedes infundir código HTML con JavaScript.
+
+- 1. Fácil de usar
+Los desarrolladores con conocimientos de JavaScript pueden aprender a utilizar React en muy poco tiempo, ya que se basa en JavaScript plano y en un enfoque basado en componentes.
+
+- 2. Admite componentes Java reutilizables
+React te permite reutilizar componentes que han sido desarrollados en otras aplicaciones. Como React JS es de código abierto, es posible pre-construir componentes, lo que reduce el tiempo de desarrollo de aplicaciones web complejas.
+
+- 3. Facilita la redacción de los componentes
+Gracias a la integración de JSX, es más fácil escribir componentes de React: los usuarios pueden crear objetos de JavaScript combinados con tipografía y etiquetas HTML. JSX también simplifica la renderización de múltiples funciones, lo que mantiene el código sencillo sin reducir las capacidades de la aplicación.
+
+- 4. Alto rendimiento
+Como comentamos anteriormente, el virtual DOM permite a ReactJS actualizar el árbol del DOM de la forma más eficiente posible. Al almacenar el virtual DOM en la memoria, React elimina el exceso de re-renderización que puede perjudicar el rendimiento.
+
+
 ## JSX
 JSX es una extensión de la sintaxis de JavaScript utilizada en la creación de elementos de React. Los desarrolladores la emplean para incrustar código HTML en objetos JavaScript.
 
@@ -52,20 +68,6 @@ React Router es una colección de componentes para navegación, que puedes integ
 
 Con esta colección de componentes puedes modificar la URL de tu página web, reemplazar componentes dependiendo de la dirección en la que se encuentre el usuario y mucho más.
 
-### VENTAJAS DE USO DE REACT
-Una de las mayores ventajas de usar React es que puedes infundir código HTML con JavaScript.
-
-- 1. Fácil de usar
-Los desarrolladores con conocimientos de JavaScript pueden aprender a utilizar React en muy poco tiempo, ya que se basa en JavaScript plano y en un enfoque basado en componentes.
-
-- 2. Admite componentes Java reutilizables
-React te permite reutilizar componentes que han sido desarrollados en otras aplicaciones. Como React JS es de código abierto, es posible pre-construir componentes, lo que reduce el tiempo de desarrollo de aplicaciones web complejas.
-
-- 3. Facilita la redacción de los componentes
-Gracias a la integración de JSX, es más fácil escribir componentes de React: los usuarios pueden crear objetos de JavaScript combinados con tipografía y etiquetas HTML. JSX también simplifica la renderización de múltiples funciones, lo que mantiene el código sencillo sin reducir las capacidades de la aplicación.
-
-- 4. Alto rendimiento
-Como comentamos anteriormente, el virtual DOM permite a ReactJS actualizar el árbol del DOM de la forma más eficiente posible. Al almacenar el virtual DOM en la memoria, React elimina el exceso de re-renderización que puede perjudicar el rendimiento.
 
 ### diferencia entre enrutamiento estático y enrutamiento dinámico?
 
