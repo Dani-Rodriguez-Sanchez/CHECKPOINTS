@@ -195,3 +195,69 @@ En React, a veces es posible que necesitemos actualizar dinámicamente el estilo
 Un gran uso de SASS es almacenar los distintos colores utilizados en su aplicación como variables. Luego se puede hacer referencia a estas variables en otros archivos .scss o, en este caso, directamente en sus componentes de React.
 
 Por ejemplo, para crear una variable de color:
+---
+# CHECKPOINT 16
+
+### ROUTER
+Se usa porque REACT por si solo no permite el enrutamiento. Es un componente, y hay que agregarlo asi: npm i -D react-router-dom necesita una estructura de carpetas, y luego a través de una función.
+
+En React, el contenido de la página es creado a partir de nuestros componentes. Así que lo que hace React Router es interceptar la petición que se envía al servidor
+y luego inyectar el contenido dinámicamente desde los componentes que hemos creado.
+
+### Qué es una solicitud POST?
+
+en REACT lo estamos usando como metodo HTTP. Es lo opuesto a GET, este envia información, y no necesita THEN como Get se usa para ENVIAR datos a la API.
+
+Es asíncrona, lo que significa que hay dos momentos cruciales en la ejecución: el momento en el que inicias la llamada y el momento en que recibes una respuesta (o un tiempo de espera).
+
+En el módulo lo hemos usado para crear nuevos items en el portfolio
+
+### HIGH ORDER COMPONENT
+
+un componente de orden superior es una función que toma un componente y devuelve un nuevo componente. permiten reutilizar la lógica de los componentes en varios componentes.
+En React, un componente de orden superior es una función que toma un componente como argumento y devuelve un nuevo componente que envuelve el componente original.
+
+### SYNTHETIC EVENTS
+
+En un sitio web HTML normal, tenemos lo que se llama DOM, es el Modelo de Objetos de Documento.
+
+pero en React, tenemos lo que se llama DOM virtual, lo que significa que no estamos interactuando con el DOM como lo haría con un sitio web HTML normal, y eso es por razones de rendimiento.
+
+no estamos trabajando con eventos reales, estamos trabajando con eventos sintéticos que están destinados a dar la misma sensación que trabajar con un evento normal,
+ese es el comportamiento natural de React, tiene muchas funciones agradables y de alto rendimiento por las que React es realmente conocido, 
+es una de las razones clave por las que la gente usa React.
+
+### COOKIE VS TOKEN
+
+HTTP no tiene estado. Cada solicitud es independiente y no contiene ningún contexto sobre las solicitudes anteriores. 
+Entonces ¿cómo gestionamos las solicitudes que se realizan después de superar la autorización? Aquí es donde entran en juego las Cookies de Sesión y JWT (Json Web Token).
+
+Ambas son herramientas para la AUTENTIFICACION DE USUARIOS. El proceso de autorización valida si dicho usuario o dispositivo tiene permisos para acceder a un recurso específico.
+
+A diferencia de las cookies, los tokens de sesión no se almacenan en el dispositivo del usuario, sino en el servidor o en un servicio de terceros. 
+El servidor genera un token único y aleatorio para cada usuario y lo envía al navegador como parte de la respuesta
+
+---
+
+# CHECKPOINT 17
+
+### HANDLER
+event handling: controladores de eventos. determinan qué acción ocurrirá cada vez que se active un evento. Esto podría ser un clic en un botón o un cambio en una entrada de texto. hacen posible que los usuarios interactúen con su aplicación React
+
+### REFS Y DOM
+sobre la manera en que REACT se relaciona con el DOM: react trabaja con un Dom virutal, 
+pero hay veces que necesitamos interactuar directamente con el DOM y eso es lo que hacen los REFS lo hemos utilizado para poder borrar los archivos tan pronto como se hayan cargado exitosamente. 
+es útil para trabajar con bibliotecas de terceros. para utilizar en casos que no podamos solucionar con props, state y funciones. 
+permite acceder a los elementos del DOM o a los elementos react creados en el método render.
+
+### CRUD
+
+CRUD (Create, Read, Update, and Delete) para muchas aplicaciones, es el conjunto completo de funcionalidad, significa crear, leer, actualizar y eliminar. En REACT se puede aplicar para el manejo de datos en la API o localmente.
+
+los métodos HTTP (POST, GET, PUT y DELETE) se corresponden a las operaciones CRUD CONJUNTO DE OPERACIONES DE CRUD que son las siguientes:
+
+- Crear: crear una publicación o agregar la fila de la tabla, agregar datos a la página web o crear contenido. CREATEUSER POR EJEMPLO. EN HTTP POST
+- Leer: leer o recuperar datos de una página web. EN HTTP GET
+- Actualización: actualizar o editar contenido existente en la página web EN HTTP PUT
+- Eliminar: eliminar y eliminar la entrada o contenido/publicación de la página web EN HTTP DELETE
+
