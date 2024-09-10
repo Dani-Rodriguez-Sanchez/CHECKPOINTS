@@ -36,3 +36,33 @@ a los cambios en los inputs del formulario y, cuando finalmente se envía el for
 no tenemos que reunir ninguna información, eso ya está hecho a través de la actualización dinámica del estado.
 a través de los hooks, podemos ir actualizando el valor del usuario, con funciones actualizadoras
 
+### estados de vida
+
+los componentes poseen algo conocido como el ciclo de vida. Este ciclo de vida son una serie de funciones que se ejecutan en distintos momentos de la vida del componente y nos permiten realizar distintas acciones en estos momentos. El ciclo de vida se puede dividir en 3 fases, el montado, actualización y desmontado del componente. Estas fases a su vez se dividen en varios métodos que puede tener el componente.
+
+a — Montaje Cuando se crea una instancia de un componente y se inserta en el DOM
+
+b — Actualización Cuando sufre algún cambio las propiedades (props) o el estado (state) del componente.
+
+c — Desmontaje Cuando el componente se elimina del DOM.
+
+### MODAL
+Modal es un elemento UX común. Un modal es un cuadro de diálogo/ventana emergente que se muestra en la parte superior de la página actual.
+
+Un modal en React es un componente que se superpone a otro contenido en una página web. Es un elemento de la interfaz de usuario que se utiliza para mostrar contenido adicional o para solicitar la interacción del usuario. Los modales de React se utilizan habitualmente para mostrar formularios, mensajes u otro contenido interactivo.
+
+
+---
+# CHECKPOINT 19
+
+### BINDING
+Es una peculiaridad de los componentes de clase en React.
+
+En componentes de clase, el valor que adopta this dentro de una función dependerá de cómo sea invocada dicha función. 
+
+Cuando nuestra función es utilizada como manejador de eventos (event handler), el valor al que apunta this será undefined. ¿Por qué? Las declaraciones y expresiones de clase (como por ejemplo nuestra función) se ejecutan en modo estricto, bajo el cual se aplica el binding por defecto a undefined y no a la instancia del componente como cabría esperar. Por tanto, el this en un event handler disparado fuera de nuestro componente de clase, perderá la referencia a la instancia a la que pertenece.
+
+La solución pasa por “atar” manualmente el this a la instancia de clase en cada una de las funciones declaradas como métodos de clase.
+asegurarte que las funciones tengan acceso a los atributos del componente como this.props y this.state
+
+this.handleClick = this.handleClick.bind(this);
