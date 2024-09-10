@@ -261,3 +261,19 @@ los métodos HTTP (POST, GET, PUT y DELETE) se corresponden a las operaciones CR
 - Actualización: actualizar o editar contenido existente en la página web EN HTTP PUT
 - Eliminar: eliminar y eliminar la entrada o contenido/publicación de la página web EN HTTP DELETE
 
+### OPERADOR TERNARIO
+
+en javascript es un operador CONDICIONAL con TRES ELEMENTOS se usa para condensar una expresión de if/else mucho más larga en menos código y más compacta. condición ? valor verdadero : valor falso;
+
+Si la condición es true, el operador retorna el valor de la valorverdadero; de lo contrario, devuelve el valor de valorfalso
+
+### solicitud API:
+- cuando queremos eliminar datos?
+DELETE
+
+-  actualizar datos?
+PUT Reemplaza todo el recurso con la versión actualizada completamente.
+
+### HOOKS
+(ganchos) permiten que los componentes de funciones tengan acceso al estado y otras características de React. Debido a esto, los componentes de clase generalmente ya no son necesarios. por ejemplo USESTATE que nos da un estado inicial, para después con una funcion poder actualizarlo. durante el ciclo de vida de la funcion
+
