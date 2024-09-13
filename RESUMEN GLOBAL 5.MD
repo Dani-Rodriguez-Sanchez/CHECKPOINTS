@@ -66,3 +66,74 @@ La solución pasa por “atar” manualmente el this a la instancia de clase en 
 asegurarte que las funciones tengan acceso a los atributos del componente como this.props y this.state
 
 this.handleClick = this.handleClick.bind(this);
+
+### MODAL
+
+Modal es un elemento UX común. Un modal es un cuadro de diálogo/ventana emergente que se muestra en la parte superior de la página actual.
+
+Un modal en React es un componente que se superpone a otro contenido en una página web. Es un elemento de la interfaz de usuario que se utiliza para mostrar contenido adicional o para solicitar la interacción del usuario. Los modales de React se utilizan habitualmente para mostrar formularios, mensajes u otro contenido interactivo.
+
+### HOOKS
+
+Los React Hooks son herramientas que te permiten usar estados y otras funciones de React sin escribir componentes de clase. Están diseñados para simplificar tu código y facilitar el intercambio de lógica entre componentes.
+
+REF ELEMENT VS GET ELEMENT
+Son hooks los dos
+
+- useState está diseñado para administrar el estado de un componente, que representa datos que pueden cambiar con el tiempo y son importantes para la representación del componente. Puedes agregar el estado a tu componente importando el useState
+
+- useRef se utiliza para crear referencias en los componentes de React. Una referencia es un objeto con una currentpropiedad que contiene un valor. Básicamente, hace referencia a un elemento DOM o a una instancia de un componente. Podemos leer y actualizar el valor accediendo a la propiedad actual.
+
+
+### REFS
+
+proporcionan una forma de acceder a los nodos DOM o elementos React creados en el método de renderizado
+
+Las referencias se crean utilizando React.createRef()elementos de React y se adjuntan a ellos mediante el ref atributo.
+Las referencias se asignan normalmente a una propiedad de instancia cuando se construye un componente para que se pueda hacer referencia a ellas en todo el componente.
+
+### Operaciones asincrónicas⏳
+En JavaScript, muchas operaciones tardan en completarse, como realizar solicitudes de red, leer o escribir archivos o ejecutar tareas que consumen mucho tiempo. Estas operaciones son asincrónicas, lo que significa que no bloquean el hilo principal de ejecución. Sin un manejo adecuado, pueden generar código complejo y propenso a errores.
+
+### PROMISES
+Las promesas son un concepto fundamental en JavaScript para gestionar operaciones asincrónicas
+
+.then()y .catch()💡
+Las promesas están equipadas con métodos .then()y .catch(). Puede adjuntar estos métodos a una promesa para manejar los resultados cuando se resuelve o para detectar errores cuando se rechaza. Este enfoque separa claramente el código de manejo de errores y éxito, lo que mejora la organización del código.
+tienen un manejo de errores integrado a través del .catch()método, 
+
+```
+
+const myPromise = new  Promise ( ( resolve, reject ) => { 
+  // El código asincrónico va aquí 
+  // Si la operación tiene éxito, llama a resolve con un resultado 
+  // Si la operación falla, llama a reject con un error
+ });
+```
+
+### REDUX
+
+Es una biblioteca de gestión de estados En el frontend moderno, tienes que juntar la continua variación de datos (mutabilidad), con la incertidumbre de cuando se producen (asincronismo), y eso es una combinación peligrosa.
+
+¿Cuando me interesa Redux entonces? Pues una señal clara de que necesitas ayuda con la gestión de estados es cuando tienes una app tan grande que en un momento dado pierdes el control del cuándo, cómo y por qué de tu estado.
+
+El propósito de Redux es hacer predecibles los cambios de estado, imponiendo ciertas restricciones sobre como y cuando pueden producirse las actualizaciones. Redux consigue que tu gestión de estado sea transparente y determinista, lo que entre otras cosas aporta…
+
+- Mejor comprensión de la evolución del estado en un momento dado
+ -Facilidad para incorporar nuevas características a la app
+ -Un nuevo abanico de herramientas de debugging (como el time travelling)
+ -Capacidad de reproducir un bug
+ -Mejoras en el proceso de desarrollo, pudiendo reiniciar la ejecución a partir de un estado concreto.
+
+### ELEMENTOS DE REDUX:
+- STORE El almacén es un objeto que contiene todo el estado de la aplicación. Es INMUTABLE
+- ACTIONS Las acciones son objetos que describen un cambio en el estado. pueden llevar datos adicionales (como información sobre el cambio) en su propiedad payload.
+- REDUCERS Los reductores son funciones puras que toman el estado actual y una acción y devuelven un nuevo estado. Los reductores definen cómo debe cambiar el estado en función del tipo de acción recibida. Deben ser inmutables y no tener efectos secundarios.
+
+### GESTION DE ESTADO
+Es el proceso de manejar y controlar la información que cambia en una aplicación web mientras los usuarios interactúan con ella, el estado puede incluir datos como información del usuario, preferencias, datos de visualización, detalles del formulario, autenticación y más. La gestión del estado es esencial porque las aplicaciones modernas son cada vez más interactivas y dinámicas. Los usuarios pueden interactuar con diferentes partes de la aplicación, realizar acciones y esperar que la interfaz responda en tiempo real. Para lograr esto, es necesario tener un método eficiente y organizado para mantener y actualizar el estado.
+
+
+
+### Rich Text Editor Styles
+Es una biblioteca, que proporciona un editor de texto enriquecido (RTE). Se usa para facilitar a los usuarios la edición de contenido, ofreciendo una experiencia de edición WYSIWYG (What You See Is What You Get)
