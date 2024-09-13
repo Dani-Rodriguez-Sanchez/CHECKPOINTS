@@ -133,6 +133,39 @@ El propósito de Redux es hacer predecibles los cambios de estado, imponiendo ci
 ### GESTION DE ESTADO
 Es el proceso de manejar y controlar la información que cambia en una aplicación web mientras los usuarios interactúan con ella, el estado puede incluir datos como información del usuario, preferencias, datos de visualización, detalles del formulario, autenticación y más. La gestión del estado es esencial porque las aplicaciones modernas son cada vez más interactivas y dinámicas. Los usuarios pueden interactuar con diferentes partes de la aplicación, realizar acciones y esperar que la interfaz responda en tiempo real. Para lograr esto, es necesario tener un método eficiente y organizado para mantener y actualizar el estado.
 
+### MIDDLEWARE
+permiten agregar funcionalidad a los Stores de Redux. un middleware es una función, esta función va a recibir como parámetro una versión reducida del Store, con solamente los métodos `dispatch` y `getState`. Sirve para muchas tareas diferentes, registrar datos, capturar errores, despachar promesas, cambiar rutas,
+
+### THUNK
+redux-thunkEs el middleware más comúnmente utilizado para trabajar con lógica sincrónica y asincrónica fuera de los componentes.
+
+Redux-thunk te permite escribir creadores de acciones que retornan una función en vez de un objeto de acción típico. Entonces, el thunk puede ser usado para retrasar el envío de una acción hasta que se cumpla una línea de código asíncrona
+
+un redux-thunk está compuesto de un “creador thunk” (creador de acciones asincrónicas) y “el mismo thunk” el cual es la función que devuelve el “creador Thunk” y acepta el dispatch y setState como argumentos.
+
+Redux-Thunk mejora las capacidades de Redux al proporcionar un mecanismo sencillo y eficiente para gestionar acciones asincrónicas. Permite a los desarrolladores escribir código limpio, predecible y fácil de mantener, al tiempo que garantiza la integridad de la gestión del estado de la aplicación.
+
+La palabra "thunk" es un término de programación que significa "un fragmento de código que realiza un trabajo diferido" . En lugar de ejecutar cierta lógica ahora , podemos escribir un cuerpo de función o código que se pueda usar para realizar el trabajo más tarde.
+
+### HOC
+
+HIGH ORDER COMPONENT Los componentes de orden superior son útiles para abstraer una lógica compartida utilizada por muchos componentes (Los componentes en React permiten la reutilización de código y evitan la repetición de código) es una técnica avanzada en React para el reuso de la lógica de componentes. Los HOCs no son parte de la API de React. Son un patrón que surge de la naturaleza composicional de React.
+Mientras que un componente transforma props en interfaz de usuario, un componente de orden superior transforma un componente en otro.
+
+### REDUX TOOLKIT
+La biblioteca principal de Redux no tiene opiniones definidas. Te permite decidir cómo quieres manejar todo, como la configuración de la tienda, qué contiene tu estado y cómo quieres construir tus reductores.Esto es bueno en algunos casos, porque te da flexibilidad, pero esa flexibilidad no siempre es necesaria.
+
+el objetivo de Redux Toolkit es ayudar a simplificar los casos de uso comunes de Redux. No pretende ser una solución completa para todo lo que pueda querer hacer con Redux, pero debería simplificar mucho el código relacionado con Redux que necesita escribir (o, en algunos casos, eliminar por completo parte del código escrito a mano).
+
+exporta varias funciones individuales que puedes usar en tu aplicación y agrega dependencias en otros paquetes que se usan comúnmente con Redux (como Reselect y Redux-Thunk). incluye: configureStore(), createReducer() etc
+
+### REDUX DEVTOOLS
+
+El módulo redux-devtools-extension nos ayudará a filtrar todo lo que pase por el store y así poder verlo desde la consola de desarrolladores de Redux
+
+SON herramientas que están disponibles directamente en el navegador como extensiones de las DevTools nativas del navegador.
+
+proporciona una consola para configurar nuestro entorno de desarrollo con Redux. Esta extensión ayuda a visualizar los movimientos y las modificaciones de estado en el software basado en Redux.
 
 
 ### Rich Text Editor Styles
